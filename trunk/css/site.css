@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333333;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
