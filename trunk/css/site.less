@@ -3,9 +3,12 @@
     // #region [ Colors ]
     @white: #fcfcfc;
     @gray: #333333;
-    @blue: #0033cc;
+    @blue: #003399;
 
+    @bodyBgColor: @white;
     @bodyColor: @gray;
+    @headerBgColor: @blue;
+    @footerBgColor: @blue;
     // #endregion
 
 // #endregion
@@ -22,6 +25,7 @@ html {
 }
 
 body {
+    background-color: @bodyBgColor;
     color: @bodyColor;
 
     font-family: 'Times New Roman', Times, serif;
@@ -29,5 +33,21 @@ body {
 
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: @headerBgColor;
+
+    height: 80px;
+}
+
+main {
+    min-height: 300px;
+}
+
+footer {
+    background-color: @footerBgColor;
+
+    height: 80px;
 }
 // #endregion

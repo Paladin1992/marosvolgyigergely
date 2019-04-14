@@ -1,3 +1,7 @@
+<?php
+    include_once("connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -21,3 +25,7 @@
     </footer>
 </body>
 </html>
+
+<?php
+    include_once("disconnect.php");
+?>
