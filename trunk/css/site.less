@@ -1,53 +1,338 @@
 // #region [ Declarations ]
 
     // #region [ Colors ]
-    @white: #fcfcfc;
-    @gray: #333333;
-    @blue: #003399;
+        @white: #fcfcfc;
+        @gray: #333333;
 
-    @bodyBgColor: @white;
-    @bodyColor: @gray;
-    @headerBgColor: @blue;
-    @footerBgColor: @blue;
+        //@orange: #ffb600;
+        @orange: #ff9900;
+
+        //@blue: #003399;
+        @mediumBlue: #006698;
+        @mediumBlue2: #2569a1;
+        @blue: #00416a;
+        @blue2: #295668;
+        @blue3: #245764;
+        @blue4: #183f4e;
+        @blue5: #014782;
+        @blue6: #003040;
+        @blue7: #002f4d;
+        @blue8: #00404d;
+        @grayishBlue: #00416a;
+        @grayishBlue2: #004472;
+
+        @bgColor_body: @white;
+        @color_body: @gray;
+        @bgColor_header: @blue;
+        @color_header: @white;
+        @color_navbarButton: @blue;
+        @bgColor_footer: @blue;
+        @color_footer: @white;
+        @color_shadow: @gray;
+        @borderColor_menu_hover: @orange;
     // #endregion
 
+    // #region [ Fonts ]
+        @font-face {
+            font-family: 'Garamond';
+            font-style: normal;
+            font-weight: 400;
+            src: url(../fonts/garamond.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Perpetua';
+            font-style: normal;
+            font-weight: 400;
+            src: url(../fonts/perpetua-titling.ttf) format('truetype');
+        }
+
+        @arial: Arial, Helvetica, sans-serif;
+        @garamond: 'Garamond', serif;
+        @perpetua: 'Perpetua';
+        @timesNewRoman: 'Times New Roman', Times, serif;
+
+        @font_header: @perpetua;
+        //@font_menu: @arial;
+        @font_menu: @garamond;
+    // #endregion
+
+    @speed: 0.3s;
 // #endregion
 
 // #region [ Structure ]
 *, *::before, *::after {
     box-sizing: border-box;
     outline: none;
+    font-family: 'Times New Roman', Times, serif
 }
 
 html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    background-color: @bodyBgColor;
-    color: @bodyColor;
+    background-color: @bgColor_body;
+    color: @color_body;
 
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
 
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    padding: 0;
 }
 
 header {
-    background-color: @headerBgColor;
+    background-color: @bgColor_header;
+    color: @color_header;
 
     height: 80px;
+
+    & .name-title {
+        font-family: @font_header;
+        font-size: 50px;
+        font-variant: small-caps;
+        letter-spacing: 5px;
+        text-align: center;
+    }
 }
+
+// nav {
+//     &.navbar {
+//         border-radius: 0;
+//         border: none;
+    
+//         margin-bottom: 0;
+//     }
+
+//     &.navbar-default { background-color: @white; }
+
+//     //& .container-fluid { padding: 0 12px; }
+
+//     & .navbar-header {
+//         background-color: @blue;
+
+//         height: 80px;
+//         padding: 10px 0;
+//         position: relative;
+//     }
+
+//     & button {
+//         background-color: transparent !important;
+//         border-color: white !important;
+//         border-radius: 4px !important;
+//         color: @color_navbarButton;
+
+//         margin-right: 0 !important;
+//         padding-bottom: 9px;
+//         position: absolute !important;
+//         right: 0;
+//         top: 10px;
+
+//         transition:
+//             background-color @speed linear,
+//             border-radius @speed linear,
+//             padding-bottom @speed linear;
+
+//         &.opened {
+//             background-color: white !important;
+//             border-radius: 4px 4px 0 0 !important;
+            
+//             padding-bottom: 35px;
+
+//             transition:
+//                 background-color @speed linear,
+//                 border-radius @speed linear,
+//                 padding-bottom @speed linear;
+
+//             & .icon-bar {
+//                 background-color: @blue !important;
+
+//                 position: relative;
+
+//                 transition: background-color @speed linear;
+
+//                 &.bar1 {
+//                     top: 6px;
+//                     transform: rotateZ(45deg);
+//                     transition:
+//                         top @speed linear,
+//                         transform @speed linear;
+//                 }
+
+//                 &.bar2 {
+//                     transform: rotateZ(-45deg);
+//                     transition: transform @speed linear;
+//                 }
+
+//                 &.bar3 {
+//                     background-color: white !important;
+//                     opacity: 0;
+
+//                     transition:
+//                         background-color @speed linear,
+//                         opacity @speed linear;
+//                 }
+//             }
+//         }
+
+//         & .icon-bar {
+//             background-color: white !important;
+//             display: block;
+
+//             position: relative;
+            
+//             transition: background-color @speed linear;
+
+//             &.bar1 {
+//                 transition:
+//                     top @speed linear,
+//                     transform @speed linear;
+//             }
+//             &.bar2 { transition: transform @speed linear; }
+//             &.bar3 {
+//                 transition:
+//                     background-color @speed linear,
+//                     opacity @speed linear;
+//             }
+//         }
+
+//         & i {
+//             transform: rotateZ(0deg);
+//             transition: transform @speed linear;
+
+//             &.opened {
+//                 transform: rotateZ(180deg);
+//                 transition: transform @speed linear;
+//             }
+//         }
+//     }
+// }
 
 main {
     min-height: 300px;
 }
 
 footer {
-    background-color: @footerBgColor;
+    background-color: @bgColor_footer;
+    color: @color_footer;
 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 80px;
+}
+// #endregion
+
+// #region [ xs only ]
+@media screen and (max-width: 767px) {
+    //body { font-size: 16px; }
+
+    header {
+        display: none;
+    }
+
+    nav {
+        & ul {
+            & li {
+                display: block;
+                list-style-type: none;
+
+                text-align: center;
+                
+                &:last-of-type::after { clear: both; }
+
+                & a {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+// #endregion
+
+// #region [ sm, md, lg ]
+@media screen and (min-width: 768px) {
+    nav {
+        overflow: hidden;
+
+        & ul {
+            //background-color: @white;
+            //background-color: @blue6;
+
+            background: #00416a; /* Old browsers */
+            background: -moz-linear-gradient(top,  #00416a 0%, #003040 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #00416a 0%,#003040 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #00416a 0%,#003040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00416a', endColorstr='#003040',GradientType=0 ); /* IE6-9 */
+            box-shadow: 0px 0px 10px 0px @color_shadow;
+
+            display: flex;
+            justify-content: center;
+            height: 48px;
+            padding: 0;
+
+            & li {
+                display: block;
+                list-style-type: none;
+                
+                text-align: center;
+
+                float: left;
+
+                &:last-of-type::after { clear: both; }
+
+                &.active {
+                    & a {
+                        background-color: @blue;
+                        border-bottom-color: @borderColor_menu_hover;
+                        color: @white;
+
+                        text-decoration: none;
+                    }
+                }
+
+                & a {
+                    //color: @blue;
+                    border-bottom: 4px solid transparent;
+                    color: @white;
+
+                    font-family: @font_menu;
+                    font-size: 22px;
+                    letter-spacing: 1px;
+                    line-height: 2;
+
+                    padding: 10px 25px;
+
+                    transition:
+                        background-color linear @speed,
+                        border-bottom-color linear @speed;
+
+                    &:hover {
+                        background-color: @blue;
+                        border-bottom-color: @borderColor_menu_hover;
+                        color: @white;
+
+                        text-decoration: none;
+
+                        transition:
+                            background-color linear @speed,
+                            border-bottom-color linear @speed;
+                    }
+                }
+            }
+        }
+    }
 }
 // #endregion

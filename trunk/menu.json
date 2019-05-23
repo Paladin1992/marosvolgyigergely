@@ -1,0 +1,37 @@
+[
+    {
+        "menuItemCaption": "Főoldal",
+        "h1": "Üdvözöllek weboldalamon!",
+        "url": "fooldal",
+        "keywords": "",
+        "description": ""
+    },
+    {
+        "menuItemCaption": "Versek",
+        "h1": "Versek",
+        "url": "versek",
+        "keywords": "",
+        "description": ""
+    },
+    {
+        "menuItemCaption": "Novellák",
+        "h1": "Novellák",
+        "url": "novellak",
+        "keywords": "",
+        "description": ""
+    },
+    {
+        "menuItemCaption": "Szereplések",
+        "h1": "Szereplések",
+        "url": "szereplesek",
+        "keywords": "",
+        "description": ""
+    },
+    {
+        "menuItemCaption": "Rólam",
+        "h1": "Rólam",
+        "url": "rolam",
+        "keywords": "",
+        "description": ""
+    }
+]

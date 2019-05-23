@@ -8,19 +8,20 @@
     }
 
     mysqli_select_db($connection, 'mgwebsite');
+    mysqli_query($connection, "SET NAMES 'UTF8'");
 
-    $sql = 'SELECT * FROM irasok';
+    $sql = "SELECT * FROM irasok";
     $result = mysqli_query($connection, $sql);
 
     if (!$result) {
         die('Could not get data: ' . mysqli_error($connection));
     }
 
-    while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-        echo "Id: {$row['Id']}, ".
-           "Title: {$row['Title']}, ".
-           "URI: {$row['Uri']}, ".
-           "Type: {$row['Type']}, ".
-           "YearFinished: {$row['YearFinished']}<br>";
-    }
+    // while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+    //     echo "Id: {$row['Id']}, ".
+    //        "Title: {$row['Title']}, ".
+    //        "URI: {$row['Uri']}, ".
+    //        "Type: {$row['Type']}, ".
+    //        "YearFinished: {$row['YearFinished']}<br>";
+    // }
 ?>
