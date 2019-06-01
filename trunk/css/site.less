@@ -1,35 +1,45 @@
 // #region [ Declarations ]
 
     // #region [ Colors ]
-        @white: #fcfcfc;
+        @white: #ffffff;
+        @grayishWhite: #f9f9f9;
         @gray: #333333;
 
-        //@orange: #ffb600;
-        @orange: #ff9900;
-
-        //@blue: #003399;
-        @mediumBlue: #006698;
-        @mediumBlue2: #2569a1;
+        @lightBlue: #005e99;
         @blue: #00416a;
-        @blue2: #295668;
-        @blue3: #245764;
-        @blue4: #183f4e;
-        @blue5: #014782;
-        @blue6: #003040;
-        @blue7: #002f4d;
-        @blue8: #00404d;
-        @grayishBlue: #00416a;
-        @grayishBlue2: #004472;
+        @darkBlue: #003040;
+        @facebookBlue: #4267b2;
+        @linkedinBlue: #00538f;
+        @poetBrown: #993d1f;
+        // @blue: #003399;
+        // @blue2: #295668;
+        // @blue3: #245764;
+        // @blue4: #183f4e;
+        // @blue5: #014782;
+        // @blue6: #003040;
+        // @blue7: #002f4d;
+        // @blue8: #00404d;
+        // @lightBlue: #006698;
+        // @lightBlue2: #2569a1;
+        // @grayishBlue: #004472;
 
-        @bgColor_body: @white;
-        @color_body: @gray;
-        @bgColor_header: @blue;
-        @color_header: @white;
-        @color_navbarButton: @blue;
-        @bgColor_footer: @blue;
-        @color_footer: @white;
-        @color_shadow: @gray;
-        @borderColor_menu_hover: @orange;
+        @body_bgColor: @grayishWhite;
+        @body_color: @gray;
+
+        @header_bgColor: @blue;
+        @header_color: @white;
+        
+        @navbarButton_color: @blue;
+        
+        @footer_bgColor: @darkBlue;
+        @footer_color: @white;
+        @social_icon_color: @white;
+        @social_icon_borderColor: @white;
+        @social_icon_facebook_bgColor: @facebookBlue;
+        @social_icon_linkedin_bgColor: @linkedinBlue;
+        @social_icon_poet_bgColor: @poetBrown;
+        
+        @shadow_color: @gray;
     // #endregion
 
     // #region [ Fonts ]
@@ -55,6 +65,7 @@
         @font_header: @perpetua;
         //@font_menu: @arial;
         @font_menu: @garamond;
+        @font_footer: @arial;
     // #endregion
 
     @speed: 0.3s;
@@ -64,7 +75,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
     outline: none;
-    font-family: 'Times New Roman', Times, serif
 }
 
 html {
@@ -75,8 +85,8 @@ html {
 }
 
 body {
-    background-color: @bgColor_body;
-    color: @color_body;
+    background-color: @body_bgColor;
+    color: @body_color;
 
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -93,8 +103,8 @@ body {
 }
 
 header {
-    background-color: @bgColor_header;
-    color: @color_header;
+    background-color: @header_bgColor;
+    color: @header_color;
 
     height: 80px;
 
@@ -107,7 +117,163 @@ header {
     }
 }
 
-// nav {
+main {
+    font-size: 18px;
+
+    margin: 0 auto 30px;
+    min-height: 300px;
+    //max-width: 900px;
+    max-width: 800px;
+}
+
+footer {
+    background-color: @footer_bgColor;
+    color: @footer_color;
+
+    font-family: @font_footer;
+    font-size: 14px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    & .social-links {
+        & .keep-in-touch {
+            font-family: @timesNewRoman;
+            font-size: 20px;
+            margin: 10px 0 10px;
+        }
+
+        & ul {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 20px;
+            padding: 0;
+
+            & li {
+                list-style-type: none;
+                
+                float: left;
+                margin: 0 12px;
+
+                & a {
+                    background-color: transparent;
+                    border: 1px solid @social_icon_borderColor;
+                    border-radius: 50%;
+                    color: @social_icon_color;
+                    display: block;
+                    opacity: 0.8;
+
+                    font-size: 25px;
+                    line-height: 2;
+                    text-decoration: none;
+
+                    width: 50px;
+                    height: 50px;
+
+                    &.facebook {
+                        &:hover {
+                            background-color: @social_icon_facebook_bgColor;
+                        }
+                    }
+
+                    &.linkedin {
+                        &:hover {
+                            background-color: @social_icon_linkedin_bgColor;
+                        }
+                    }
+
+                    &.poet {
+                        &:hover {
+                            background-color: @social_icon_poet_bgColor;
+                        }
+                    }
+
+                    &:hover {
+                        //box-shadow: 0px 0px 5px 0px @white;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    & .copyright {
+        font-size: 12px;
+    }
+}
+// #endregion
+
+// #region [ Common ]
+a {
+    color: @blue;
+
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+blockquote {
+    border: none;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 30px;
+
+    &.center {
+        text-align: center;
+    }
+}
+// #endregion
+
+// #region [ Content ]
+.intro-poem {
+    display: inline-block;
+    font-style: italic;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & .intro-poet {
+        font-style: normal;
+        float: right;
+    }
+}
+// #endregion
+
+// #region [ xs only ]
+@media screen and (max-width: 767px) {
+    //body { font-size: 16px; }
+
+    header {
+        display: none;
+    }
+
+    nav {
+        & ul {
+            & li {
+                display: block;
+                list-style-type: none;
+
+                text-align: center;
+                
+                &:last-of-type::after { clear: both; }
+
+                & a {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    // nav {
 //     &.navbar {
 //         border-radius: 0;
 //         border: none;
@@ -218,49 +384,15 @@ header {
 //         }
 //     }
 // }
-
-main {
-    min-height: 300px;
-}
-
-footer {
-    background-color: @bgColor_footer;
-    color: @color_footer;
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
 }
 // #endregion
 
-// #region [ xs only ]
-@media screen and (max-width: 767px) {
-    //body { font-size: 16px; }
-
-    header {
-        display: none;
-    }
-
-    nav {
-        & ul {
-            & li {
-                display: block;
-                list-style-type: none;
-
-                text-align: center;
-                
-                &:last-of-type::after { clear: both; }
-
-                & a {
-                    &:hover {
-                    }
-                }
-            }
-        }
-    }
+.gradient(@color_from, @color_to) {
+    background: @color_from; /* Old browsers */
+    background: -moz-linear-gradient(top, @color_from 0%, @color_to 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, @color_from 0%, @color_to 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, @color_from 0%, @color_to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-// #endregion
 
 // #region [ sm, md, lg ]
 @media screen and (min-width: 768px) {
@@ -268,19 +400,12 @@ footer {
         overflow: hidden;
 
         & ul {
-            //background-color: @white;
-            //background-color: @blue6;
-
-            background: #00416a; /* Old browsers */
-            background: -moz-linear-gradient(top,  #00416a 0%, #003040 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top,  #00416a 0%,#003040 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom,  #00416a 0%,#003040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00416a', endColorstr='#003040',GradientType=0 ); /* IE6-9 */
-            box-shadow: 0px 0px 10px 0px @color_shadow;
+            .gradient(@blue, @darkBlue);
+            box-shadow: 0px 0px 10px 0px @shadow_color;
 
             display: flex;
             justify-content: center;
-            height: 48px;
+            height: 44px;
             padding: 0;
 
             & li {
@@ -293,25 +418,15 @@ footer {
 
                 &:last-of-type::after { clear: both; }
 
-                &.active {
-                    & a {
-                        background-color: @blue;
-                        border-bottom-color: @borderColor_menu_hover;
-                        color: @white;
-
-                        text-decoration: none;
-                    }
-                }
-
                 & a {
-                    //color: @blue;
-                    border-bottom: 4px solid transparent;
                     color: @white;
 
                     font-family: @font_menu;
                     font-size: 22px;
+                    font-weight: normal;
                     letter-spacing: 1px;
                     line-height: 2;
+                    text-decoration: none;
 
                     padding: 10px 25px;
 
@@ -320,8 +435,7 @@ footer {
                         border-bottom-color linear @speed;
 
                     &:hover {
-                        background-color: @blue;
-                        border-bottom-color: @borderColor_menu_hover;
+                        .gradient(@blue, @lightBlue);
                         color: @white;
 
                         text-decoration: none;
@@ -329,6 +443,18 @@ footer {
                         transition:
                             background-color linear @speed,
                             border-bottom-color linear @speed;
+                    }
+                }
+
+                &.active {
+                    background-color: @grayishWhite;
+                    height: 60px;
+
+                    & a {
+                        background: @grayishWhite;
+                        color: @blue;
+
+                        text-decoration: none;
                     }
                 }
             }

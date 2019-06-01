@@ -1,0 +1,1 @@
+<p style="color: red">Téli kép tartalma</p>

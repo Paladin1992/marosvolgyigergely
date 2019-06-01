@@ -51,7 +51,7 @@
     function get_menu_item($current_page, $is_active) {
         $menu_item_data = get_menu_item_data($current_page);
         $caption = $menu_item_data['menuItemCaption'];
-        $url = $menu_item_data['url'];
+        $url = base_url($menu_item_data['url']);
         $active_class = ($is_active ? 'active' : '');
         
         echo '<li class="menu '.$active_class.'"><a href="'.$url.'">'.$caption.'</a></li>';
@@ -72,22 +72,66 @@
         if (!$pageToExclude) {
 
             if ($wrap_in_h1) {
-                echo '<h1>'.get_menu_item_data($page)['h1'].'</h1>';
+                $classes = get_menu_item_data($page)['classes'];
+                $classes = $classes == '' ? '' : ' class="'.$classes.'"';
+                echo '<h1'.$classes.'>'.get_menu_item_data($page)['h1'].'</h1>';
             } else {
                 echo get_menu_item_data($page)['menuItemCaption'];
             }
         }
     }
 
-    function wrap_into_hider($content) {
-        $result = '';
+    function insert_page_title($page) {
+        global $_TITLE_SEPARATOR, $_TITLE_SUFFIX;
+        echo '<title>'.get_menu_item_data($page)['menuItemCaption'].' '.$_TITLE_SEPARATOR.' '.$_TITLE_SUFFIX.'</title>';
+    }
 
-        $result .= '<div class="hider-container">';
-            $result .= '<div class="hider"></div>';
-            $result .= $content;
-        $result .= '</div>';
+    function get_protocol() {
+        $protocol = 'http';
 
-        return $result;
+        if (isset($_SERVER['HTTPS'])) {
+            $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+        } else if (isset($_SERVER['REQUEST_SCHEME'])) {
+            $protocol = $_SERVER['REQUEST_SCHEME'];
+        }
+
+        return $protocol;
+    }
+
+    function base_url($relative_path) {
+        global $_BASE_URL;
+
+        $protocol = get_protocol().'://';
+        $requestUri = $_BASE_URL;
+        $base_url = $protocol.$_SERVER['HTTP_HOST'].'/'.$requestUri.'/'.$relative_path;
+
+        return $base_url;
+    }
+
+    function link_file($type, $relative_path) {
+        $url = base_url($relative_path);
+
+        switch (strtolower($type)) {
+            case 'css':
+            echo '<link rel="stylesheet" href="'.$url.'"/>';
+            break;
+
+            case 'js':
+            echo '<script type="text/javascript" src="'.$url.'"></script>';
+            break;
+
+            case 'icon':
+            echo '<link rel="shortcut icon" href="'.$url.'">';
+            break;
+        }
+    }
+
+    function action_link($relative_path, $caption, $target = '', $class = '') {
+        $href = 'href="'.base_url($relative_path).'"';
+        $class = $class == '' ? '' : ' class="'.$class.'"';
+        $target = $target == '' ? '' : ' target="'.$target.'"';
+
+        echo '<a '.$href.$target.$class.'>'.$caption.'</a>';
     }
 
     // $orientation : "portrait" | "landscape"

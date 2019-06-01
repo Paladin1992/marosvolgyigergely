@@ -1,13 +1,15 @@
 <?php
+    $page = (isset($_GET['page']) ? $_GET['page'] : 'fooldal');
+
+    include_once("config.php");
     include_once("connect.php");
     include_once("helpers.php");
-    $page = (isset($_GET['p']) ? $_GET['p'] : 'fooldal');
 ?>
 
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <title><?=print_page_title($page);?> &bull; Marosvölgyi Gergely hivatalos oldala</title>
+    <?php insert_page_title($page); ?>
 
     <meta charset="utf-8"/>
     <meta keywords="Marosvölgyi Gergely, vers, versek, novella, novellák"/>
@@ -15,13 +17,19 @@
     <meta name="author" content="MaGe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/site.css">
-    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+    <?php
+        // icon
+        link_file('icon', 'images/favicon.png');
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        // CSS
+        link_file('css', 'css/bootstrap.min.css');
+        link_file('css', 'css/font-awesome.min.css');
+        link_file('css', 'css/site.css');
+
+        // JavaScript
+        link_file('js', 'js/jquery.min.js');
+        link_file('js', 'js/bootstrap.min.js');
+    ?>
 </head>
 <body>
     <div class="container <?=bs_col(12, 12, 12, 12, true);?>">
@@ -31,9 +39,7 @@
             </div>
         </header>
 
-        <?php
-            include("menu.php");
-        ?>
+        <?php include("menu.php"); ?>
         
         <main>
             <?php
@@ -42,25 +48,15 @@
                 if (file_exists($file_path)) {
                     print_page_title($page, true);
                     include($file_path);
-                } else {
-                    header("Location: fooldal");
                 }
             ?>
         </main>
 
-        <footer>
-            <?php
-                $startYear = 2019;
-                $currentYear = date("Y");
-                echo '&copy;'.$startYear.($currentYear > $startYear ? '-'.$currentYear : '').' Marosvölgyi Gergely &ndash; Minden jog fenntartva!<br>';
-            ?>
-        </footer>
+        <?php include('footer.php'); ?>
     </div>
 
-    <script src="js/script.js"></script>
+    <?php link_file('js', 'js/script.js'); ?>
 </body>
 </html>
 
-<?php
-    include_once("disconnect.php");
-?>
+<?php include_once("disconnect.php"); ?>

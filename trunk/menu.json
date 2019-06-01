@@ -1,7 +1,8 @@
 [
     {
         "menuItemCaption": "Főoldal",
-        "h1": "Üdvözöllek weboldalamon!",
+        "h1": "Üdvözöllek weblapomon!",
+        "classes": "center",
         "url": "fooldal",
         "keywords": "",
         "description": ""
@@ -9,6 +10,7 @@
     {
         "menuItemCaption": "Versek",
         "h1": "Versek",
+        "classes": "",
         "url": "versek",
         "keywords": "",
         "description": ""
@@ -16,6 +18,7 @@
     {
         "menuItemCaption": "Novellák",
         "h1": "Novellák",
+        "classes": "",
         "url": "novellak",
         "keywords": "",
         "description": ""
@@ -23,6 +26,7 @@
     {
         "menuItemCaption": "Szereplések",
         "h1": "Szereplések",
+        "classes": "",
         "url": "szereplesek",
         "keywords": "",
         "description": ""
@@ -30,6 +34,7 @@
     {
         "menuItemCaption": "Rólam",
         "h1": "Rólam",
+        "classes": "",
         "url": "rolam",
         "keywords": "",
         "description": ""
