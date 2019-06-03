@@ -13,7 +13,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.poet.hu/szerzo/Marosvolgyi_Gergely" target="_blank" class="poet" title="Nézz körül a Poet.hu oldalon!">
+                <a href="https://www.poet.hu/szerzo/Marosvolgyi_Gergely" target="_blank" class="poet" title="Tegyél figyelőbe a Poet.hu oldalon!">
                     P
                 </a>
             </li>
