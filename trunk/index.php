@@ -5,11 +5,13 @@
     include_once("connect.php");
     include_once("helpers.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <?php insert_page_title($page); ?>
+    <?php
+        set_base_url();
+        insert_page_title($page);
+    ?>
 
     <meta charset="utf-8"/>
     <meta keywords="Marosvölgyi Gergely, vers, versek, novella, novellák"/>
@@ -17,29 +19,32 @@
     <meta name="author" content="MaGe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?php
-        // icon
-        link_file('icon', 'images/favicon.png');
+    <link rel="shortcut icon" href="images/favicon.png">
 
-        // CSS
-        link_file('css', 'css/bootstrap.min.css');
-        link_file('css', 'css/font-awesome.min.css');
-        link_file('css', 'css/site.css');
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/site.css">
 
-        // JavaScript
-        link_file('js', 'js/jquery.min.js');
-        link_file('js', 'js/bootstrap.min.js');
-    ?>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container <?=bs_col(12, 12, 12, 12, true);?>">
-        <header>
-            <div class="name-title">
-                Marosvölgyi Gergely
-            </div>
-        </header>
+        <div class="header-container">
+            <header>
+                <div class="name-title">
+                    Marosvölgyi Gergely
+                </div>
 
-        <?php include("menu.php"); ?>
+                <button id="btn-menu" type="button">
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+            </header>
+
+            <?php include("menu.php"); ?>
+        </div>
         
         <main>
             <?php
@@ -55,7 +60,7 @@
         <?php include('footer.php'); ?>
     </div>
 
-    <?php link_file('js', 'js/script.js'); ?>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
 

@@ -37,7 +37,7 @@ body {
   padding: 0;
 }
 header {
-  background-color: #00416a;
+  background-color: #003040;
   color: #ffffff;
   height: 80px;
 }
@@ -50,7 +50,7 @@ header .name-title {
 }
 main {
   font-size: 18px;
-  margin: 0 auto 150px;
+  margin: 150px auto 150px;
   padding: 0 15px;
   min-height: 300px;
   max-width: 800px;
@@ -140,19 +140,99 @@ h1.center {
   float: right;
 }
 @media screen and (max-width: 767px) {
+  .header-container {
+    position: fixed;
+    width: 100%;
+  }
+  header {
+    box-shadow: 0px 0px 10px 0px #333333;
+    position: relative;
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    z-index: 10000;
+    transition: box-shadow 0.5s linear;
+  }
+  header.menu-opened {
+    box-shadow: 0px 0px 0px 0px #333333;
+    transition: none;
+  }
   header .name-title {
     font-size: 7vw;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  header button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-right: 0;
+    padding: 9px 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header button.opened .icon-bar {
+    position: relative;
+    transition: background-color 0.3s linear;
+  }
+  header button.opened .icon-bar.bar1 {
+    top: 6px;
+    transform: rotateZ(45deg);
+    transition: top 0.3s linear, transform 0.3s linear;
+  }
+  header button.opened .icon-bar.bar2 {
+    transform: rotateZ(-45deg);
+    transition: transform 0.3s linear;
+  }
+  header button.opened .icon-bar.bar3 {
+    background-color: #ffffff !important;
+    opacity: 0;
+    transition: background-color 0.3s linear, opacity 0.3s linear;
+  }
+  header button .icon-bar {
+    background-color: #ffffff !important;
+    display: block;
+    position: relative;
+    margin: 4px 0 0;
+    width: 22px;
+    height: 2px;
+    transition: background-color 0.3s linear;
+  }
+  header button .icon-bar.bar1 {
+    margin-top: 0;
+    top: 0px;
+    transition: top 0.3s linear, transform 0.3s linear;
+  }
+  header button .icon-bar.bar2 {
+    transition: transform 0.3s linear;
+  }
+  header button .icon-bar.bar3 {
+    transition: background-color 0.3s linear, opacity 0.3s linear;
+  }
+  nav {
+    overflow: hidden;
+    width: 100%;
+    z-index: 50;
+  }
+  nav.menu-container {
+    display: block;
+    max-height: 0;
+    transition: max-height 0.45s ease-out;
+  }
+  nav.menu-container.opened {
+    display: block;
+    max-height: 800px;
+    transition: max-height 0.7s ease-in;
   }
   nav ul {
-    background: #00416a;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #00416a 0%, #003040 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #00416a 0%, #003040 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #00416a 0%, #003040 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -moz-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -ms-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -o-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: linear-gradient(180deg, #003040 0%, #00416a 100%);
     box-shadow: 0px 0px 10px 0px #333333;
     padding: 0;
   }
@@ -178,36 +258,64 @@ h1.center {
   nav ul li a:hover {
     color: #ffffff;
     text-decoration: none;
-    transition: background-color linear 0.3s;
   }
   nav ul li a:active,
   nav ul li a:focus,
   nav ul li a:active:focus {
     text-decoration: none;
   }
-  nav ul li.active {
-    background-color: #f9f9f9;
-  }
   nav ul li.active a,
   nav ul li.active a:hover {
-    background-color: #f9f9f9;
+    background: -webkit-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
+    background: -moz-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
+    background: -ms-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
+    background: -o-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
     color: #00416a;
+    font-weight: bold;
     text-decoration: none;
+  }
+  main {
+    margin-top: 85px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .name-title {
+    line-height: 50px;
+  }
+  main {
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+  main {
+    margin-top: 100px;
   }
 }
 @media screen and (min-width: 768px) {
+  .header-container {
+    position: fixed;
+    width: 100%;
+  }
+  header button {
+    display: none;
+  }
   nav {
+    background: -webkit-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
+    background: -moz-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
+    background: -ms-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
+    background: -o-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
+    background: linear-gradient(180deg, #f9f9f9 85%, transparent 100%);
+    display: block;
     overflow: hidden;
+    padding-bottom: 15px;
   }
   nav ul {
-    background: #00416a;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #00416a 0%, #003040 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #00416a 0%, #003040 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #00416a 0%, #003040 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -moz-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -ms-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: -o-linear-gradient(-90deg, #003040 0%, #00416a 100%);
+    background: linear-gradient(180deg, #003040 0%, #00416a 100%);
     box-shadow: 0px 0px 10px 0px #333333;
     display: flex;
     justify-content: center;
@@ -224,6 +332,7 @@ h1.center {
     clear: both;
   }
   nav ul li a {
+    background: transparent;
     color: #ffffff;
     display: block;
     font-family: 'Garamond', serif;
@@ -233,20 +342,15 @@ h1.center {
     line-height: 2;
     text-decoration: none;
     padding: 0 25px;
-    transition: background-color linear 0.3s;
   }
   nav ul li a:hover {
-    background: #00416a;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #00416a 0%, #005e99 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #00416a 0%, #005e99 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #00416a 0%, #005e99 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(-90deg, #003040 0%, #005e99 100%);
+    background: -moz-linear-gradient(-90deg, #003040 0%, #005e99 100%);
+    background: -ms-linear-gradient(-90deg, #003040 0%, #005e99 100%);
+    background: -o-linear-gradient(-90deg, #003040 0%, #005e99 100%);
+    background: linear-gradient(180deg, #003040 0%, #005e99 100%);
     color: #ffffff;
     text-decoration: none;
-    transition: background-color linear 0.3s;
   }
   nav ul li a:active,
   nav ul li a:focus,
@@ -255,7 +359,7 @@ h1.center {
   }
   nav ul li.active {
     background-color: #f9f9f9;
-    height: 60px;
+    height: 55px;
   }
   nav ul li.active a,
   nav ul li.active a:hover {

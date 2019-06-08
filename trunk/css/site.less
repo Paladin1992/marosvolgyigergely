@@ -26,8 +26,10 @@
         @body_bgColor: @grayishWhite;
         @body_color: @gray;
 
-        @header_bgColor: @blue;
+        //@header_bgColor: @blue;
+        @header_bgColor: @darkBlue;
         @header_color: @white;
+        @navbarButton_color: @white;
         
         @menu_color: @white;
         @menu_hover_color: @white;
@@ -45,11 +47,17 @@
         
         @shadow_color: @gray;
 
-        .gradient(@color_from, @color_to) {
-            background: @color_from; /* Old browsers */
-            background: -moz-linear-gradient(top, @color_from 0%, @color_to 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, @color_from 0%, @color_to 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, @color_from 0%, @color_to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        .gradient(@type; @colors; @dir: 0deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
+            .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
+         
+            @prefix  : extract(@prefixes, @index);
+            @dir-old : 90 - (@dir);
+         
+            background: ~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+
+            & when (@index = length(@prefixes)) {
+                background: ~"@{type}-gradient(@{dir}, @{colors})";
+            }
         }
     // #endregion
 
@@ -82,6 +90,7 @@
     // #endregion
 
     @speed: 0.3s;
+    @header_height: 50px;
 // #endregion
 
 // #region [ Structure ]
@@ -123,7 +132,7 @@ header {
 
     & .name-title {
         font-family: @font_header;
-        font-size: 50px;
+        font-size: @header_height;
         font-variant: small-caps;
         letter-spacing: 5px;
         text-align: center;
@@ -133,10 +142,9 @@ header {
 main {
     font-size: 18px;
 
-    margin: 0 auto 150px;
+    margin: 150px auto 150px;
     padding: 0 15px;
     min-height: 300px;
-    //max-width: 900px;
     max-width: 800px;
 }
 
@@ -264,21 +272,127 @@ h1 {
 @media screen and (max-width: 767px) {
     //body { font-size: 16px; }
 
+    .header-container {
+        position: fixed;
+        width: 100%;
+    }
+
     header {
+        box-shadow: 0px 0px 10px 0px @shadow_color;
+
+        position: relative;
+        min-height: @header_height;
+        height: auto;
+        width: 100%;
+        z-index: 10000;
+
+        transition: box-shadow 0.5s linear;
+
+        &.menu-opened {
+            box-shadow: 0px 0px 0px 0px @shadow_color;
+            transition: none;
+        }
+
         & .name-title {
             font-size: 7vw;
-            letter-spacing: 3px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+
+        & button {
+            background-color: transparent;
+            border: none;
+            border-radius: 4px;
+            color: @navbarButton_color;
+    
+            margin-right: 0;
+            padding: 9px 10px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+    
+            &.opened {
+                & .icon-bar {
+                    position: relative;
+    
+                    transition: background-color @speed linear;
+    
+                    &.bar1 {
+                        top: 6px;
+                        transform: rotateZ(45deg);
+                        transition:
+                            top @speed linear,
+                            transform @speed linear;
+                    }
+    
+                    &.bar2 {
+                        transform: rotateZ(-45deg);
+                        transition: transform @speed linear;
+                    }
+    
+                    &.bar3 {
+                        background-color: @white !important;
+                        opacity: 0;
+    
+                        transition:
+                            background-color @speed linear,
+                            opacity @speed linear;
+                    }
+                }
+            }
+    
+            & .icon-bar {
+                background-color: @white !important;
+                display: block;
+    
+                position: relative;
+                margin: 4px 0 0;
+                width: 22px;
+                height: 2px;
+                
+                transition: background-color @speed linear;
+    
+                &.bar1 {
+                    margin-top: 0;
+                    top: 0px;
+
+                    transition:
+                        top @speed linear,
+                        transform @speed linear;
+                }
+                &.bar2 { transition: transform @speed linear; }
+                &.bar3 {
+                    transition:
+                        background-color @speed linear,
+                        opacity @speed linear;
+                }
+            }
         }
     }
 
     nav {
+        overflow: hidden;
+
+        width: 100%;
+        z-index: 50;
+
+        &.menu-container {
+            display: block;
+            max-height: 0;
+            transition: max-height 0.45s ease-out;
+
+            &.opened {
+                display: block;
+                max-height: 800px;
+                transition: max-height 0.7s ease-in;
+            }
+        }
+
         & ul {
-            .gradient(@blue, @darkBlue);
+            .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
             box-shadow: 0px 0px 10px 0px @shadow_color;
 
-            //display: flex;
-            //justify-content: center;
-            //height: 44px;
             padding: 0;
 
             & li {
@@ -300,46 +414,79 @@ h1 {
                     line-height: 2;
                     text-decoration: none;
 
-                    //padding: 10px 25px;
                     padding: 5px 0;
 
                     &:hover {
-                        //.gradient(@blue, @lightBlue);
                         color: @menu_hover_color;
-
-                        text-decoration: none;
-
-                        transition: background-color linear @speed;
-                    }
-
-                    &:active, &:focus, &:active:focus {
                         text-decoration: none;
                     }
+
+                    &:active, &:focus, &:active:focus { text-decoration: none; }
                 }
 
                 &.active {
-                    background-color: @menu_active_bgColor;
-
                     & a, & a:hover {
-                        background-color: @menu_active_link_bgColor;
+                        .gradient(linear; transparent 0%, @grayishWhite 25%, @grayishWhite 75%, transparent 100%; 90deg);
                         color: @menu_active_color;
 
+                        font-weight: bold;
                         text-decoration: none;
                     }
                 }
             }
         }
     }
+
+    main {
+        margin-top: 85px;
+    }
+}
+// #endregion
+
+// #region [ <=500px ]
+@media screen and (max-width: 500px) {
+    header {
+        .name-title {
+            line-height: @header_height;
+        }
+    }
+
+    main {
+        margin-top: 75px;
+    }
+}
+// #endregion
+
+// #region [ 700-767px ]
+@media screen and (min-width: 700px) and (max-width: 767px) {
+    main {
+        margin-top: 100px;
+    }
 }
 // #endregion
 
 // #region [ sm, md, lg ]
 @media screen and (min-width: 768px) {
+    .header-container {
+        position: fixed;
+        width: 100%;
+    }
+
+    header {
+        & button {
+            display: none;
+        }
+    }
+
     nav {
+        .gradient(linear; @grayishWhite 85%, transparent 100%; 180deg);
+        display: block;
         overflow: hidden;
 
+        padding-bottom: 15px;
+
         & ul {
-            .gradient(@blue, @darkBlue);
+            .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
             box-shadow: 0px 0px 10px 0px @shadow_color;
 
             display: flex;
@@ -358,6 +505,7 @@ h1 {
                 &:last-of-type::after { clear: both; }
 
                 & a {
+                    background: transparent;
                     color: @menu_color;
                     display: block;
 
@@ -370,25 +518,18 @@ h1 {
 
                     padding: 0 25px;
 
-                    transition: background-color linear @speed;
-
                     &:hover {
-                        .gradient(@blue, @lightBlue);
+                        .gradient(linear; @darkBlue 0%, @lightBlue 100%; 180deg);
                         color: @menu_hover_color;
-
-                        text-decoration: none;
-
-                        transition: background-color linear @speed;
-                    }
-
-                    &:active, &:focus, &:active:focus {
                         text-decoration: none;
                     }
+
+                    &:active, &:focus, &:active:focus { text-decoration: none; }
                 }
 
                 &.active {
                     background-color: @menu_active_bgColor;
-                    height: 60px;
+                    height: 55px;
 
                     & a, & a:hover {
                         background: @menu_active_link_bgColor;
@@ -402,116 +543,3 @@ h1 {
     }
 }
 // #endregion
-
-
-// nav {
-//     &.navbar {
-//         border-radius: 0;
-//         border: none;
-    
-//         margin-bottom: 0;
-//     }
-
-//     &.navbar-default { background-color: @white; }
-
-//     //& .container-fluid { padding: 0 12px; }
-
-//     & .navbar-header {
-//         background-color: @blue;
-
-//         height: 80px;
-//         padding: 10px 0;
-//         position: relative;
-//     }
-
-//     & button {
-//         background-color: transparent !important;
-//         border-color: white !important;
-//         border-radius: 4px !important;
-//         color: @color_navbarButton;
-
-//         margin-right: 0 !important;
-//         padding-bottom: 9px;
-//         position: absolute !important;
-//         right: 0;
-//         top: 10px;
-
-//         transition:
-//             background-color @speed linear,
-//             border-radius @speed linear,
-//             padding-bottom @speed linear;
-
-//         &.opened {
-//             background-color: white !important;
-//             border-radius: 4px 4px 0 0 !important;
-            
-//             padding-bottom: 35px;
-
-//             transition:
-//                 background-color @speed linear,
-//                 border-radius @speed linear,
-//                 padding-bottom @speed linear;
-
-//             & .icon-bar {
-//                 background-color: @blue !important;
-
-//                 position: relative;
-
-//                 transition: background-color @speed linear;
-
-//                 &.bar1 {
-//                     top: 6px;
-//                     transform: rotateZ(45deg);
-//                     transition:
-//                         top @speed linear,
-//                         transform @speed linear;
-//                 }
-
-//                 &.bar2 {
-//                     transform: rotateZ(-45deg);
-//                     transition: transform @speed linear;
-//                 }
-
-//                 &.bar3 {
-//                     background-color: white !important;
-//                     opacity: 0;
-
-//                     transition:
-//                         background-color @speed linear,
-//                         opacity @speed linear;
-//                 }
-//             }
-//         }
-
-//         & .icon-bar {
-//             background-color: white !important;
-//             display: block;
-
-//             position: relative;
-            
-//             transition: background-color @speed linear;
-
-//             &.bar1 {
-//                 transition:
-//                     top @speed linear,
-//                     transform @speed linear;
-//             }
-//             &.bar2 { transition: transform @speed linear; }
-//             &.bar3 {
-//                 transition:
-//                     background-color @speed linear,
-//                     opacity @speed linear;
-//             }
-//         }
-
-//         & i {
-//             transform: rotateZ(0deg);
-//             transition: transform @speed linear;
-
-//             &.opened {
-//                 transform: rotateZ(180deg);
-//                 transition: transform @speed linear;
-//             }
-//         }
-//     }
-// }
