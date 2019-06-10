@@ -3,7 +3,8 @@
 
     include_once("config.php");
     include_once("connect.php");
-    include_once("helpers.php");
+    include_once("helpers/menu_helper.php");
+    include_once("helpers/html_helper.php");
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -25,8 +26,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/site.css">
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container <?=bs_col(12, 12, 12, 12, true);?>">
@@ -43,7 +44,13 @@
                 </button>
             </header>
 
-            <?php include("menu.php"); ?>
+            <?php
+                include("menu.php");
+
+                if ($page == 'versek' || $page == 'novellak') {
+                    include("submenu.php");
+                }
+            ?>
         </div>
         
         <main>
@@ -60,7 +67,7 @@
         <?php include('footer.php'); ?>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
