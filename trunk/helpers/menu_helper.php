@@ -16,7 +16,9 @@
         $url = $menu_item_data['url'];
         $active_class = ($is_active ? 'active' : '');
         
-        echo '<li class="menu '.$active_class.'"><a href="'.$url.'">'.$caption.'</a></li>';
+        if ($caption != '') {
+            echo '<li class="menu '.$active_class.'"><a href="'.$url.'">'.$caption.'</a></li>';
+        }
     }
 
     function get_menu($current_page) {
@@ -45,6 +47,12 @@
 
     function insert_page_title($page) {
         global $_TITLE_SEPARATOR, $_TITLE_SUFFIX;
-        echo '<title>'.get_menu_item_data($page)['menuItemCaption'].' '.$_TITLE_SEPARATOR.' '.$_TITLE_SUFFIX.'</title>';
+        
+        $pageTitle =
+            get_menu_item_data($page)['menuItemCaption'] == ''
+                ? get_menu_item_data($page)['h1']
+                : get_menu_item_data($page)['menuItemCaption'];
+
+        echo '<title>'.$pageTitle.' '.$_TITLE_SEPARATOR.' '.$_TITLE_SUFFIX.'</title>';
     }
 ?>

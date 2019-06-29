@@ -1,6 +1,8 @@
 const MENU_SLIDE_SPEED_MS = 500;
-var versek = null;
-var writings = [];
+const SCREEN_WIDTH_XS = 768;
+const OFFSET_Y = 150;
+const SCROLL_TIME_MS = 1000;
+//var writings = [];
 
 $(document).ready(function() {
     $('#btn-menu').on('click', function() {
@@ -32,29 +34,17 @@ $(document).ready(function() {
         }
     });
 
-    get('api', function(response) {
-        writings = response;
+    // scroll to section
+    $('a[href*="#"]').not('[href="#"], [href^="#collapse"]').on('click', function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        var offset = window.innerWidth < SCREEN_WIDTH_XS ? 0 : OFFSET_Y;
+        var destination = target.offset().top - offset;
+        var distance = Math.abs(destination - window.pageYOffset);
+        var time = distance < OFFSET_Y ? SCROLL_TIME_MS / 10 : SCROLL_TIME_MS;
+
+        $('html, body').animate({
+            scrollTop: destination
+        }, time, 'linear');
     });
 });
-
-function get(url, callback) {
-    var result;
-
-    $.ajax({
-        method: "GET",
-        url: url,
-        dataType: "json",
-        success: function(response) {
-            if (Array.isArray(response)) {
-                result = response;
-            } else {
-                result = JSON.parse(response);
-            }
-            
-            callback(result);
-        },
-        error: function(response) {
-            console.error(response);
-        }
-    });
-}

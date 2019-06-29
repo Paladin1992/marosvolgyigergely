@@ -7,7 +7,7 @@
         <i class="material-icons">keyboard_arrow_down</i>
     </div>
 
-    <div class="sub-nav-list-container open">
+    <div class="sub-nav-list-container">
         <?php include('content/versek_lista.php'); ?>
     </div>
 </nav>

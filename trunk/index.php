@@ -1,10 +1,15 @@
 <?php
     $page = (isset($_GET['page']) ? $_GET['page'] : 'fooldal');
+    $title = (isset($_GET['title']) ? $_GET['title'] : '');
 
     include_once("config.php");
     include_once("connect.php");
     include_once("helpers/menu_helper.php");
     include_once("helpers/html_helper.php");
+
+    if ($page == 'versek' || $page == 'novellak') {
+        include_once("helpers/sql_helper.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -47,7 +52,7 @@
             <?php
                 include("menu.php");
 
-                if ($page == 'versek' || $page == 'novellak') {
+                if ($title != '') {
                     include("submenu.php");
                 }
             ?>
@@ -58,13 +63,13 @@
                 $file_path = "content/".$page.".php";
 
                 if (file_exists($file_path)) {
-                    print_page_title($page, true);
-                    include($file_path);
+                    print_page_title($page, true, ['versek', 'novellak']);
+                    include_once($file_path);
                 }
             ?>
         </main>
 
-        <?php include('footer.php'); ?>
+        <?php include_once('footer.php'); ?>
     </div>
 
     <script src="js/script.js"></script>

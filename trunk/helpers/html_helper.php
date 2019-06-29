@@ -38,7 +38,7 @@
     }
 
     function action_link($relative_path, $caption, $target = '', $class = '') {
-        $href = 'href="'.base_url($relative_path).'"';
+        $href = 'href="'.$relative_path.'"';
         $class = $class == '' ? '' : ' class="'.$class.'"';
         $target = $target == '' ? '' : ' target="'.$target.'"';
 

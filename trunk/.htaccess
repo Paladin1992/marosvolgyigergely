@@ -9,12 +9,11 @@ RewriteRule ^index\.php$ - [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^([^/]+)/(.+)/?$ index.php?page=$1&title=$2 [NC,L]
-RewriteRule ^versek/(.*)$ index.php?page=versek&title=$1 [NC,L]
+RewriteRule ^vers/(.*)$ index.php?page=versek&title=$1 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^novellak/(.*)$ index.php?page=novellak&title=$1 [NC,L]
+RewriteRule ^novella/(.*)$ index.php?page=novellak&title=$1 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
