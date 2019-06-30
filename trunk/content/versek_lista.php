@@ -36,3 +36,7 @@
 <div>
     <a href="vers/osszes">Az összes vers egy lapon</a>
 </div>
+
+<div>
+    <a href="vers/valtozatok">Változatok</a>
+</div>

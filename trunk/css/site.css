@@ -227,16 +227,22 @@ p {
   font-weight: bold;
   margin-bottom: 3px;
 }
+.verse-subtitle {
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
 .indented-line {
   display: inline-block;
 }
-.indented-line.left20 {
+.indented-line.by20 {
   padding-left: 20px;
 }
-.indented-line.left40 {
+.indented-line.by40 {
   padding-left: 40px;
 }
-.indented-line.left60 {
+.indented-line.by60 {
   padding-left: 60px;
 }
 .writing-quotation {

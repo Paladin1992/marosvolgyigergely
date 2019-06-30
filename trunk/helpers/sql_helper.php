@@ -139,7 +139,14 @@
 
     function list_all($type) {
         global $connection;
-        $query = "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year FROM `irasok` WHERE `IsVisible`=1 AND `Type`='".$type."' ORDER BY `DateFinished` ASC";
+
+        if ($type == 'vers') {
+            $finalType = "vers' OR `Type`='haiku";
+        } else {
+            $finalType = $type;
+        }
+
+        $query = "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year FROM `irasok` WHERE `IsVisible`=1 AND `Type`='".$finalType."' ORDER BY `DateFinished` ASC";
         $result = mysqli_query($connection, $query);
         $prev_year = '';
 
