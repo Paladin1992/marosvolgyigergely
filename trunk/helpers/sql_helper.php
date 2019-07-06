@@ -1,13 +1,53 @@
 <?php
     include('connect.php');
 
-    function list_poems_by_name() {
+    function list_all($type) {
+        global $connection;
+
+        $query =
+            "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE '".$type."%' "
+            ."ORDER BY `DateFinished` ASC";
+        
+        $result = mysqli_query($connection, $query);
+        $prev_year = '';
+
+        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $url = $row['Uri'];
+            $path = 'content/'.$type.'/'.$url.'.php';
+            $year = $row['Year'];
+
+            if ($year != $prev_year) {
+                echo '<div class="year-group">'.$year.'</div>';
+            } else {
+                echo '<hr/>';
+            }
+
+            echo '<article id="'.$url.'">';
+
+            if (file_exists($path)) {
+                include($path);
+            } else {
+                echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';
+            }
+
+            echo '</article>';
+
+            $prev_year = $year;
+        }
+    }
+
+    // poems
+    function get_poems_by_name() {
         global $connection;
 
         $query =
             "SELECT `Title`, `Initial`, `Uri` "
-            ."FROM `irasok` "
-            ."WHERE `IsVisible`=1 AND `Type`='vers' "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
             ."ORDER BY `Initial`, `TitleLetterOnly`";
 
         $result = mysqli_query($connection, $query);
@@ -48,13 +88,14 @@
         echo '</ul>';
     }
 
-    function list_poems_by_time() {
+    function get_poems_by_time() {
         global $connection;
 
         $query =
             "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` "
-            ."WHERE `IsVisible`=1 AND `Type`='vers' "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
             ."ORDER BY `DateFinished`";
 
         $result = mysqli_query($connection, $query);
@@ -95,9 +136,17 @@
         echo '</ul>';
     }
 
-    function list_alphabet_for_poems() {
+    function get_alphabet_for_poems() {
         global $connection;
-        $query = "SELECT `Initial` FROM `irasok` WHERE `IsVisible`=1 GROUP BY `Initial` ORDER BY 1 ASC";
+
+        $query =
+            "SELECT `Initial` "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId` "
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
+            ."GROUP BY `Initial` "
+            ."ORDER BY 1 ASC";
+
         $result = mysqli_query($connection, $query);
 
         while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
@@ -106,9 +155,17 @@
         }
     }
 
-    function list_years_for_poems() {
+    function get_years_for_poems() {
         global $connection;
-        $query = "SELECT YEAR(`DateFinished`) AS Year FROM `irasok` WHERE `IsVisible`=1 GROUP BY YEAR(`DateFinished`) ORDER BY 1 ASC";
+
+        $query =
+            "SELECT YEAR(`DateFinished`) AS Year "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
+            ."GROUP BY YEAR(`DateFinished`) "
+            ."ORDER BY 1 ASC";
+        
         $result = mysqli_query($connection, $query);
 
         while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
@@ -117,6 +174,142 @@
         }
     }
 
+    // short stories
+    function get_short_stories_by_name() {
+        global $connection;
+
+        $query =
+            "SELECT `Title`, `Initial`, `Uri` "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
+            ."ORDER BY `Initial`, `TitleLetterOnly`";
+
+        $result = mysqli_query($connection, $query);
+        
+        $rows = [];
+        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $rows[] = $row;
+        }
+
+        $rows_length = count($rows);
+        $prev_letter = '';
+        $inside_block = false;
+
+        for ($i = 0; $i < $rows_length; $i++) {
+            $row = $rows[$i];
+            $initial = $row['Initial'];
+
+            if ($initial != $prev_letter) {
+                if ($inside_block) {
+                    echo '</ul>';
+                    $inside_block = false;
+                }
+
+                echo '<div class="initial-group" id="'.$initial.'">'.transform_initial($initial).'</div>';
+                echo '<ul>';
+                
+                $inside_block = true;
+            }
+
+            echo
+                '<li>'
+                    .'<a href="novella/'.$row['Uri'].'" class="short-story-title-link">'.$row['Title'].'</a>'
+                .'</li>';
+
+            $prev_letter = $initial;
+        }
+
+        echo '</ul>';
+    }
+
+    function get_short_stories_by_time() {
+        global $connection;
+
+        $query =
+            "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
+            ."ORDER BY `DateFinished`";
+
+        $result = mysqli_query($connection, $query);
+        
+        $rows = [];
+        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $rows[] = $row;
+        }
+
+        $rows_length = count($rows);
+        $prev_year = '';
+        $inside_block = false;
+
+        for ($i = 0; $i < $rows_length; $i++) {
+            $row = $rows[$i];
+            $year = $row['Year'];
+
+            if ($year != $prev_year) {
+                if ($inside_block) {
+                    echo '</ul>';
+                    $inside_block = false;
+                }
+
+                echo '<div class="year-group" id="'.$year.'">'.$year.'</div>';
+                echo '<ul>';
+                
+                $inside_block = true;
+            }
+
+            echo
+                '<li>'
+                    .'<a href="novella/'.$row['Uri'].'" class="short-story-title-link">'.$row['Title'].'</a>'
+                .'</li>';
+
+            $prev_year = $year;
+        }
+
+        echo '</ul>';
+    }
+
+    function get_alphabet_for_short_stories() {
+        global $connection;
+
+        $query =
+            "SELECT `Initial` "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
+            ."GROUP BY `Initial` "
+            ."ORDER BY 1 ASC";
+        
+        $result = mysqli_query($connection, $query);
+
+        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $initial = $row['Initial'];
+            echo '<li><a href="novellak#'.$initial.'">'.transform_initial($initial).'</a></li>';
+        }
+    }
+
+    function get_years_for_short_stories() {
+        global $connection;
+
+        $query =
+            "SELECT YEAR(`DateFinished`) AS Year "
+            ."FROM `irasok` iras "
+            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
+            ."GROUP BY YEAR(`DateFinished`) "
+            ."ORDER BY 1 ASC";
+        
+        $result = mysqli_query($connection, $query);
+
+        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+            $year = $row['Year'];
+            echo '<li><a href="novellak#'.$year.'">'.$year.'</a></li>';
+        }
+    }
+
+    // helpers
     function transform_initial($letter) {
         switch ($letter) {
             case 'A': 
@@ -134,44 +327,6 @@
             case 'Ü':
             case 'Ű': return 'Ü-Ű';
             default: return $letter;
-        }
-    }
-
-    function list_all($type) {
-        global $connection;
-
-        if ($type == 'vers') {
-            $finalType = "vers' OR `Type`='haiku";
-        } else {
-            $finalType = $type;
-        }
-
-        $query = "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year FROM `irasok` WHERE `IsVisible`=1 AND `Type`='".$finalType."' ORDER BY `DateFinished` ASC";
-        $result = mysqli_query($connection, $query);
-        $prev_year = '';
-
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $url = $row['Uri'];
-            $path = 'content/'.$type.'/'.$url.'.php';
-            $year = $row['Year'];
-
-            if ($year != $prev_year) {
-                echo '<div class="year-group">'.$year.'</div>';
-            } else {
-                echo '<hr/>';
-            }
-
-            echo '<article id="'.$url.'">';
-
-            if (file_exists($path)) {
-                include($path);
-            } else {
-                echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';
-            }
-
-            echo '</article>';
-
-            $prev_year = $year;
         }
     }
 ?>
