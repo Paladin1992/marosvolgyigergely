@@ -1,6 +1,15 @@
 <?php
     include('connect.php');
 
+    function get_writing_info($title) {
+        global $connection;
+        $query = "SELECT * FROM `irasok` WHERE `Uri`='$title'";
+        $result = mysqli_query($connection, $query);
+
+        $writing_info = mysqli_fetch_array($result, MYSQL_ASSOC);
+        return $writing_info;
+    }
+
     function list_all($type) {
         global $connection;
 
@@ -172,6 +181,63 @@
             $year = $row['Year'];
             echo '<li><a href="versek#'.$year.'">'.$year.'</a></li>';
         }
+    }
+
+    // function get_prev_poem_link_by_time($id) {
+    //     global $connection;
+    //     $query = "CALL GetPrevPoemByTime(".$id.")";
+    //     $result = mysqli_query($connection, $query);
+    //     $rowsCount = mysqli_num_rows($result);
+        
+    //     if ($rowsCount > 0) {
+    //         echo action_link('vers/'.$result['Uri'], 'Előző vers időrendben ('.$result['Name'].')');
+    //     } else {
+    //         echo '';
+    //     }
+    // }
+
+    // function get_next_poem_link_by_time($id) {
+    //     global $connection;
+    //     $query = "CALL GetNextPoemByTime(".$id.")";
+    //     $result = mysqli_query($connection, $query);
+    //     $rowsCount = mysqli_num_rows($result);
+        
+    //     if ($rowsCount > 0) {
+    //         echo action_link('vers/'.$result['Uri'], 'Következő vers időrendben ('.$result['Name'].')');
+    //     } else {
+    //         echo '';
+    //     }
+    // }
+
+    // $direction: 'prev' | 'next'
+    // $type: 'vers' | 'novella'
+    // $by: 'name' | 'time'
+    function get_paging_link($id, $direction, $type, $by) {
+        global $connection;
+        $qDirection = ucfirst($direction);
+        $qType = ($type == 'vers' ? 'Poem' : 'ShortStory');
+        $qBy = ucfirst($by);
+        $proc = '`Get'.$qDirection.$qType.'By'.$qBy.'`';
+
+        $query = 'CALL '.$proc.'('.intval($id).')';
+        $result = mysqli_query($connection, $query);
+
+        if (!$result) return;
+        
+        if (mysqli_num_rows($result) > 0) {
+            $writing = mysqli_fetch_array($result, MYSQL_ASSOC);
+            $caption_with_arrow = '';
+
+            if ($direction == 'prev') {
+                $caption_with_arrow = '<i class="material-icons arrow">keyboard_arrow_left</i>'.$writing['Title'];
+            } else {
+                $caption_with_arrow = $writing['Title'].'<i class="material-icons arrow">keyboard_arrow_right</i>';
+            }
+
+            echo action_link($type.'/'.$writing['Uri'], $caption_with_arrow);
+        }
+
+        $connection->next_result();
     }
 
     // short stories

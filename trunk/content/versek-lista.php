@@ -1,34 +1,28 @@
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Versek betűrendben</a>
-            </h4>
+<div class="accordion-group">
+    <div class="accordion">
+        <div class="accordion-header">
+            Versek betűrendben
+            <i class="material-icons arrow">keyboard_arrow_down</i>
         </div>
-        <div id="collapse1" class="panel-collapse collapse">
-            <div class="panel-body">
-                <ul class="poems-alphabet">
-                    <?php get_alphabet_for_poems(); ?>
-                </ul>
-                
-                <?php get_poems_by_name(); ?>
-            </div>
+        <div class="accordion-body">
+            <ul class="poems-alphabet">
+                <?php get_alphabet_for_poems(); ?>
+            </ul>
+            
+            <?php get_poems_by_name(); ?>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Versek időrendben</a>
-            </h4>
+    <div class="accordion">
+        <div class="accordion-header">
+            Versek időrendben
+            <i class="material-icons arrow">keyboard_arrow_down</i>
         </div>
-        <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">
-                <ul class="poems-time">
-                    <?php get_years_for_poems(); ?>
-                </ul>    
+        <div class="accordion-body">
+            <ul class="poems-time">
+                <?php get_years_for_poems(); ?>
+            </ul>    
 
-                <?php get_poems_by_time(); ?>
-            </div>
+            <?php get_poems_by_time(); ?>
         </div>
     </div>
 </div>

@@ -9,6 +9,7 @@
 
     if ($page == 'versek' || $page == 'novellak') {
         include_once("helpers/sql_helper.php");
+        $writing_info = get_writing_info($title);
     }
 ?>
 <!DOCTYPE html>
@@ -27,12 +28,10 @@
 
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/site.css">
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container <?=bs_col(12, 12, 12, 12, true);?>">
@@ -49,15 +48,15 @@
                 </button>
             </header>
 
-            <?php
-                include("menu.php");
-
-                if ($title != '') {
-                    include("submenu.php");
-                }
-            ?>
+            <?php include("menu.php"); ?>
         </div>
         
+        <div class="header-placeholder">
+            <div class="name-title">
+                Marosvölgyi Gergely
+            </div>
+        </div>
+
         <main>
             <?php
                 $file_path = "content/".$page.".php";

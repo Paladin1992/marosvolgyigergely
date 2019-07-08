@@ -1,8 +1,7 @@
 const MENU_SLIDE_SPEED_MS = 500;
 const SCREEN_WIDTH_XS = 768;
 const OFFSET_Y = 150;
-const SCROLL_TIME_MS = 1000;
-//var writings = [];
+const SCROLL_TIME_MS = 500;
 
 $(document).ready(function() {
     $('#btn-menu').on('click', function() {
@@ -33,6 +32,23 @@ $(document).ready(function() {
             $listContainer.addClass('open');
         }
     });
+
+    // $('.panel-title a').on('click', function() {
+    //     var $arrow = $(this).find('i.material-icons');
+
+    //     $arrow.toggleClass('open');
+    //     // if ($arrow.hasClass('open')) {
+    //     //     $arrow.removeClass('open');
+    //     // } else {
+    //     //     $arrow.addClass('open');
+    //     // }
+    // });
+
+    $('.panel').on('show.bs.collapse, hide.bs.collapse', function (e) {
+        var $arrow = $(this).find('i.material-icons');
+
+        $arrow.toggleClass('open');
+    })
 
     // scroll to section
     $('a[href*="#"]').not('[href="#"], [href^="#collapse"]').on('click', function() {
