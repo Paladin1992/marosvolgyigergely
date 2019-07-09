@@ -206,13 +206,20 @@ p {
 .accordion .accordion-header {
   color: #004080;
   display: block;
-  font-size: 20px;
 }
-.accordion .accordion-body ul {
-  padding-left: 25px;
+.accordion .accordion-header .accordion-caption {
+  cursor: pointer;
+}
+.accordion .accordion-header .accordion-caption:hover {
+  text-decoration: underline;
+}
+.accordion .accordion-body {
+  display: none;
+  padding-left: 15px;
 }
 .accordion .accordion-body ul.poems-alphabet,
 .accordion .accordion-body ul.poems-time {
+  margin: 10px 0 15px;
   padding: 0;
 }
 .accordion .accordion-body ul.poems-alphabet li,
@@ -221,6 +228,7 @@ p {
 }
 .accordion .accordion-body ul.poems-alphabet li a,
 .accordion .accordion-body ul.poems-time li a {
+  font-size: 22px;
   margin-right: 10px;
 }
 .initial-group,
@@ -231,11 +239,16 @@ p {
   background: -ms-linear-gradient(0deg, #004080 0%, transparent 100%);
   background: -o-linear-gradient(0deg, #004080 0%, transparent 100%);
   background: linear-gradient(90deg, #004080 0%, transparent 100%);
-  font-size: 20px;
-  line-height: 26px;
-  height: 30px;
+  font-size: 26px;
+  line-height: 38px;
+  height: 36px;
   margin-bottom: 5px;
   padding-left: 9px;
+}
+.initial-group + .group-list,
+.year-group + .group-list {
+  margin: 0;
+  padding: 0 0 20px 40px;
 }
 article.poem p {
   text-align: left;

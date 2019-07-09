@@ -13,9 +13,9 @@ Ment, mendegélt, míg el nem ért egy vasúti töltéshez. A sínek mentén vil
 </p>
 
 <p>
-Aztán egyszer csak elkezdett esni, és egyre hevesebben zúdultak alá az esőcseppek. A fiatal felsővezeték-szakadás nem tudta, mi ez, ezért hangosan megkérdezte:
-&ndash; Te ki vagy, és mit csinálsz? 
-&ndash; Én az eső vagyok, és ugyanazt csinálom, amit te: szakadok.
+Aztán egyszer csak elkezdett esni, és egyre hevesebben zúdultak alá az esőcseppek. A fiatal felsővezeték-szakadás nem tudta, mi ez, ezért hangosan megkérdezte:<br>
+&ndash; Te ki vagy, és mit csinálsz?<br>
+&ndash; Én az eső vagyok, és ugyanazt csinálom, amit te: szakadok.<br>
 A felsővezeték-szakadás megörült ennek a kijelentésnek, azonnal barátságot kötöttek, és együtt szakadtak tovább &ndash; a vasúti karbantartók mérgére, mert az eső megnehezítette számukra a javítási munkálatokat.
 </p>
 

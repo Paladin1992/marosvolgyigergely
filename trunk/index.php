@@ -34,7 +34,7 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container <?=bs_col(12, 12, 12, 12, true);?>">
+    <div class="container">
         <div class="header-container">
             <header>
                 <div class="name-title">

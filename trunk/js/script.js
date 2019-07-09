@@ -1,4 +1,5 @@
 const MENU_SLIDE_SPEED_MS = 500;
+const ACCORDION_SLIDE_SPEED_MS = 500;
 const SCREEN_WIDTH_XS = 768;
 const OFFSET_Y = 150;
 const SCROLL_TIME_MS = 500;
@@ -20,34 +21,29 @@ $(document).ready(function() {
         }
     });
 
-    $('.sub-nav-arrow-container').on('click', function() {
-        var $listContainer = $('.sub-nav-list-container');
-        var $arrow = $(this).find('i.material-icons');
+    $('.accordion-caption').on('click', function (e) {
+        var $accordionCaption = $(this);
+        var $accordionHeader = $accordionCaption.parent();
+        var $accordionBody = $accordionHeader.siblings('.accordion-body');
+        var $accordion = $accordionHeader.parent();
+        var $accordionGroup = $accordion.parent();
+        var $arrow = $accordionHeader.find('i.material-icons');
 
         if ($arrow.hasClass('open')) {
+            $accordionBody.slideUp(ACCORDION_SLIDE_SPEED_MS);
             $arrow.removeClass('open');
-            $listContainer.removeClass('open');
         } else {
             $arrow.addClass('open');
-            $listContainer.addClass('open');
+
+            if ($accordionGroup.hasClass('exclusive')) {
+                // close all accordions but this
+                var $siblings = $accordion.siblings('.accordion');
+                $siblings.find('i.material-icons').removeClass('open');
+                $siblings.find('.accordion-body').slideUp(ACCORDION_SLIDE_SPEED_MS);
+            }
+
+            $accordionBody.slideDown(ACCORDION_SLIDE_SPEED_MS);
         }
-    });
-
-    // $('.panel-title a').on('click', function() {
-    //     var $arrow = $(this).find('i.material-icons');
-
-    //     $arrow.toggleClass('open');
-    //     // if ($arrow.hasClass('open')) {
-    //     //     $arrow.removeClass('open');
-    //     // } else {
-    //     //     $arrow.addClass('open');
-    //     // }
-    // });
-
-    $('.panel').on('show.bs.collapse, hide.bs.collapse', function (e) {
-        var $arrow = $(this).find('i.material-icons');
-
-        $arrow.toggleClass('open');
     })
 
     // scroll to section

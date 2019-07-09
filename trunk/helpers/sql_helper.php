@@ -81,7 +81,7 @@
                 }
 
                 echo '<div class="initial-group" id="'.$initial.'">'.transform_initial($initial).'</div>';
-                echo '<ul>';
+                echo '<ul class="group-list">';
                 
                 $inside_block = true;
             }
@@ -129,7 +129,7 @@
                 }
 
                 echo '<div class="year-group" id="'.$year.'">'.$year.'</div>';
-                echo '<ul>';
+                echo '<ul class="group-list">';
                 
                 $inside_block = true;
             }
@@ -182,32 +182,6 @@
             echo '<li><a href="versek#'.$year.'">'.$year.'</a></li>';
         }
     }
-
-    // function get_prev_poem_link_by_time($id) {
-    //     global $connection;
-    //     $query = "CALL GetPrevPoemByTime(".$id.")";
-    //     $result = mysqli_query($connection, $query);
-    //     $rowsCount = mysqli_num_rows($result);
-        
-    //     if ($rowsCount > 0) {
-    //         echo action_link('vers/'.$result['Uri'], 'Előző vers időrendben ('.$result['Name'].')');
-    //     } else {
-    //         echo '';
-    //     }
-    // }
-
-    // function get_next_poem_link_by_time($id) {
-    //     global $connection;
-    //     $query = "CALL GetNextPoemByTime(".$id.")";
-    //     $result = mysqli_query($connection, $query);
-    //     $rowsCount = mysqli_num_rows($result);
-        
-    //     if ($rowsCount > 0) {
-    //         echo action_link('vers/'.$result['Uri'], 'Következő vers időrendben ('.$result['Name'].')');
-    //     } else {
-    //         echo '';
-    //     }
-    // }
 
     // $direction: 'prev' | 'next'
     // $type: 'vers' | 'novella'
@@ -273,7 +247,7 @@
                 }
 
                 echo '<div class="initial-group" id="'.$initial.'">'.transform_initial($initial).'</div>';
-                echo '<ul>';
+                echo '<ul class="group-list">';
                 
                 $inside_block = true;
             }
@@ -321,7 +295,7 @@
                 }
 
                 echo '<div class="year-group" id="'.$year.'">'.$year.'</div>';
-                echo '<ul>';
+                echo '<ul class="group-list">';
                 
                 $inside_block = true;
             }

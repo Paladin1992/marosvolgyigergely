@@ -347,79 +347,51 @@ p {
         color: @blue;
         display: block;
 
-        font-size: 20px;
+        & .accordion-caption {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     & .accordion-body {
-        & ul {
-            padding-left: 25px;
+        display: none;
 
-            &.poems-alphabet, &.poems-time {
-                padding: 0;
+        padding-left: 15px;
 
-                & li {
-                    display: inline-block;
+        & ul.poems-alphabet, & ul.poems-time {
+            margin: 10px 0 15px;
+            padding: 0;
 
-                    & a { margin-right: 10px; }
+            & li {
+                display: inline-block;
+
+                & a {
+                    font-size: 22px;
+                    margin-right: 10px;
                 }
             }
         }
     }
 }
-// .panel-group .panel {
-//     border: 1px solid @blue;
-//     border-radius: 0;
-
-//     & .panel-heading {
-//         background-color: @blue;
-//         border-radius: 0;
-//         padding: 0;
-
-//         & .panel-title {
-//             & a {
-//                 color: @grayishWhite;
-//                 display: block;
-
-//                 font-size: 20px;
-//                 font-weight: normal;
-//                 text-decoration: none;
-
-//                 padding: 10px 15px;
-
-//                 &:hover {
-//                     border: none;
-//                 }
-//             }
-//         }
-//     }
-
-//     & .panel-body {
-//         font-family: @literata;
-
-//         & ul { padding-left: 25px; }
-//     }
-
-//     & ul.poems-alphabet, & ul.poems-time {
-//         padding: 0;
-
-//         & li {
-//             display: inline-block;
-
-//             & a { margin-right: 10px; }
-//         }
-//     }
-// }
 
 .initial-group, .year-group {
     color: @grayishWhite;
     .gradient(linear; @blue 0%, transparent 100%; 90deg);
     
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 26px;
+    line-height: 38px;
 
-    height: 30px;
+    height: 36px;
     margin-bottom: 5px;
     padding-left: 9px;
+
+    & + .group-list {
+        margin: 0;
+        padding: 0 0 20px 40px;
+    }
 }
 
 article {

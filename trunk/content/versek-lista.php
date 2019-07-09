@@ -1,8 +1,10 @@
-<div class="accordion-group">
+<div class="accordion-group exclusive">
     <div class="accordion">
         <div class="accordion-header">
-            Versek betűrendben
-            <i class="material-icons arrow">keyboard_arrow_down</i>
+            <span class="accordion-caption">
+                Versek betűrendben
+                <i class="material-icons arrow">keyboard_arrow_down</i>
+            </span>
         </div>
         <div class="accordion-body">
             <ul class="poems-alphabet">
@@ -14,8 +16,10 @@
     </div>
     <div class="accordion">
         <div class="accordion-header">
-            Versek időrendben
-            <i class="material-icons arrow">keyboard_arrow_down</i>
+            <span class="accordion-caption">
+                Versek időrendben
+                <i class="material-icons arrow">keyboard_arrow_down</i>
+            </span>
         </div>
         <div class="accordion-body">
             <ul class="poems-time">
