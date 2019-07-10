@@ -1,5 +1,3 @@
-<h1>Levél a Télhez</h1>
-
 <p>
 Kedves Tél Úr!
 </p>

@@ -1,5 +1,3 @@
-<h1>Mese a felsővezeték-szakadásról</h1>
-
 <p>
 Hol volt, hol nem volt, volt egyszer egy felsővezeték-szakadás. Egy hétfői reggelen a kis felsővezeték-szakadás úgy döntött, elmegy világot látni. Búcsút intett hát szüleinek, és elindult Vezetékföldéről, hogy kalandot keressen.
 </p>

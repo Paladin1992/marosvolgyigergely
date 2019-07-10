@@ -1,5 +1,4 @@
-<h1>Beteg a Föld<br>
-<span class="subtitle">A Föld napjára</span></h1>
+<div class="subtitle">A Föld napjára</div>
 
 <p>
 A Föld elmegy az orvoshoz:<br>

@@ -1,5 +1,3 @@
-<h1>Járási hivatal</h1>
-
 <p>
 Munkaügyet kellett intéznem, így hát elmentem a járási hivatalba. Hallottam ilyen rémhíreket, hogy ott állítólag sokat kell várni, ezért igyekeztem már nyitáskor &ndash; reggel nyolckor &ndash; ott lenni. Nyolc óra után pár perccel már bent is voltam az épületben, megkerestem a foglalkoztatási osztályt a sokadik emeleten, de amikor beléptem a várakozó helyiségbe, valóságos embertömeget pillantottam meg, akik mind üveges, merev tekintettel figyelték a sorszámjelzőt, kezükben egy cetlit szorongatva.
 </p>

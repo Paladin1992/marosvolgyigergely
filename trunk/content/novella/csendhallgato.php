@@ -1,5 +1,3 @@
-<h1>Csendhallgató</h1>
-
 <p>
 Elindulok reggel. Csapódik a kerti kapu. Békés, csendes kis utcánkat siető lépteim hangja veri fel, de ezt még fél tucatnyi kutya ugatása tetézi. Valaki most húzza fel nyikorogva a redőnyt. Valami marha most száguldozik lefelé a hegyről kocsival.
 </p>

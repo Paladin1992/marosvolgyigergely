@@ -1,5 +1,3 @@
-<h1>Fenyősors</h1>
-
 <p>
 Egy városi piactéren járunk, valamikor december közepén. A stand mögé nemrég állt be egy teherautó, arról pakolják éppen a frissen vágott fenyőfákat, mert a múlt heti adagból már alig maradt néhány. Az egyiket pont egy ilyen régebbi fa mellé támasztják, s miután a rakodók elmentek, az új fenyő megszólítja a már ott lévő, idősebb fenyőt:
 </p>

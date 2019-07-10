@@ -1,5 +1,3 @@
-<h1>Idő</h1>
-
 <p>
 Nem szeretem a hétköznapokat... Még kimondani is sivár ezt a szót „hétköznapok”. Olyan üres. Olyan szürke. Olyan semmilyen. Mint az egész élet &ndash; ha az ember hagyja. Ez a szó nem ringat vagy emel fel úgy, mint az „ünnep” vagy a „béke”, melyek a mindenség örök pilléreit alkotó pillanatok. Ez a szó bedarál és összetör.
 </p>

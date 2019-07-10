@@ -1,5 +1,3 @@
-<h1>Ha eső volnék</h1>
-
 <p>
 Te voltál már eső? Mert én nagyon szeretnék eső lenni...
 </p>

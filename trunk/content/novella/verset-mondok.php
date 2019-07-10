@@ -1,5 +1,4 @@
-<h1>Verset mondok<br>
-<span class="subtitle">Gondolataim egy versmondó versenyen</span></h1>
+<div class="subtitle">Gondolataim egy versmondó versenyen</div>
 
 <p>
 Hát itt vagyok megint, egy újabb megmérettetésen! Most már nincs visszaút, meg kell csinálni! Még néhány ember van előttem.
