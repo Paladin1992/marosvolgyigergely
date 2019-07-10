@@ -2,7 +2,7 @@
 Kötelező szavak: szilvalekvár, naiv, lepke, birsalma, palacsinta, padlás, elképesztő, sokféle, hasmenés, őszhajú, búváruszony, szalma, fülbevaló, aszalás, feketerigó, dióbél, hang, remény, kávéház, alku, függöny, béke
 </p>
 
-<h3>A Dunánál (jött rám...)</h3>
+<h1>A Dunánál (jött rám...)</h1>
 
 <p>
 A rakodópart alsó kövén ültem,<br>

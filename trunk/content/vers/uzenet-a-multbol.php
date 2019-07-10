@@ -1,4 +1,4 @@
-<h3>Üzenet a múltból</h3>
+<h1>Üzenet a múltból</h1>
 
 <p>
 Pár sort üzenek csupán, Barátom,<br>

@@ -1,4 +1,4 @@
-<h3>Téli kép</h3>
+<h1>Téli kép</h1>
 
 <p>
 Dunai széllel jár most a napfény táncot:<br>

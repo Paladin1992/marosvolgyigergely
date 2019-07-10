@@ -87,8 +87,8 @@
             }
 
             echo
-                '<li>'
-                    .'<a href="vers/'.$row['Uri'].'" class="poem-title-link">'.$row['Title'].'</a>'
+                '<li class="group-list-item">'
+                    .'<a href="vers/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
                 .'</li>';
 
             $prev_letter = $initial;
@@ -135,8 +135,8 @@
             }
 
             echo
-                '<li>'
-                    .'<a href="vers/'.$row['Uri'].'" class="poem-title-link">'.$row['Title'].'</a>'
+                '<li class="group-list-item">'
+                    .'<a href="vers/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
                 .'</li>';
 
             $prev_year = $year;
@@ -186,7 +186,7 @@
     // $direction: 'prev' | 'next'
     // $type: 'vers' | 'novella'
     // $by: 'name' | 'time'
-    function get_paging_link($id, $direction, $type, $by) {
+    function get_paging_link($id, $direction, $type, $by, $classes) {
         global $connection;
         $qDirection = ucfirst($direction);
         $qType = ($type == 'vers' ? 'Poem' : 'ShortStory');
@@ -208,7 +208,7 @@
                 $caption_with_arrow = $writing['Title'].'<i class="material-icons arrow">keyboard_arrow_right</i>';
             }
 
-            echo action_link($type.'/'.$writing['Uri'], $caption_with_arrow);
+            echo action_link($type.'/'.$writing['Uri'], $caption_with_arrow, '', $classes);
         }
 
         $connection->next_result();
@@ -253,8 +253,8 @@
             }
 
             echo
-                '<li>'
-                    .'<a href="novella/'.$row['Uri'].'" class="short-story-title-link">'.$row['Title'].'</a>'
+                '<li class="group-list-item">'
+                    .'<a href="novella/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
                 .'</li>';
 
             $prev_letter = $initial;
@@ -301,8 +301,8 @@
             }
 
             echo
-                '<li>'
-                    .'<a href="novella/'.$row['Uri'].'" class="short-story-title-link">'.$row['Title'].'</a>'
+                '<li class="group-list-item">'
+                    .'<a href="novella/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
                 .'</li>';
 
             $prev_year = $year;

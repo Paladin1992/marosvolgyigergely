@@ -1,4 +1,4 @@
-<h3>Állatokról dióhéjban</h3>
+<h1>Állatokról dióhéjban</h1>
 
 <p>
 <span class="verse-subtitle">(Cinege)</span><br>

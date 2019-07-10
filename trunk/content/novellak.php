@@ -6,7 +6,7 @@
         $path = "content/novella/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('novellak', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a novellákhoz');
+            action_link('novellak', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a novellákhoz', '', 'nav-link');
             echo '<article id="'.$title.'" class="short-story">';
             include($path);
             echo '</article>';

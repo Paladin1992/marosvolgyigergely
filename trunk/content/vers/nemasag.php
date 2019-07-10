@@ -1,5 +1,5 @@
-<h3>Némaság<br>
-<span class="subtitle">(igék nélkül)</span></h3>
+<h1>Némaság<br>
+<span class="subtitle">(igék nélkül)</span></h1>
 
 <p>
 Szél szavára jót nevető,<br>

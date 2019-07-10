@@ -21,8 +21,8 @@
     ?>
 
     <meta charset="utf-8"/>
-    <meta keywords="Marosvölgyi Gergely, vers, versek, novella, novellák"/>
-    <meta description="Marosvölgyi Gergely hivatalos oldala. Versek, novellák"/>
+    <meta keywords="<?=get_meta_keywords($page, $title);?>"/>
+    <meta description="<?=get_meta_description($page, $title);?>"/>
     <meta name="author" content="MaGe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,9 +37,7 @@
     <div class="container">
         <div class="header-container">
             <header>
-                <div class="name-title">
-                    Marosvölgyi Gergely
-                </div>
+                <div class="name-title"><?=$_MAGE?></div>
 
                 <button id="btn-menu" type="button">
                     <span class="icon-bar bar1"></span>
@@ -52,9 +50,7 @@
         </div>
         
         <div class="header-placeholder">
-            <div class="name-title">
-                Marosvölgyi Gergely
-            </div>
+            <div class="name-title"><?=$_MAGE?></div>
         </div>
 
         <main>

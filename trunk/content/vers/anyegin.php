@@ -1,6 +1,6 @@
-<h3>Anyegin<br>
+<h1>Anyegin<br>
     <span class="subtitle">(egyéni befejezés)</span>
-</h3>
+</h1>
 
 <p>
 <span class="verse-number">1</span><br>

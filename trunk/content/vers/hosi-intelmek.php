@@ -1,4 +1,4 @@
-<h3>Hősi intelmek</h3>
+<h1>Hősi intelmek</h1>
 
 <p>
 Láss, hogy meglássák az igaz fényt;<br>

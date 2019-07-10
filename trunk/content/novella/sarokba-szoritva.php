@@ -1,4 +1,4 @@
-<h3>Sarokba szorítva</h3>
+<h1>Sarokba szorítva</h1>
 
 <p>
 Ez még általános iskolában történt; ha jól emlékszem, ötödik osztályosok voltunk.

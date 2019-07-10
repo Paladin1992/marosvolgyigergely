@@ -72,7 +72,7 @@ body {
 }
 header {
   background-color: #003355;
-  color: #ffffff;
+  color: #f9f9f9;
   height: 80px;
 }
 .header-placeholder {
@@ -88,14 +88,14 @@ header {
 }
 main {
   font-size: 18px;
-  margin: 0 auto 160px;
-  padding: 0 15px;
   min-height: 300px;
   max-width: 800px;
+  margin: 0 auto 160px;
+  padding: 15px;
 }
 footer {
   background-color: #003355;
-  color: #ffffff;
+  color: #f9f9f9;
   font-family: 'Garamond', serif;
   font-size: 14px;
   text-align: center;
@@ -121,9 +121,9 @@ footer .social-links ul li {
 }
 footer .social-links ul li a {
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #f9f9f9;
   border-radius: 50%;
-  color: #ffffff;
+  color: #f9f9f9;
   display: block;
   font-size: 22px;
   font-weight: normal;
@@ -146,7 +146,12 @@ footer .social-links ul li a.poet:hover {
   background-color: #993d1f;
 }
 footer .copyright {
-  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+footer .copyright .copyright-name,
+footer .copyright .copyright-separator,
+footer .copyright .copyright-rights {
+  display: inline-block;
 }
 a {
   color: #004080;
@@ -166,12 +171,21 @@ blockquote {
   padding: 0;
 }
 h1 {
+  font-weight: bold;
+  line-height: 1;
+  margin: 20px 0 15px;
+}
+h1.page-title {
   font-size: 36px;
   font-weight: normal;
   margin: 20px 0;
 }
 h1.center {
   text-align: center;
+}
+h1 .subtitle {
+  font-size: 0.75em;
+  font-style: italic;
 }
 hr {
   border: none;
@@ -180,16 +194,8 @@ hr {
   background: -ms-linear-gradient(0deg, #004080 0%, transparent 100%);
   background: -o-linear-gradient(0deg, #004080 0%, transparent 100%);
   background: linear-gradient(90deg, #004080 0%, transparent 100%);
-  height: 1px;
+  height: 2px;
   margin: 30px 0;
-}
-h3 {
-  font-weight: bold;
-  margin: 30px 0 15px;
-}
-h3 .subtitle {
-  font-size: 0.75em;
-  font-style: italic;
 }
 p {
   line-height: 1.3;
@@ -214,13 +220,19 @@ p {
   text-decoration: underline;
 }
 .accordion .accordion-body {
+  background: -webkit-linear-gradient(0deg, #f0f0f0 0%, transparent 100%);
+  background: -moz-linear-gradient(0deg, #f0f0f0 0%, transparent 100%);
+  background: -ms-linear-gradient(0deg, #f0f0f0 0%, transparent 100%);
+  background: -o-linear-gradient(0deg, #f0f0f0 0%, transparent 100%);
+  background: linear-gradient(90deg, #f0f0f0 0%, transparent 100%);
+  border-left: 1px solid #004080;
   display: none;
   padding-left: 15px;
 }
 .accordion .accordion-body ul.poems-alphabet,
 .accordion .accordion-body ul.poems-time {
-  margin: 10px 0 15px;
-  padding: 0;
+  margin: 0;
+  padding: 10px 0 15px;
 }
 .accordion .accordion-body ul.poems-alphabet li,
 .accordion .accordion-body ul.poems-time li {
@@ -233,6 +245,7 @@ p {
 }
 .initial-group,
 .year-group {
+  border-radius: 5px 0 0 5px;
   color: #f9f9f9;
   background: -webkit-linear-gradient(0deg, #004080 0%, transparent 100%);
   background: -moz-linear-gradient(0deg, #004080 0%, transparent 100%);
@@ -249,6 +262,15 @@ p {
 .year-group + .group-list {
   margin: 0;
   padding: 0 0 20px 40px;
+}
+.nav-link {
+  display: inline-block;
+  font-size: 1.1em;
+  line-height: 1;
+  padding: 5px 0;
+}
+.group-list-item .title-link {
+  font-size: 1.1em;
 }
 article.poem p {
   text-align: left;
@@ -314,7 +336,7 @@ i.arrow.open {
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    color: #ffffff;
+    color: #f9f9f9;
     margin-right: 0;
     padding: 9px 10px;
     position: absolute;
@@ -336,12 +358,12 @@ i.arrow.open {
     transition: transform 0.3s linear;
   }
   header button.open .icon-bar.bar3 {
-    background-color: #ffffff !important;
+    background-color: #f9f9f9 !important;
     opacity: 0;
     transition: background-color 0.3s linear, opacity 0.3s linear;
   }
   header button .icon-bar {
-    background-color: #ffffff !important;
+    background-color: #f9f9f9 !important;
     display: block;
     position: relative;
     margin: 4px 0 0;
@@ -401,7 +423,7 @@ i.arrow.open {
     clear: both;
   }
   nav.menu-container ul li a {
-    color: #ffffff;
+    color: #f9f9f9;
     display: block;
     font-family: 'Garamond', serif;
     font-size: 22px;
@@ -412,7 +434,7 @@ i.arrow.open {
     padding: 5px 0;
   }
   nav.menu-container ul li a:hover {
-    color: #ffffff;
+    color: #f9f9f9;
     text-decoration: none;
   }
   nav.menu-container ul li a:active,
@@ -422,6 +444,7 @@ i.arrow.open {
   }
   nav.menu-container ul li.active a,
   nav.menu-container ul li.active a:hover {
+    border-radius: 5px 5px 0 0;
     background: -webkit-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
     background: -moz-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
     background: -ms-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
@@ -431,13 +454,86 @@ i.arrow.open {
     font-weight: bold;
     text-decoration: none;
   }
+  footer .copyright {
+    letter-spacing: 1px;
+  }
+  footer .copyright .copyright-name {
+    display: block;
+    line-height: 20px;
+  }
+  footer .copyright .copyright-separator {
+    display: none;
+  }
+  footer .copyright .copyright-rights {
+    display: block;
+    line-height: 20px;
+  }
   p {
     text-align: left;
+  }
+  .accordion .accordion-header .accordion-caption {
+    font-size: 1.25em;
+  }
+  .accordion .accordion-header .accordion-caption:hover {
+    text-decoration: none;
+  }
+  .accordion .accordion-body {
+    padding-left: 0;
+  }
+  .accordion .accordion-body ul.poems-alphabet,
+  .accordion .accordion-body ul.poems-time {
+    padding-left: 15px;
+  }
+  .accordion .accordion-body ul.poems-alphabet li a,
+  .accordion .accordion-body ul.poems-time li a {
+    font-size: 26px;
+    margin-right: 20px;
+  }
+  .initial-group,
+  .year-group {
+    border-radius: 0;
+    padding-left: 10px;
+  }
+  .nav-link {
+    font-size: 1.25em;
+  }
+  .nav-link:hover,
+  .nav-link:active,
+  .nav-link:focus {
+    text-decoration: none !important;
+  }
+  .group-list-item {
+    margin-bottom: 5px;
+  }
+  .group-list-item .title-link {
+    font-size: 1.1em;
+    line-height: 1;
+  }
+  .pagination-container .pagination-prev {
+    padding: 10px 0 5px;
+    text-align: center;
+  }
+  .pagination-container .pagination-next {
+    padding-top: 5px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 500px) {
   header .name-title {
     line-height: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  article.poem p {
+    font-size: 4.5vw;
+  }
+  article.short-story p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 350px) {
+  .intro-poem {
+    font-size: 5vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -483,7 +579,7 @@ i.arrow.open {
   }
   nav.menu-container ul li a {
     background: transparent;
-    color: #ffffff;
+    color: #f9f9f9;
     display: block;
     font-family: 'Garamond', serif;
     font-size: 22px;
@@ -499,7 +595,7 @@ i.arrow.open {
     background: -ms-linear-gradient(-90deg, #003355 0%, #056cb9 100%);
     background: -o-linear-gradient(-90deg, #003355 0%, #056cb9 100%);
     background: linear-gradient(180deg, #003355 0%, #056cb9 100%);
-    color: #ffffff;
+    color: #f9f9f9;
     text-decoration: none;
   }
   nav.menu-container ul li a:active,

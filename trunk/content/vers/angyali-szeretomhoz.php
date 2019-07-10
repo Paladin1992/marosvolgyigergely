@@ -1,4 +1,4 @@
-<h3>Angyali szeretőmhöz</h3>
+<h1>Angyali szeretőmhöz</h1>
 
 <p>
 Ábránd formálja arcodat:<br>

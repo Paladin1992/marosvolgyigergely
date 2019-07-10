@@ -1,4 +1,4 @@
-<h3>Élet</h3>
+<h1>Élet</h1>
 
 <p>
 Sokan élik, miről<br>

@@ -1,4 +1,4 @@
-<h3>Óda</h3>
+<h1>Óda</h1>
 
 <p>
 <span class="verse-number">1</span><br>

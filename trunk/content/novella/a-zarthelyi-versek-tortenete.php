@@ -1,4 +1,4 @@
-<h3>A zárthelyi versek története</h3>
+<h1>A zárthelyi versek története</h1>
 
 <p>
 Na, ezt muszáj elmesélnem!

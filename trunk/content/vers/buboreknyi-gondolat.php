@@ -3,8 +3,8 @@ Tábori versírói feladat, párban; megadott szavak (nem volt mind kötelező):
 kerüllek, napsütötte, alma, hőség, selymes, lélek, fényes, levelek, világosság, csillaghullás, buborék, kék
 </p>
 
-<h3>Buboréknyi gondolat<br>
-<span class="subtitle">(a dőlttel szedett részeket Töreki Tilda írta)</span></h3>
+<h1>Buboréknyi gondolat<br>
+<span class="subtitle">(a dőlttel szedett részeket Töreki Tilda írta)</span></h1>
 
 <p>
 Miért kerüllek,<br>

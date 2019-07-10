@@ -1,5 +1,5 @@
-<h3>Örök perc<br>
-<span class="subtitle">&ndash; mert az eskütétel csak egy perc, mégis egy életre szól...</span></h3>
+<h1>Örök perc<br>
+<span class="subtitle">&ndash; mert az eskütétel csak egy perc, mégis egy életre szól...</span></h1>
 
 <p>
 Eljött a perc, mit régen vártunk,<br>

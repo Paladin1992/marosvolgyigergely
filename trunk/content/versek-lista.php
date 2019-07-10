@@ -1,7 +1,7 @@
 <div class="accordion-group exclusive">
     <div class="accordion">
         <div class="accordion-header">
-            <span class="accordion-caption">
+            <span class="accordion-caption nav-link">
                 Versek betűrendben
                 <i class="material-icons arrow">keyboard_arrow_down</i>
             </span>
@@ -16,7 +16,7 @@
     </div>
     <div class="accordion">
         <div class="accordion-header">
-            <span class="accordion-caption">
+            <span class="accordion-caption nav-link">
                 Versek időrendben
                 <i class="material-icons arrow">keyboard_arrow_down</i>
             </span>
@@ -32,9 +32,9 @@
 </div>
 
 <div>
-    <a href="vers/osszes">Az összes vers egy lapon</a>
+    <a href="vers/osszes" class="nav-link">Az összes vers egy lapon</a>
 </div>
 
-<div>
-    <a href="vers/valtozatok">Változatok</a>
-</div>
+<!-- <div>
+    <a href="vers/valtozatok" class="nav-link">Változatok</a>
+</div> -->

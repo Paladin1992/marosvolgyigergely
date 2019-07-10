@@ -1,7 +1,5 @@
-<h2>Összes vers</h2>
+<h1 class="page-title">Összes vers</h1>
 
 <p>Ezen az oldalon befejezés szerinti időrendi sorrendben szerepel az összes felvállalható versem.</p>
 
-<?php
-    list_all('vers');
-?>
+<?php list_all('vers'); ?>

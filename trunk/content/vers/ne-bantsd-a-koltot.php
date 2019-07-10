@@ -1,4 +1,4 @@
-<h3>Ne bántsd a költőt!</h3>
+<h1>Ne bántsd a költőt!</h1>
 
 <p>
 Ne bántsd a költőt!<br>

@@ -1,7 +1,7 @@
-<h3>A magyar diák<br>
+<h1>A magyar diák<br>
 <span class="subtitle">(Avagy a mai fiatalokat kigúnyoló vers<br>
 Petőfi Sándor „A magyar nemes” c. verse mintájára)</span>
-</h3>
+</h1>
 
 <p>
 Hajvasaló, szakadt gatya,<br>

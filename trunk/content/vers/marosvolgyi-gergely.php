@@ -1,4 +1,4 @@
-<h3>Marosvölgyi Gergely</h3>
+<h1>Marosvölgyi Gergely</h1>
 
 <p>
 Vidám s jó fiú volt,<br>

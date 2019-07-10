@@ -1,4 +1,4 @@
-<h3>Nagymaros</h3>
+<h1>Nagymaros</h1>
 
 <p>
 Hol a vén Duna völgybe ér,<br>

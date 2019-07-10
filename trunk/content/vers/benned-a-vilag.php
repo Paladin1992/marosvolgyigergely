@@ -1,4 +1,4 @@
-<h3>Benned a világ</h3>
+<h1>Benned a világ</h1>
 
 <p>
 Nincs mitől félni:<br>

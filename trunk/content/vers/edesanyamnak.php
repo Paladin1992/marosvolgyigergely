@@ -1,5 +1,5 @@
-<h3>Édesanyámnak<br>
-<span class="subtitle">Anyák napjára</span></h3>
+<h1>Édesanyámnak<br>
+<span class="subtitle">Anyák napjára</span></h1>
 
 <p>
 Ma bejártam a világot,<br>

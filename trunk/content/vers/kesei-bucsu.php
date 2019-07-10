@@ -1,5 +1,5 @@
-<h3>Kései búcsú<br>
-<span class="subtitle">(szonett Sz. A. részére)</span></h3>
+<h1>Kései búcsú<br>
+<span class="subtitle">(szonett Sz. A. részére)</span></h1>
 
 <p>
 Mint jót akaró kisgyerek,<br>
@@ -32,7 +32,7 @@ Nagymaros,<br>
 2013. december 31.
 </p>
 
-<h3>Jegyzetek</h3>
+<h1>Jegyzetek</h1>
 
 <p>
     <i>Sz. A. válasza:</i><br>

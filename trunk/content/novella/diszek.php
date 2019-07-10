@@ -1,4 +1,4 @@
-<h3>Díszek?</h3>
+<h1>Díszek?</h1>
 
 <p>
 Egy átlagos családi házban vagyunk, nem sokkal a fadíszítés befejezte után. A szoba csendes, a sarokban áll a karácsonyfa. Egyszer csak megszólal az egyik aranyszínű dísze:

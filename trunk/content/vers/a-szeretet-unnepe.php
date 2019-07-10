@@ -1,4 +1,4 @@
-<h3>A Szeretet ünnepe</h3>
+<h1>A Szeretet ünnepe</h1>
 
 <p>
 Ma beteg világban élünk,<br>

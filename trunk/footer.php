@@ -23,6 +23,12 @@
     <?php
         $startYear = 2019;
         $currentYear = date("Y");
-        echo '<span class="copyright">&copy;'.$startYear.($currentYear > $startYear ? '-'.$currentYear : '').' Marosvölgyi Gergely &ndash; Minden jog fenntartva!</span>';
+        $years = $startYear.($currentYear > $startYear ? '-'.$currentYear : '');
     ?>
+    <div class="copyright">
+        <div class="copyright-name">&copy;<?=($years.' '.$_MAGE)?></div>
+        <div class="copyright-rights">
+            <span class="copyright-separator">&ndash;</span> Minden jog fenntartva!
+        </div>
+    </div>
 </footer>

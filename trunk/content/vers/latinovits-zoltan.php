@@ -1,4 +1,4 @@
-<h3>Latinovits Zoltán</h3>
+<h1>Latinovits Zoltán</h1>
 
 <p>
 Mint a villám derült égből,<br>

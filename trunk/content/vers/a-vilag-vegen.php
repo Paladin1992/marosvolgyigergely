@@ -1,4 +1,4 @@
-<h3>A világ végén</h3>
+<h1>A világ végén</h1>
 
 <p>
 A világ végén van egy hely,<br>

@@ -1,4 +1,4 @@
-<h3>Átkarolt az ősz...</h3>
+<h1>Átkarolt az ősz...</h1>
 
 <p>
 Szeptember &ndash; így szólt a naptár

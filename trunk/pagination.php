@@ -6,12 +6,12 @@
 <div class="pagination-container">
     <div class="pagination-prev">
         <?php
-            get_paging_link($id, 'prev', $type, 'time');
+            get_paging_link($id, 'prev', $type, 'time', 'nav-link');
         ?>
     </div>
     <div class="pagination-next">
         <?php
-            get_paging_link($id, 'next', $type, 'time');
+            get_paging_link($id, 'next', $type, 'time', 'nav-link');
         ?>
     </div>
 </div>

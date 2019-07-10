@@ -1,4 +1,4 @@
-<h3>Nincs ihlet</h3>
+<h1>Nincs ihlet</h1>
 
 <p>
 Nos, igen: van olyan, hogy nincs ihlet,<br>

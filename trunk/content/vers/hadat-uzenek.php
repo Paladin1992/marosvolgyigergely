@@ -1,4 +1,4 @@
-<h3>Hadat üzenek...</h3>
+<h1>Hadat üzenek...</h1>
 
 <p>
 Hadat üzenek a szerelemnek,<br>

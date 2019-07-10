@@ -1,5 +1,5 @@
-<h3>Hazudj nekem<br>
-<span class="subtitle">(T. B. részére)</span></h3>
+<h1>Hazudj nekem<br>
+<span class="subtitle">(T. B. részére)</span></h1>
 
 <p>
 Tudom, hogy kettőnk között<br>

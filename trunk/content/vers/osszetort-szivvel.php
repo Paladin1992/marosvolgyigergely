@@ -1,5 +1,5 @@
-<h3>Összetört szívvel<br>
-<span class="subtitle">(szakítás után)</span></h3>
+<h1>Összetört szívvel<br>
+<span class="subtitle">(szakítás után)</span></h1>
 
 <p>
 Most összetört szívvel<br>

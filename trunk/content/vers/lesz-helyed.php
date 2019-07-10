@@ -1,5 +1,5 @@
-<h3>Lesz helyed<br>
-<span class="subtitle">(F. R. részére)</span></h3>
+<h1>Lesz helyed<br>
+<span class="subtitle">(F. R. részére)</span></h1>
 
 <p>
 Már nem is tudom, mióta<br>

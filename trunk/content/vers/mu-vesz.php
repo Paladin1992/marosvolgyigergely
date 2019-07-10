@@ -1,5 +1,5 @@
-<h3>„Mű-vész”<br>
-<span class="subtitle">asszociációs lánc</span></h3>
+<h1>„Mű-vész”<br>
+<span class="subtitle">asszociációs lánc</span></h1>
 
 <p>
 művész<br>

@@ -1,4 +1,4 @@
-<h3>A szomszéd</h3>
+<h1>A szomszéd</h1>
 
 <p>
 Jön a szomszéd,<br>

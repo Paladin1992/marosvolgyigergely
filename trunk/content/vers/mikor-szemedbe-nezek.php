@@ -1,5 +1,5 @@
-<h3>Mikor szemedbe nézek...<br>
-<span class="subtitle">(T. B. részére)</span></h3>
+<h1>Mikor szemedbe nézek...<br>
+<span class="subtitle">(T. B. részére)</span></h1>
 
 <p>
 Mikor szemedbe nézek,<br>

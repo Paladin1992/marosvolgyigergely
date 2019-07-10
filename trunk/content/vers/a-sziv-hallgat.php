@@ -1,4 +1,4 @@
-<h3>A szív hallgat</h3>
+<h1>A szív hallgat</h1>
 
 <p>
 Már csak Te vagy, Uram,<br>

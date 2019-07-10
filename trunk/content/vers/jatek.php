@@ -1,4 +1,4 @@
-<h3>Játék</h3>
+<h1>Játék</h1>
 
 <p>
 Elkapott a lét?<br>

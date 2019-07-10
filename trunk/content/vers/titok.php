@@ -1,4 +1,4 @@
-<h3>Titok</h3>
+<h1>Titok</h1>
 
 <p>
 Új nap köszönt, mosolyg rám,<br>

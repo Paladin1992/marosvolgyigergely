@@ -1,4 +1,4 @@
-<h3>Másképp</h3>
+<h1>Másképp</h1>
 
 <p>
 Másképp jár az óra,<br>

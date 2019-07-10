@@ -2,7 +2,7 @@
     <i>Eredeti szöveg:</i>
 <p>
 
-<h3>József Attila &ndash; Wolke</h3>
+<h1>József Attila &ndash; Wolke</h1>
 
 <p>
 Du wirst nicht meine Frau sein,<br>
@@ -20,8 +20,8 @@ auf die es regnet, leise, langsam.
 
 <p><i>Fordítások:</i></p>
 
-<h3>József Attila &ndash; Felhő<br>
-<span class="subtitle">I. változat (szabadabb)</span></h3>
+<h1>József Attila &ndash; Felhő<br>
+<span class="subtitle">I. változat (szabadabb)</span></h1>
 
 <p>
 Tán nem leszel a kedvesem,<br>
@@ -42,8 +42,8 @@ Nagymaros,<br>
 2015. december 22.
 </p>
 
-<h3>József Attila &ndash; Felhő<br>
-<span class="subtitle">II. változat (szöveghűbb)</span></h3>
+<h1>József Attila &ndash; Felhő<br>
+<span class="subtitle">II. változat (szöveghűbb)</span></h1>
 
 <p>
 Te nem leszel a kedvesem,<br>
@@ -64,8 +64,8 @@ Nagymaros,<br>
 2015. december 23-24.
 </p>
 
-<h3>József Attila &ndash; Felhő<br>
-<span class="subtitle">III. változat</span></h3>
+<h1>József Attila &ndash; Felhő<br>
+<span class="subtitle">III. változat</span></h1>
 
 <p>
 Te nem leszel a kedvesem,<br>
@@ -86,8 +86,8 @@ Veszprém,<br>
 2016. február 2.
 </p>
 
-<h3>József Attila &ndash; Felhő<br>
-<span class="subtitle">IV. változat</span></h3>
+<h1>József Attila &ndash; Felhő<br>
+<span class="subtitle">IV. változat</span></h1>
 
 <p>
 Már nem leszel a kedvesem,<br>

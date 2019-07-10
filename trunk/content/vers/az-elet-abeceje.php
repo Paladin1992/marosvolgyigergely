@@ -1,5 +1,5 @@
-<h3>Az élet ábécéje<br>
-<span class="subtitle">avagy: ami az élethez kell</span></h3>
+<h1>Az élet ábécéje<br>
+<span class="subtitle">avagy: ami az élethez kell</span></h1>
 
 <p>
 A, mint alázat;<br>

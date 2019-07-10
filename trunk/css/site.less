@@ -1,54 +1,49 @@
+// @gray: #333333;
+// @lightBlue: #005e99;
+// @lightBlue: #0060c0;
+// @blue: #00416a;
+// @darkBlue: #003040;
+// @darkBlue: #154889; // Signal blue
+// @darkBlue: #13447C; // Gentian blue
+// @darkBlue: #0E518D; // Traffic blue
+// @darkBlue: #00477e;
+// @darkBlue: #00416a;
+// @blue5: #014782;
+// @blue7: #002f4d;
+// @lightBlue: #006698;
+// @lightBlue2: #2569a1;
+// @grayishBlue: #004472;
+
 // #region [ Declarations ]
 
     // #region [ Colors ]
-        @white: #ffffff;
-        @grayishWhite: #f9f9f9;
-        //@gray: #333333;
+        @almostWhite: #f9f9f9;
+        @paleGray: #f0f0f0;
         @gray: #404040;
 
-        //@lightBlue: #005e99;
-        @lightBlue: #0060c0;
         @lightBlue: #056cb9;
-        //@blue: #00416a;
-        //@darkBlue: #003040;
-        //@darkBlue: #154889; // Signal blue
-        //@darkBlue: #13447C; // Gentian blue
-        //@darkBlue: #0E518D; // Traffic blue
-        //@darkBlue: #00477e;
         @blue: #004080;
-        @darkBlue: #00416a;
         @darkBlue: #003355;
+
         @facebookBlue: #4267b2;
         @linkedinBlue: #00538f;
         @poetBrown: #993d1f;
         
-        // @blue5: #014782;
-        // @blue6: #003040;
-        // @blue7: #002f4d;
-        // @lightBlue: #006698;
-        // @lightBlue2: #2569a1;
-        // @grayishBlue: #004472;
-
-        @body_bgColor: @grayishWhite;
+        
+        @body_bgColor: @almostWhite;
         @body_color: @gray;
 
         @header_bgColor: @darkBlue;
-        @header_color: @white;
-        @navbarButton_color: @white;
+        @header_color: @almostWhite;
         
-        @menu_color: @white;
-        @menu_hover_color: @white;
+        @menu_color: @almostWhite;
+        @menu_hover_color: @almostWhite;
         @menu_active_color: @blue;
-        @menu_active_bgColor: @grayishWhite;
-        @menu_active_link_bgColor: @grayishWhite;
+        @menu_active_bgColor: @almostWhite;
+        @menu_active_link_bgColor: @almostWhite;
         
         @footer_bgColor: @darkBlue;
-        @footer_color: @white;
-        @social_icon_color: @white;
-        @social_icon_borderColor: @white;
-        @social_icon_facebook_bgColor: @facebookBlue;
-        @social_icon_linkedin_bgColor: @linkedinBlue;
-        @social_icon_poet_bgColor: @poetBrown;
+        @footer_color: @almostWhite;
         
         @shadow_color: @gray;
 
@@ -83,29 +78,15 @@
             src: url(../fonts/perpetua.ttf) format('truetype');
         }
 
-        // @font-face {
-        //     font-family: 'Literata';
-        //     font-style: normal;
-        //     font-weight: 400;
-        //     src: url('../fonts/literata.eot'); /* IE9 Compat Modes */
-        //     src: 
-        //         url('../fonts/literata.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //         url('../fonts/literata.woff2') format('woff2'), /* Super Modern Browsers */
-        //         url('../fonts/literata.woff') format('woff'), /* Modern Browsers */
-        //         url('../fonts/literata.ttf') format('truetype'), /* Safari, Android, iOS */
-        //         url('../fonts/literata.svg#Literata') format('svg'); /* Legacy iOS */
-        // }
-
-        @arial: Arial, Helvetica, sans-serif;
         @garamond: 'Garamond', serif;
         @perpetua: 'Perpetua';
-        //@literata: 'Literata', Times, serif;
         @timesNewRoman: 'Times New Roman', Times, serif;
 
         @font_header: @perpetua;
         @font_menu: @garamond;
         @font_body: @timesNewRoman;
         @font_footer: @garamond;
+        @font_copyright: @timesNewRoman;
         @font_keep_in_touch: @garamond;
         @font_social_icon_poet: @perpetua;
     // #endregion
@@ -205,10 +186,10 @@ header {
 main {
     font-size: 18px;
 
-    margin: 0 auto 160px;
-    padding: 0 15px;
     min-height: 300px;
     max-width: 800px;
+    margin: 0 auto 160px;
+    padding: 15px;
 }
 
 footer {
@@ -244,9 +225,9 @@ footer {
 
                 & a {
                     background-color: transparent;
-                    border: 1px solid @social_icon_borderColor;
+                    border: 1px solid @almostWhite;
                     border-radius: 50%;
-                    color: @social_icon_color;
+                    color: @almostWhite;
                     display: block;
 
                     font-size: 22px;
@@ -258,25 +239,31 @@ footer {
                     height: 44px;
 
                     &.facebook {
-                        &:hover { background-color: @social_icon_facebook_bgColor; }
+                        &:hover { background-color: @facebookBlue; }
                     }
 
                     &.linkedin {
-                        &:hover { background-color: @social_icon_linkedin_bgColor; }
+                        &:hover { background-color: @linkedinBlue; }
                     }
 
                     &.poet {
                         font-family: @font_social_icon_poet;
                         font-size: 23px;
 
-                        &:hover { background-color: @social_icon_poet_bgColor; }
+                        &:hover { background-color: @poetBrown; }
                     }
                 }
             }
         }
     }
 
-    & .copyright { font-size: 16px; }
+    & .copyright {
+        font-family: @font_copyright;
+
+        & .copyright-name,
+        & .copyright-separator,
+        & .copyright-rights { display: inline-block; }
+    }
 }
 // #endregion
 
@@ -299,24 +286,19 @@ blockquote {
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: normal;
-    margin: 20px 0;
+    // as page-title
+    &.page-title {
+        font-size: 36px;
+        font-weight: normal;
+        margin: 20px 0;
+    }
 
     &.center { text-align: center; }
-}
 
-hr {
-    border: none;
-    .gradient(linear; @blue 0%, transparent 100%; 90deg);
-
-    height: 1px;
-    margin: 30px 0;
-}
-
-h3 { // vers- és novellacímek
+    // as title for writings
     font-weight: bold;
-    margin: 30px 0 15px;
+    line-height: 1;
+    margin: 20px 0 15px;
 
     & .subtitle {
         font-size: 0.75em;
@@ -324,10 +306,17 @@ h3 { // vers- és novellacímek
     }
 }
 
+hr {
+    border: none;
+    .gradient(linear; @blue 0%, transparent 100%; 90deg);
+
+    height: 2px;
+    margin: 30px 0;
+}
+
 p {
     line-height: 1.3;
     text-align: justify;
-
     margin: 0 0 20px;
 }
 // #endregion
@@ -357,13 +346,15 @@ p {
     }
 
     & .accordion-body {
+        .gradient(linear; @paleGray 0%, transparent 100%; 90deg);
+        border-left: 1px solid @blue;
         display: none;
 
         padding-left: 15px;
 
         & ul.poems-alphabet, & ul.poems-time {
-            margin: 10px 0 15px;
-            padding: 0;
+            margin: 0;
+            padding: 10px 0 15px;
 
             & li {
                 display: inline-block;
@@ -378,7 +369,8 @@ p {
 }
 
 .initial-group, .year-group {
-    color: @grayishWhite;
+    border-radius: 5px 0 0 5px;
+    color: @almostWhite;
     .gradient(linear; @blue 0%, transparent 100%; 90deg);
     
     font-size: 26px;
@@ -391,6 +383,19 @@ p {
     & + .group-list {
         margin: 0;
         padding: 0 0 20px 40px;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 1;
+    padding: 5px 0;
+}
+
+.group-list-item {
+    & .title-link {
+        font-size: 1.1em;
     }
 }
 
@@ -473,7 +478,7 @@ i {
             background-color: transparent;
             border: none;
             border-radius: 4px;
-            color: @navbarButton_color;
+            color: @almostWhite;
     
             margin-right: 0;
             padding: 9px 10px;
@@ -502,7 +507,7 @@ i {
                     }
     
                     &.bar3 {
-                        background-color: @white !important;
+                        background-color: @almostWhite !important;
                         opacity: 0;
     
                         transition:
@@ -513,7 +518,7 @@ i {
             }
     
             & .icon-bar {
-                background-color: @white !important;
+                background-color: @almostWhite !important;
                 display: block;
     
                 position: relative;
@@ -605,7 +610,8 @@ i {
 
                 &.active {
                     & a, & a:hover {
-                        .gradient(linear; transparent 0%, @grayishWhite 25%, @grayishWhite 75%, transparent 100%; 90deg);
+                        border-radius: 5px 5px 0 0;
+                        .gradient(linear; transparent 0%, @almostWhite 25%, @almostWhite 75%, transparent 100%; 90deg);
                         color: @menu_active_color;
 
                         font-weight: bold;
@@ -616,17 +622,99 @@ i {
         }
     }
 
+    footer {
+        & .copyright {
+            letter-spacing: 1px;
+
+            & .copyright-name {
+                display: block;
+                line-height: 20px;
+            }
+            & .copyright-separator { display: none; }
+            & .copyright-rights {
+                display: block;
+                line-height: 20px;
+            }
+        }
+    }
+
     p { text-align: left; }
+
+    .accordion {
+        & .accordion-header {
+            & .accordion-caption {
+                font-size: 1.25em;
+
+                &:hover { text-decoration: none; }
+            }
+        }
+    
+        & .accordion-body {
+            padding-left: 0;
+    
+            & ul.poems-alphabet, & ul.poems-time {
+                padding-left: 15px;
+    
+                & li {
+                    & a {
+                        font-size: 26px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .initial-group, .year-group {
+        border-radius: 0;
+        padding-left: 10px;
+    }
+
+    .nav-link {
+        font-size: 1.25em;
+
+        &:hover, &:active, &:focus { text-decoration: none !important; }
+    }
+
+    .group-list-item {
+        margin-bottom: 5px;
+
+        & .title-link {
+            font-size: 1.1em;
+            line-height: 1;
+        }
+    }
+
+    .pagination-container {
+        & .pagination-prev {
+            padding: 10px 0 5px;
+            text-align: center;
+        }
+        & .pagination-next {
+            padding-top: 5px;
+            text-align: center;
+        }
+    }
 }
 // #endregion
 
 // #region [ <=500px ]
 @media screen and (max-width: 500px) {
-    header {
-        .name-title {
-            line-height: @header_height;
-        }
-    }
+    header .name-title { line-height: @header_height; }
+}
+// #endregion
+
+// #region [ <=400px ]
+@media screen and (max-width: 400px) {
+    article.poem p { font-size: 4.5vw; }
+
+    article.short-story p { text-align: left; }
+}
+// #endregion
+
+// #region [ <=350px ]
+@media screen and (max-width: 350px) {
+    .intro-poem { font-size: 5vw; }
 }
 // #endregion
 
@@ -643,7 +731,7 @@ i {
     }
 
     nav.menu-container {
-        .gradient(linear; @grayishWhite 85%, transparent 100%; 180deg);
+        .gradient(linear; @almostWhite 85%, transparent 100%; 180deg);
         display: block;
         overflow: hidden;
 
@@ -698,7 +786,6 @@ i {
                     & a, & a:hover {
                         background: @menu_active_link_bgColor;
                         color: @menu_active_color;
-
                         text-decoration: none;
                     }
                 }

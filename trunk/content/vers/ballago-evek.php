@@ -1,6 +1,6 @@
-<h3>Ballagó évek<br>
+<h1>Ballagó évek<br>
 <span class="subtitle">A nagymarosi Kittenberger Kálmán Általános és Művészeti Iskola<br>
-alapításának 100. évfordulója alkalmából (1915-2015)</span></h3>
+alapításának 100. évfordulója alkalmából (1915-2015)</span></h1>
 
 <p>
 Mint a fürge, néma percek,<br>

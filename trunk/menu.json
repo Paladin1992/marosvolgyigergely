@@ -2,33 +2,33 @@
     {
         "menuItemCaption": "Főoldal",
         "h1": "Üdvözöllek weblapomon!",
-        "classes": "center",
+        "classes": "page-title center",
         "url": "fooldal",
-        "keywords": "",
-        "description": ""
+        "keywords": "Marosvölgyi Gergely, vers, versek, novella, novellák, József Attila",
+        "description": "Marosvölgyi Gergely hivatalos oldala. Itt minden versemet, novellámat megtalálod egy helyen!"
     },
     {
         "menuItemCaption": "Versek",
         "h1": "Versek",
-        "classes": "",
+        "classes": "page-title",
         "url": "versek",
-        "keywords": "",
-        "description": ""
+        "keywords": "Marosvölgyi Gergely",
+        "description": "Erről az oldalról kiindulva verseimre betűrendben és időrendi sorrendben is rátalálhatsz."
     },
     {
         "menuItemCaption": "Novellák",
         "h1": "Novellák",
-        "classes": "",
+        "classes": "page-title",
         "url": "novellak",
-        "keywords": "",
-        "description": ""
+        "keywords": "Marosvölgyi Gergely",
+        "description": "Erről az oldalról kiindulva novelláimra betűrendben és időrendi sorrendben is rátalálhatsz."
     },
     {
         "menuItemCaption": "Rólam",
         "h1": "Rólam",
-        "classes": "",
+        "classes": "page-title",
         "url": "rolam",
-        "keywords": "",
-        "description": ""
+        "keywords": "Marosvölgyi Gergely, önéletrajz",
+        "description": "Ha többet szeretnél megtudni rólam, akkor itt elolvashatod az önéletrajzomat."
     }
 ]

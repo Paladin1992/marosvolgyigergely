@@ -1,4 +1,34 @@
 <?php
+    function get_meta_keywords($page, $title) {
+        global $writing_info;
+        $pageKeywords = get_menu_item_data($page)['keywords'];
+        $niceTitle = $writing_info['Title'];
+        $type = ($page == 'versek' ? 'vers' : 'novella');
+
+        if ($niceTitle != '') {
+            $pageKeywords .= ', '.$niceTitle;
+        } else if ($title == 'osszes') {
+            $pageKeywords .= ', összes '.$type;
+        }
+
+        echo $pageKeywords;
+    }
+
+    function get_meta_description($page, $title) {
+        global $writing_info;
+        $pageDescription = get_menu_item_data($page)['description'];
+        $niceTitle = $writing_info['Title'];
+        $type = ($page == 'versek' ? 'vers' : 'novella');
+
+        if ($niceTitle != '') {
+            $pageDescription = $niceTitle.', '.$type;
+        } else if ($title == 'osszes') {
+            $pageDescription .= ', összes '.$type;
+        }
+
+        echo $pageDescription;
+    }
+
     function action_link($relative_path, $caption, $target = '', $class = '') {
         $href = 'href="'.$relative_path.'"';
         $class = $class == '' ? '' : ' class="'.$class.'"';

@@ -1,4 +1,4 @@
-<h3>Hajnali áhítat</h3>
+<h1>Hajnali áhítat</h1>
 
 <p>
 Még fénylik a hold odafent,<br>

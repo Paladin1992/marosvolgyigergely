@@ -4,8 +4,9 @@
     // release
     //$_HTML_BASE_URL = 'http://marosvolgyigergely.hu/';
 
+    $_MAGE = 'Marosvölgyi Gergely';
     $_TITLE_SEPARATOR = '&bull;';
-    $_TITLE_SUFFIX = 'Marosvölgyi Gergely hivatalos oldala';
+    $_TITLE_SUFFIX = $_MAGE.' hivatalos oldala';
 
     function set_base_url() {
         global $_HTML_BASE_URL;

@@ -1,4 +1,4 @@
-<h3>Vándorlélek</h3>
+<h1>Vándorlélek</h1>
 
 <p>
 A hajnali dér szálla már alá lassan,<br>

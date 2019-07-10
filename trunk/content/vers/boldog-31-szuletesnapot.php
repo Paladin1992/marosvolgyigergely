@@ -1,4 +1,4 @@
-<h3>Boldog 31. születésnapot!</h3>
+<h1>Boldog 31. születésnapot!</h1>
 
 <p>
 <b>B</b>oldog születésnapot kívánok hát, s<br>

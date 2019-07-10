@@ -1,4 +1,4 @@
-<h3>Reditio</h3>
+<h1>Reditio</h1>
 
 <p>
 Csak egy nagy tűz kellene,<br>

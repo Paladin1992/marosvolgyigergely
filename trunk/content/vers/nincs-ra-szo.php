@@ -1,5 +1,5 @@
-<h3>Nincs rá szó<br>
-<span class="subtitle">(T. B. részére)</span></h3>
+<h1>Nincs rá szó<br>
+<span class="subtitle">(T. B. részére)</span></h1>
 
 <p>
 Nincs rá szó,<br>

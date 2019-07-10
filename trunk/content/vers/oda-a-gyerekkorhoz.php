@@ -1,4 +1,4 @@
-<h3>Óda a gyerekkorhoz</h3>
+<h1>Óda a gyerekkorhoz</h1>
 
 <p class="writing-quotation">
 „Mikor gyermek valék,<br>

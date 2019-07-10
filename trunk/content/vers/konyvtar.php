@@ -1,4 +1,4 @@
-<h3>Könyvtár</h3>
+<h1>Könyvtár</h1>
 
 <p>
 A kincsbarlang, hol egymásra<br>

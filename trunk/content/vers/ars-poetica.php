@@ -1,4 +1,4 @@
-<h3>Ars poetica</h3>
+<h1>Ars poetica</h1>
 
 <p>
 Mint földre hulló dicső jel:<br>

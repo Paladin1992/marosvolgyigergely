@@ -1,6 +1,6 @@
-<h3>Mama<br>
+<h1>Mama<br>
 <span class="subtitle">(Nagymamám, sz. Paulicsek Rozália emlékére,<br>
-1928. május 17. &ndash; 2012. április 22.)</span></h3>
+1928. május 17. &ndash; 2012. április 22.)</span></h1>
 
 <p>
 Most is a mamára gondolok<br>

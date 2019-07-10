@@ -1,4 +1,4 @@
-<h3>Őszi varázs</h3>
+<h1>Őszi varázs</h1>
 
 <p>
 Elmúlt a nyár, és az ősz<br>

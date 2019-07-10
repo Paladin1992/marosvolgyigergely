@@ -1,5 +1,5 @@
-<h3>Új kezdet előtt<br>
-<span class="subtitle">(szilveszterkor)</span></h3>
+<h1>Új kezdet előtt<br>
+<span class="subtitle">(szilveszterkor)</span></h1>
 
 <p>
 Rossz volt nekem ez az év,<br>

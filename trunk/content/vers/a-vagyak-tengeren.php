@@ -1,6 +1,6 @@
 <?php global $title; ?>
 
-<h3>A vágyak tengerén</h3>
+<h1>A vágyak tengerén</h1>
 
 <span class="verse-number">1</span><br>
 Jéghideg ágy lapul<br>

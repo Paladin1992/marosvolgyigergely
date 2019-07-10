@@ -2,7 +2,7 @@
 Pár: Andris és Lilla
 </p>
 
-<h3>Útmutató frissen férjülteknek</h3>
+<h1>Útmutató frissen férjülteknek</h1>
 
 <p>
 Tökéletes kis férjedet<br>

@@ -1,4 +1,4 @@
-<h3>Őrizd meg a pillanatot</h3>
+<h1>Őrizd meg a pillanatot</h1>
 
 <p>
 Pereg az idő,<br>

@@ -1,4 +1,4 @@
-<h3>Kell az élet</h3>
+<h1>Kell az élet</h1>
 
 <p>
 ...És kelni kell,<br>

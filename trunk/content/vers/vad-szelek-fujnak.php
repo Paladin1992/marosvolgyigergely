@@ -1,4 +1,4 @@
-<h3>Vad szelek fújnak</h3>
+<h1>Vad szelek fújnak</h1>
 
 <p>
 Szomorú dalt süvít a szél,<br>

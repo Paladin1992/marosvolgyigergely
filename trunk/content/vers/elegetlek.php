@@ -1,5 +1,5 @@
-<h3>Elégetlek!<br>
-<span class="subtitle">Sz. K. részére</span></h3>
+<h1>Elégetlek!<br>
+<span class="subtitle">Sz. K. részére</span></h1>
 
 <p>
 csak most<br>
