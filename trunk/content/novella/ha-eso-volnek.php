@@ -1,4 +1,4 @@
-<h1>Ha eső volnék</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Te voltál már eső? Mert én nagyon szeretnék eső lenni...

@@ -1,4 +1,4 @@
-<h1>A zárthelyi versek története</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Na, ezt muszáj elmesélnem!

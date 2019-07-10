@@ -1,4 +1,4 @@
-<h1>Anya és a matek</h1>
+<?php get_title($current_title); ?>
 
 <p>
 &ndash; Anya, kimehetek játszani?<br>

@@ -1,4 +1,4 @@
-<h1>Levél a Télhez</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Kedves Tél Úr!

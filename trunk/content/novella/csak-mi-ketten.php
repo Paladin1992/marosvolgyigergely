@@ -1,5 +1,5 @@
-<h1>Csak mi ketten<br>
-<span class="subtitle">(T. N. részére)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(T. N. részére)</div>
 
 <p>
 Júniusi este volt, ültünk a Balaton partján. A pici hullámoknak halk csobogással feleltek a sziklák; a kikötőben szenderegve ringatóztak a vitorlások. Idehallatszott a nádas felől a békák brekegése. A túlpartot csak egy halovány fénysor körvonalazta; a hegyek beleolvadtak a csillagos, fátyolfelhős égboltba. A Hold akkor éppen más féltekén lévő párokat boldogított, de mi mégis örültünk, mert így legalább hagyta kedvenc csillagainkat tündökölni.

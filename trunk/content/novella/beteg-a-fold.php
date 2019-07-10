@@ -1,5 +1,5 @@
-<h1>Beteg a Föld<br>
-<span class="subtitle">A Föld napjára</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">A Föld napjára</div>
 
 <p>
 A Föld elmegy az orvoshoz:<br>
