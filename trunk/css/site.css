@@ -187,13 +187,24 @@ h1.page-title {
 h1.center {
   text-align: center;
 }
-h1 .subtitle {
-  font-size: 0.75em;
+h1 + .subtitle {
+  font-size: 18px;
   font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+  margin: -12px 0 15px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 20px 0 15px;
 }
 h2.welcome {
+  font-size: 36px;
   font-weight: normal;
   text-align: center;
+  margin: 20px 0;
 }
 hr {
   border: none;
@@ -280,6 +291,9 @@ p {
   font-size: 1.1em;
   line-height: 1;
   padding: 5px 0;
+}
+.nav-link.back {
+  padding-bottom: 15px;
 }
 .group-list-item .title-link {
   font-size: 1.1em;

@@ -6,7 +6,7 @@
         $path = "content/vers/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link');
+            action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link back');
             
             echo '<article id="'.$title.'" class="poem">';
             $current_title = $writing_info['Title'];
