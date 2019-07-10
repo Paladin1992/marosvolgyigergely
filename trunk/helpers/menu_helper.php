@@ -45,13 +45,22 @@
         }
     }
 
-    function insert_page_title($page) {
-        global $_TITLE_SEPARATOR, $_TITLE_SUFFIX;
+    function insert_page_title($page, $title) {
+        global $_TITLE_SEPARATOR, $_TITLE_SUFFIX, $writing_info;
+        $niceTitle = $writing_info == null ? '' : $writing_info['Title'];
+        $type = ($page == 'versek' ? 'vers' : 'novella');
+        $pageTitle = '';
         
-        $pageTitle =
-            get_menu_item_data($page)['menuItemCaption'] == ''
-                ? get_menu_item_data($page)['h1']
-                : get_menu_item_data($page)['menuItemCaption'];
+        if ($niceTitle != '') {
+            $pageTitle = $niceTitle;
+        } else if ($title == 'osszes') {
+            $pageTitle = 'Összes '.$type;
+        } else {
+            $pageTitle =
+                get_menu_item_data($page)['menuItemCaption'] == ''
+                    ? get_menu_item_data($page)['h1']
+                    : get_menu_item_data($page)['menuItemCaption'];
+        }
 
         echo '<title>'.$pageTitle.' '.$_TITLE_SEPARATOR.' '.$_TITLE_SUFFIX.'</title>';
     }

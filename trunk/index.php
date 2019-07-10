@@ -17,7 +17,7 @@
 <head>
     <?php
         set_base_url();
-        insert_page_title($page);
+        insert_page_title($page, $title);
     ?>
 
     <meta charset="utf-8"/>

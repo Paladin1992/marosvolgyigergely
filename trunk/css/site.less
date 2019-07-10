@@ -28,7 +28,7 @@
         @facebookBlue: #4267b2;
         @linkedinBlue: #00538f;
         @poetBrown: #993d1f;
-        
+
         
         @body_bgColor: @almostWhite;
         @body_color: @gray;
@@ -296,6 +296,7 @@ h1 {
     &.center { text-align: center; }
 
     // as title for writings
+    font-size: 24px;
     font-weight: bold;
     line-height: 1;
     margin: 20px 0 15px;
@@ -348,6 +349,10 @@ p {
     & .accordion-body {
         .gradient(linear; @paleGray 0%, transparent 100%; 90deg);
         border-left: 1px solid @blue;
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient(to right, @blue 0%, transparent 100%) 1;
+        border-right: none;
         display: none;
 
         padding-left: 15px;
@@ -382,7 +387,7 @@ p {
 
     & + .group-list {
         margin: 0;
-        padding: 0 0 20px 40px;
+        padding: 5px 0 20px 40px;
     }
 }
 
@@ -610,7 +615,6 @@ i {
 
                 &.active {
                     & a, & a:hover {
-                        border-radius: 5px 5px 0 0;
                         .gradient(linear; transparent 0%, @almostWhite 25%, @almostWhite 75%, transparent 100%; 90deg);
                         color: @menu_active_color;
 
@@ -657,7 +661,6 @@ i {
     
                 & li {
                     & a {
-                        font-size: 26px;
                         margin-right: 20px;
                     }
                 }
@@ -726,9 +729,7 @@ i {
         z-index: 2000;
     }
 
-    header {
-        & button { display: none; }
-    }
+    header button { display: none; }
 
     nav.menu-container {
         .gradient(linear; @almostWhite 85%, transparent 100%; 180deg);
@@ -781,10 +782,12 @@ i {
 
                 &.active {
                     background-color: @menu_active_bgColor;
+                    border-radius: 5px 5px 0 0;
                     height: 55px;
 
                     & a, & a:hover {
                         background: @menu_active_link_bgColor;
+                        border-radius: 5px 5px 0 0;
                         color: @menu_active_color;
                         text-decoration: none;
                     }

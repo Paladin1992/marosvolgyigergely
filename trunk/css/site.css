@@ -171,6 +171,7 @@ blockquote {
   padding: 0;
 }
 h1 {
+  font-size: 24px;
   font-weight: bold;
   line-height: 1;
   margin: 20px 0 15px;
@@ -226,6 +227,10 @@ p {
   background: -o-linear-gradient(0deg, #f0f0f0 0%, transparent 100%);
   background: linear-gradient(90deg, #f0f0f0 0%, transparent 100%);
   border-left: 1px solid #004080;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #004080 0%, transparent 100%) 1;
+  border-right: none;
   display: none;
   padding-left: 15px;
 }
@@ -261,7 +266,7 @@ p {
 .initial-group + .group-list,
 .year-group + .group-list {
   margin: 0;
-  padding: 0 0 20px 40px;
+  padding: 5px 0 20px 40px;
 }
 .nav-link {
   display: inline-block;
@@ -444,7 +449,6 @@ i.arrow.open {
   }
   nav.menu-container ul li.active a,
   nav.menu-container ul li.active a:hover {
-    border-radius: 5px 5px 0 0;
     background: -webkit-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
     background: -moz-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
     background: -ms-linear-gradient(0deg, transparent 0%, #f9f9f9 25%, #f9f9f9 75%, transparent 100%);
@@ -486,7 +490,6 @@ i.arrow.open {
   }
   .accordion .accordion-body ul.poems-alphabet li a,
   .accordion .accordion-body ul.poems-time li a {
-    font-size: 26px;
     margin-right: 20px;
   }
   .initial-group,
@@ -605,11 +608,13 @@ i.arrow.open {
   }
   nav.menu-container ul li.active {
     background-color: #f9f9f9;
+    border-radius: 5px 5px 0 0;
     height: 55px;
   }
   nav.menu-container ul li.active a,
   nav.menu-container ul li.active a:hover {
     background: #f9f9f9;
+    border-radius: 5px 5px 0 0;
     color: #004080;
     text-decoration: none;
   }
