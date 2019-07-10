@@ -1,8 +1,8 @@
 [
     {
         "menuItemCaption": "Főoldal",
-        "h1": "Üdvözöllek weblapomon!",
-        "classes": "page-title center",
+        "h1": "",
+        "classes": "",
         "url": "fooldal",
         "keywords": "Marosvölgyi Gergely, vers, versek, novella, novellák, József Attila",
         "description": "Marosvölgyi Gergely hivatalos oldala. Itt minden versemet, novellámat megtalálod egy helyen!"

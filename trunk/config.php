@@ -1,8 +1,8 @@
-<?php
+﻿<?php
     // debug
     $_HTML_BASE_URL = 'http://localhost:8080/marosvolgyigergely/trunk/';
     // release
-    //$_HTML_BASE_URL = 'http://marosvolgyigergely.hu/';
+    //$_HTML_BASE_URL = 'https://www.marosvolgyigergely.hu/';
 
     $_MAGE = 'Marosvölgyi Gergely';
     $_TITLE_SEPARATOR = '&bull;';

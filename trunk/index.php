@@ -37,7 +37,13 @@
     <div class="container">
         <div class="header-container">
             <header>
-                <div class="name-title"><?=$_MAGE?></div>
+                <?php
+                    if ($page == 'fooldal') {
+                        echo '<h1 class="name-title">'.$_MAGE.'</h1>';
+                    } else {
+                        echo '<div class="name-title">'.$_MAGE.'</div>';
+                    }
+                ?>
 
                 <button id="btn-menu" type="button">
                     <span class="icon-bar bar1"></span>
@@ -58,7 +64,7 @@
                 $file_path = "content/".$page.".php";
 
                 if (file_exists($file_path)) {
-                    print_page_title($page, true, ['versek', 'novellak']);
+                    print_page_title($page, true, ['fooldal', 'versek', 'novellak']);
                     include_once($file_path);
                 }
             ?>

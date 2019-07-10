@@ -34,7 +34,6 @@
         $pageToExclude = in_array($page, $exclude);
 
         if (!$pageToExclude) {
-
             if ($wrap_in_h1) {
                 $classes = get_menu_item_data($page)['classes'];
                 $classes = $classes == '' ? '' : ' class="'.$classes.'"';

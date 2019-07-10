@@ -37,6 +37,7 @@
             echo '<article id="'.$url.'">';
 
             if (file_exists($path)) {
+                echo '<h2>'.$row['Title'].'</h2>';
                 include($path);
             } else {
                 echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';

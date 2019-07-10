@@ -83,8 +83,11 @@ header {
   font-family: 'Perpetua';
   font-size: 50px;
   font-variant: small-caps;
+  font-weight: normal;
+  line-height: 1.5;
   letter-spacing: 5px;
   text-align: center;
+  margin: 0;
 }
 main {
   font-size: 18px;
@@ -187,6 +190,10 @@ h1.center {
 h1 .subtitle {
   font-size: 0.75em;
   font-style: italic;
+}
+h2.welcome {
+  font-weight: normal;
+  text-align: center;
 }
 hr {
   border: none;

@@ -1,3 +1,5 @@
+<h2 class="welcome">Üdvözöllek weblapomon!</h2>
+
 <p>
     Marosvölgyi Gergely vagyok, informatikus, aki szabadidejében szeret verseket, novellákat írni.
 </p>
