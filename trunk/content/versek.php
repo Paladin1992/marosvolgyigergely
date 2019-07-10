@@ -9,7 +9,7 @@
             action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link');
             
             echo '<article id="'.$title.'" class="poem">';
-            echo '<h1>'.$writing_info['Title'].'</h1>';
+            $current_title = $writing_info['Title'];
             include($path);
             echo '</article>';
 

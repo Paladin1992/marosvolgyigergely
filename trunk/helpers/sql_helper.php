@@ -1,5 +1,7 @@
 <?php
     include('connect.php');
+    $list_all_in_progress = false;
+    $current_title = '';
 
     function get_writing_info($title) {
         global $connection;
@@ -12,6 +14,8 @@
 
     function list_all($type) {
         global $connection;
+        global $list_all_in_progress;
+        $list_all_in_progress = true;
 
         $query =
             "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year "
@@ -37,7 +41,7 @@
             echo '<article id="'.$url.'">';
 
             if (file_exists($path)) {
-                echo '<h2>'.$row['Title'].'</h2>';
+                $current_title = $row['Title'];
                 include($path);
             } else {
                 echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';
@@ -46,6 +50,18 @@
             echo '</article>';
 
             $prev_year = $year;
+        }
+
+        $list_all_in_progress = false;
+    }
+
+    function get_title($final_title) {
+        global $list_all_in_progress;
+
+        if ($list_all_in_progress) {
+            echo '<h2>'.$final_title.'</h2>';
+        } else {
+            echo '<h1>'.$final_title.'</h1>';
         }
     }
 
