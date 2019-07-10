@@ -1,4 +1,4 @@
-<h1>Cseppvers</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Esik,<br>

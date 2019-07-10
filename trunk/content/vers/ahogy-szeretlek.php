@@ -1,4 +1,4 @@
-<h1>Ahogy szeretlek</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ahogy csókod megpihen ajkamon,<br>

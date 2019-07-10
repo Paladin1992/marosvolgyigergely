@@ -1,4 +1,4 @@
-<h1>Vágyakozás</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Én már csak arra vágyom,<br>

@@ -1,4 +1,4 @@
-<h1>A világon át</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ha kéred,<br>

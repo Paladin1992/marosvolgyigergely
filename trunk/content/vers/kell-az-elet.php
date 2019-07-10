@@ -1,4 +1,4 @@
-<h1>Kell az élet</h1>
+<?php get_title($current_title); ?>
 
 <p>
 ...És kelni kell,<br>

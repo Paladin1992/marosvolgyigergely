@@ -1,4 +1,4 @@
-<h1>Neked írom altatómat...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Neked írom altatómat,<br>

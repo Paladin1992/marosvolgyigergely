@@ -1,4 +1,4 @@
-<h1>Álmomban az enyém voltál</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Álmomban az enyém voltál,<br>

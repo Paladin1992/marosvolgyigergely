@@ -1,4 +1,4 @@
-<h1>A szív hallgat</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Már csak Te vagy, Uram,<br>

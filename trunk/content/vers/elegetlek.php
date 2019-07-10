@@ -1,5 +1,5 @@
-<h1>Elégetlek!<br>
-<span class="subtitle">Sz. K. részére</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">Sz. K. részére</div>
 
 <p>
 csak most<br>

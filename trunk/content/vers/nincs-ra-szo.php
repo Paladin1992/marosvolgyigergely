@@ -1,5 +1,5 @@
-<h1>Nincs rá szó<br>
-<span class="subtitle">(T. B. részére)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(T. B. részére)</div>
 
 <p>
 Nincs rá szó,<br>

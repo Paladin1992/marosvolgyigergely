@@ -1,4 +1,4 @@
-<h1>20. születésnapomra</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Kerek húsz éves lettem én,<br>

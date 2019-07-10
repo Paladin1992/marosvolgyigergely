@@ -1,4 +1,4 @@
-<h1>Indulásra készen</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ismersz &ndash; vagyis te úgy hiszed,<br>

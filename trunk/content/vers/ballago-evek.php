@@ -1,6 +1,6 @@
-<h1>Ballagó évek<br>
-<span class="subtitle">A nagymarosi Kittenberger Kálmán Általános és Művészeti Iskola<br>
-alapításának 100. évfordulója alkalmából (1915-2015)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">A nagymarosi Kittenberger Kálmán Általános és Művészeti Iskola<br>
+alapításának 100. évfordulója alkalmából (1915-2015)</div>
 
 <p>
 Mint a fürge, néma percek,<br>

@@ -1,4 +1,4 @@
-<h1>Titok</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Új nap köszönt, mosolyg rám,<br>

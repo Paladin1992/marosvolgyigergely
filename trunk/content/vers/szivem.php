@@ -1,4 +1,4 @@
-<h1>Szívem</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Puha csend ringatja lelkem,<br>

@@ -1,4 +1,4 @@
-<h1>(Már hív a tiszta papír...)</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Már hív a tiszta papír,<br>

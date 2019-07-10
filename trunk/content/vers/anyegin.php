@@ -1,6 +1,5 @@
-<h1>Anyegin<br>
-    <span class="subtitle">(egyéni befejezés)</span>
-</h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(egyéni befejezés)</div>
 
 <p>
 <span class="verse-number">1</span><br>

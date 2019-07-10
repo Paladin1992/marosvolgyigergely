@@ -1,4 +1,4 @@
-<h1>Benned a világ</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Nincs mitől félni:<br>

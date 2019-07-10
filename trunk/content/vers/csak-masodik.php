@@ -1,4 +1,4 @@
-<h1>Csak második</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Sok tankönyvből tudtam már<br>

@@ -1,4 +1,4 @@
-<h1>Az vagy nekem</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Az vagy nekem, mi másnak az élet,<br>

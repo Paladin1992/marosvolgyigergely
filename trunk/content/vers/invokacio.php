@@ -1,4 +1,4 @@
-<h1>Invokáció</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Összetéve két tenyered,<br>

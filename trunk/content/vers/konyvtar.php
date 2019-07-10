@@ -1,4 +1,4 @@
-<h1>Könyvtár</h1>
+<?php get_title($current_title); ?>
 
 <p>
 A kincsbarlang, hol egymásra<br>

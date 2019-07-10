@@ -1,4 +1,4 @@
-<h1>Másképp</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Másképp jár az óra,<br>

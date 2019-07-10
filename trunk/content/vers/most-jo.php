@@ -1,4 +1,4 @@
-<h1>Most jó</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Most jó lesz, mert egész,<br>

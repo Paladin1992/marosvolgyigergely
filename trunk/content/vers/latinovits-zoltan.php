@@ -1,4 +1,4 @@
-<h1>Latinovits Zoltán</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mint a villám derült égből,<br>

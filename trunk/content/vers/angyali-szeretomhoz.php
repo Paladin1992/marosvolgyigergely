@@ -1,4 +1,4 @@
-<h1>Angyali szeretőmhöz</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ábránd formálja arcodat:<br>

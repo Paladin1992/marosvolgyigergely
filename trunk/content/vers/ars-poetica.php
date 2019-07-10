@@ -1,4 +1,4 @@
-<h1>Ars poetica</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mint földre hulló dicső jel:<br>

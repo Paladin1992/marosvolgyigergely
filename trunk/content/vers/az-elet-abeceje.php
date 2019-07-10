@@ -1,5 +1,5 @@
-<h1>Az élet ábécéje<br>
-<span class="subtitle">avagy: ami az élethez kell</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">avagy: ami az élethez kell</div>
 
 <p>
 A, mint alázat;<br>

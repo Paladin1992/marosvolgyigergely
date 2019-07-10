@@ -1,4 +1,4 @@
-<h1>A világ végén</h1>
+<?php get_title($current_title); ?>
 
 <p>
 A világ végén van egy hely,<br>

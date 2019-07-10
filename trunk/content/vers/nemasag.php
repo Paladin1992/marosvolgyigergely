@@ -1,5 +1,5 @@
-<h1>Némaság<br>
-<span class="subtitle">(igék nélkül)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(igék nélkül)</div>
 
 <p>
 Szél szavára jót nevető,<br>

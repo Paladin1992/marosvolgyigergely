@@ -1,4 +1,4 @@
-<h1>Valentin-napra</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Hát itt vagyok én,<br>

@@ -1,4 +1,4 @@
-<h1>Marosvölgyi Gergely</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Vidám s jó fiú volt,<br>

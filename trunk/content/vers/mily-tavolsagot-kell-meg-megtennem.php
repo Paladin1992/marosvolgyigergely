@@ -1,4 +1,4 @@
-<h1>Mily távolságot kell még megtennem...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mily távolságot kell még megtennem,<br>

@@ -1,4 +1,4 @@
-<h1>Ha karácsonyfa dísze lennék...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ha karácsonyfa dísze lennék,<br>

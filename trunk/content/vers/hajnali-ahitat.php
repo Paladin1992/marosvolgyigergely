@@ -1,4 +1,4 @@
-<h1>Hajnali áhítat</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Még fénylik a hold odafent,<br>

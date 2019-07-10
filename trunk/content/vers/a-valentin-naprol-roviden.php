@@ -1,4 +1,4 @@
-<h1>A Valentin-napról röviden</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Van, akinek rendhagyó nap,<br>

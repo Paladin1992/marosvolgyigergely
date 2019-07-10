@@ -1,6 +1,6 @@
-<h1>Mama<br>
-<span class="subtitle">(Nagymamám, sz. Paulicsek Rozália emlékére,<br>
-1928. május 17. &ndash; 2012. április 22.)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(Nagymamám, sz. Paulicsek Rozália emlékére,<br>
+1928. május 17. &ndash; 2012. április 22.)</div>
 
 <p>
 Most is a mamára gondolok<br>

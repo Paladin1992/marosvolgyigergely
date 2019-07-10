@@ -1,4 +1,4 @@
-<h1>Ha újra hull a fehér hó...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ha újra hull a fehér hó,<br>

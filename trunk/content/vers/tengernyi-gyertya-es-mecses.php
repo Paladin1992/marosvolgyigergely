@@ -1,4 +1,4 @@
-<h1>Tengernyi gyertya és mécses</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mennyi szép csillag tündököl<br>

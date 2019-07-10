@@ -1,4 +1,4 @@
-<h1>Szeress!</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Már nem is tudom, mióta<br>

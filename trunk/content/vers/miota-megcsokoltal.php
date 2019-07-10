@@ -1,4 +1,4 @@
-<h1>Mióta megcsókoltál...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mióta megcsókoltál,<br>

@@ -1,4 +1,4 @@
-<h1>Reditio</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Csak egy nagy tűz kellene,<br>

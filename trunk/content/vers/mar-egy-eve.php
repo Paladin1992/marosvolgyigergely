@@ -1,4 +1,4 @@
-<h1>Már egy éve</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Már egy éve ölellek,<br>

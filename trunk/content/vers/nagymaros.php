@@ -1,4 +1,4 @@
-<h1>Nagymaros</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Hol a vén Duna völgybe ér,<br>

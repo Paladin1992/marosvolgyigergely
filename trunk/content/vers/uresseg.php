@@ -1,4 +1,4 @@
-<h1>Üresség</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Nem létező, fájó percben<br>

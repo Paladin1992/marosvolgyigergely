@@ -1,4 +1,4 @@
-<h1>Üzenet a múltból</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Pár sort üzenek csupán, Barátom,<br>

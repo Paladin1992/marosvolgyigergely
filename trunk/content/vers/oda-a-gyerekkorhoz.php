@@ -1,4 +1,4 @@
-<h1>Óda a gyerekkorhoz</h1>
+<?php get_title($current_title); ?>
 
 <p class="writing-quotation">
 „Mikor gyermek valék,<br>

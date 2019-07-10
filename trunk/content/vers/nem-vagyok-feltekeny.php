@@ -1,4 +1,4 @@
-<h1>Nem vagyok féltékeny...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ne félj, nem vagyok féltékeny,<br>

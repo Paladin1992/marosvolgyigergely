@@ -1,4 +1,4 @@
-<h1>Játék</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Elkapott a lét?<br>

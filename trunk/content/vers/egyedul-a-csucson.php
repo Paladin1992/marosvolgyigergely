@@ -1,4 +1,4 @@
-<h1>Egyedül a csúcson</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Itt állok, magasan,<br>

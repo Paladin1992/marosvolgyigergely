@@ -1,4 +1,4 @@
-<h1>Ősztündér</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Sétálni voltam utcán, téren,<br>

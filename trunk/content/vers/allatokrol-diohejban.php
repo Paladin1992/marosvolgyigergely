@@ -1,4 +1,4 @@
-<h1>Állatokról dióhéjban</h1>
+<?php get_title($current_title); ?>
 
 <p>
 <span class="verse-subtitle">(Cinege)</span><br>

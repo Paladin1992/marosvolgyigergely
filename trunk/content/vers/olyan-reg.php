@@ -1,4 +1,4 @@
-<h1>Olyan rég</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Olyan rég szerettek,<br>

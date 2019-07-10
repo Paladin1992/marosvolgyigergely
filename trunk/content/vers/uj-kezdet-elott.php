@@ -1,5 +1,5 @@
-<h1>Új kezdet előtt<br>
-<span class="subtitle">(szilveszterkor)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(szilveszterkor)</div>
 
 <p>
 Rossz volt nekem ez az év,<br>

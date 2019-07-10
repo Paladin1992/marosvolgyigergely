@@ -1,4 +1,4 @@
-<h1>Ne bántsd a költőt!</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ne bántsd a költőt!<br>

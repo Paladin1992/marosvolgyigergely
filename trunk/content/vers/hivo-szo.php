@@ -1,4 +1,4 @@
-<h1>Hívó szó</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Hajnalban még harmat vagyok,<br>

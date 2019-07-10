@@ -1,5 +1,5 @@
-<h1>Összetört szívvel<br>
-<span class="subtitle">(szakítás után)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(szakítás után)</div>
 
 <p>
 Most összetört szívvel<br>

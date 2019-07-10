@@ -1,4 +1,4 @@
-<h1>A fiú és a lány</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Sétálni mentem egy messzi rétre,<br>

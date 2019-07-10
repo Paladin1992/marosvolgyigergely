@@ -1,4 +1,4 @@
-<h1>Alkony</h1>
+<?php get_title($current_title); ?>
 
 <p>
 A fényes percek nyugodni térnek,<br>

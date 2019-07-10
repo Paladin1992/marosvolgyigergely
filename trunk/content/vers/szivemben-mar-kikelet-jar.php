@@ -1,4 +1,4 @@
-<h1>Szívemben már kikelet jár...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szívemben már kikelet jár,<br>

@@ -1,4 +1,4 @@
-<h1>Furcsa szonett</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Egy szép, meleg nyári délután,<br>

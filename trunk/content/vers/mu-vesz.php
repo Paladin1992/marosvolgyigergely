@@ -1,5 +1,5 @@
-<h1>„Mű-vész”<br>
-<span class="subtitle">asszociációs lánc</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">asszociációs lánc</div>
 
 <p>
 művész<br>

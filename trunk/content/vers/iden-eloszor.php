@@ -1,4 +1,4 @@
-<h1>Idén először</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Idén először<br>

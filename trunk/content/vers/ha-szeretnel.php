@@ -1,4 +1,4 @@
-<h1>Ha szeretnél</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ha szeretnél,<br>

@@ -1,4 +1,4 @@
-<h1>Itthon már a tavasz várt...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Itthon már a tavasz várt<br>

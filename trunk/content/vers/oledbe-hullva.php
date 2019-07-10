@@ -1,4 +1,4 @@
-<h1>Öledbe hullva</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mint tengerszilaj áhítat,<br>

@@ -1,4 +1,4 @@
-<h1>Hópihék hullnak</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Hópihék hullnak lomhán,<br>

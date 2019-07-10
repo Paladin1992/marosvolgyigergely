@@ -1,4 +1,4 @@
-<h1>Úgy szeress</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Úgy szeress, mint ifjú szívem őszi tájat;<br>

@@ -1,4 +1,4 @@
-<h1>Őrizd meg a pillanatot</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Pereg az idő,<br>

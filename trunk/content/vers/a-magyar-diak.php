@@ -1,7 +1,6 @@
-<h1>A magyar diák<br>
-<span class="subtitle">(Avagy a mai fiatalokat kigúnyoló vers<br>
-Petőfi Sándor „A magyar nemes” c. verse mintájára)</span>
-</h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(Avagy a mai fiatalokat kigúnyoló vers<br>
+Petőfi Sándor „A magyar nemes” c. verse mintájára)</div>
 
 <p>
 Hajvasaló, szakadt gatya,<br>

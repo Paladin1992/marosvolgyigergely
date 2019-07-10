@@ -1,5 +1,5 @@
-<h1>Esik, esik<br>
-<span class="subtitle">dalocska</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">dalocska</div>
 
 <p>
 Esik,<br>

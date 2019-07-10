@@ -1,4 +1,4 @@
-<h1>Hóvirág</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Nem érdekel a világ &ndash;<br>

@@ -1,4 +1,4 @@
-<h1>Merengés az esőben</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szürke az ég,<br>

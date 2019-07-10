@@ -1,4 +1,4 @@
-<h1>Szívvel-lélekkel</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szerettél már nőt igazán?<br>

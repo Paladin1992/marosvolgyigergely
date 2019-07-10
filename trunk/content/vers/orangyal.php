@@ -1,4 +1,4 @@
-<h1>Őrangyal</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Üldöz a veszély,<br>

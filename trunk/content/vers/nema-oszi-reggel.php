@@ -1,4 +1,4 @@
-<h1>Néma, őszi reggel</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Gyűrt paplan a meleg ágyon:<br>

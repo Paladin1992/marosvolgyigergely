@@ -1,4 +1,4 @@
-<h1>Emlékszel?</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Emlékszel még, kedvesem?<br>

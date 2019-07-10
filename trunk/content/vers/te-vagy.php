@@ -1,4 +1,4 @@
-<h1>Te vagy</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Te vagy a rózsa kertemben,<br>

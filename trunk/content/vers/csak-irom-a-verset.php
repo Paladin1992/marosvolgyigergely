@@ -1,4 +1,4 @@
-<h1>Csak írom a verset...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Csak írom a verset halomba,<br>

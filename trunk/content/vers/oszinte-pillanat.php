@@ -1,4 +1,4 @@
-<h1>Őszinte pillanat</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Gondoltam, hozok egy szál virágot,<br>

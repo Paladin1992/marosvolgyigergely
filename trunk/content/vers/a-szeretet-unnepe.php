@@ -1,4 +1,4 @@
-<h1>A Szeretet ünnepe</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Ma beteg világban élünk,<br>

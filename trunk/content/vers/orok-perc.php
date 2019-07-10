@@ -1,5 +1,5 @@
-<h1>Örök perc<br>
-<span class="subtitle">&ndash; mert az eskütétel csak egy perc, mégis egy életre szól...</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">&ndash; mert az eskütétel csak egy perc, mégis egy életre szól...</div>
 
 <p>
 Eljött a perc, mit régen vártunk,<br>

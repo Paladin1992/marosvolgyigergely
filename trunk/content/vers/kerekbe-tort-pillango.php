@@ -1,4 +1,4 @@
-<h1>Kerékbe tört pillangó</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Én nem értelek titeket,<br>

@@ -1,4 +1,4 @@
-<h1>Hadat üzenek...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Hadat üzenek a szerelemnek,<br>

@@ -1,4 +1,4 @@
-<h1>Szemed</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Lehet tőlem szemszíned<br>

@@ -1,4 +1,4 @@
-<h1>Vad szelek fújnak</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szomorú dalt süvít a szél,<br>

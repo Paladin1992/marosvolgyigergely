@@ -1,4 +1,4 @@
-<h1>Óda</h1>
+<?php get_title($current_title); ?>
 
 <p>
 <span class="verse-number">1</span><br>

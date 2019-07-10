@@ -1,5 +1,5 @@
-<h1>Lesz helyed<br>
-<span class="subtitle">(F. R. részére)</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">(F. R. részére)</div>
 
 <p>
 Már nem is tudom, mióta<br>

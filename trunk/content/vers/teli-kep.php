@@ -1,4 +1,4 @@
-<h1>Téli kép</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Dunai széllel jár most a napfény táncot:<br>

@@ -32,7 +32,7 @@ Nagymaros,<br>
 2013. december 31.
 </p>
 
-<h1>Jegyzetek</h1>
+<?php get_title($current_title); ?>
 
 <p>
     <i>Sz. A. válasza:</i><br>

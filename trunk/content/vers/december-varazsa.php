@@ -1,4 +1,4 @@
-<h1>December varázsa</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Cipőmmel a hóban ropogva járván,<br>

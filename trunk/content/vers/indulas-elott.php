@@ -1,4 +1,4 @@
-<h1>Indulás előtt</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Utolsó napom ez itthon:<br>

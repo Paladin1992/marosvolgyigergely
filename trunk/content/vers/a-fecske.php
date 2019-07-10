@@ -1,4 +1,4 @@
-<h1>A fecske</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Két kezem közt remegő kis fecske:<br>

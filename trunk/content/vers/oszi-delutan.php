@@ -1,4 +1,4 @@
-<h1>Őszi délután</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Már a délután perceit<br>

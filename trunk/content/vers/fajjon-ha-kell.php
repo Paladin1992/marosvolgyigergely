@@ -1,4 +1,4 @@
-<h1>Fájjon, ha kell</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Tőlem ne várjon jó szót senki:<br>

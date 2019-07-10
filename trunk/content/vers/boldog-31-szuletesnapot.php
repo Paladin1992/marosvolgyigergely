@@ -1,4 +1,4 @@
-<h1>Boldog 31. születésnapot!</h1>
+<?php get_title($current_title); ?>
 
 <p>
 <b>B</b>oldog születésnapot kívánok hát, s<br>

@@ -1,4 +1,4 @@
-<h1>Cseppnyi félelem</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szomorú az égbolt,<br>

@@ -1,4 +1,4 @@
-<h1>Romokban</h1>
+<?php get_title($current_title); ?>
 
 Kicsit ritka fajta<br>
 vagyok, s mint a balta:<br>

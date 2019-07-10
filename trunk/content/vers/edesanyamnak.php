@@ -1,5 +1,5 @@
-<h1>Édesanyámnak<br>
-<span class="subtitle">Anyák napjára</span></h1>
+<?php get_title($current_title); ?>
+<div class="subtitle">Anyák napjára</div>
 
 <p>
 Ma bejártam a világot,<br>

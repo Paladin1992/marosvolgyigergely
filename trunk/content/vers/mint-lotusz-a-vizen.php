@@ -1,4 +1,4 @@
-<h1>Mint lótusz a vízen</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Mint lótusz a vízen<br>

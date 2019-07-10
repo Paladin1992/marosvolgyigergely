@@ -1,4 +1,4 @@
-<h1>Rab madár</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Világba zárt madár vagyok,<br>

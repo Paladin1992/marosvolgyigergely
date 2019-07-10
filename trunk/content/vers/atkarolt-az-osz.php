@@ -1,4 +1,4 @@
-<h1>Átkarolt az ősz...</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Szeptember &ndash; így szólt a naptár

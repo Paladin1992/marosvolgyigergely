@@ -1,4 +1,4 @@
-<h1>Élet</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Sokan élik, miről<br>

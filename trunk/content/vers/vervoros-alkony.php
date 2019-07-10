@@ -1,4 +1,4 @@
-<h1>Vérvörös alkony</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Még nem tudhatom,<br>

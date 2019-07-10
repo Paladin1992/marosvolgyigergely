@@ -1,4 +1,4 @@
-<h1>Tétova óda</h1>
+<?php get_title($current_title); ?>
 
 <p>
 Nem tudom, mit tegyek:<br>
