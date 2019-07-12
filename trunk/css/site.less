@@ -284,9 +284,33 @@ blockquote {
     border: none;
     display: flex;
     justify-content: center;
+    font-style: italic;
 
     margin: 40px 0 20px;
     padding: 0;
+
+    & .inline-block {
+        display: inline-block;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            quotes: "\201C""\201D""\2018""\2019";
+            content: open-quote;
+            font-size: 3.5em;
+            font-weight: bold;
+            opacity: 0.6;
+
+            position: absolute;
+            left: -20px;
+            top: -30px;
+        }
+    }
+
+    & .author {
+        font-style: normal;
+        text-align: right;
+    }
 }
 
 h1 {
@@ -344,15 +368,6 @@ p {
 // #endregion
 
 // #region [ Content ]
-.intro-poem {
-    font-style: italic;
-
-    & .intro-poet {
-        font-style: normal;
-        float: right;
-    }
-}
-
 .accordion {
     & .accordion-header {
         color: @blue;
@@ -434,6 +449,20 @@ article {
 
     &.short-story {
         & p { text-align: justify; }
+    }
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+
+    & .pagination-prev {
+        padding: 0;
+        text-align: center;
+    }
+    & .pagination-next {
+        padding: 0;
+        text-align: center;
     }
 }
 
@@ -602,6 +631,7 @@ i {
         
         & ul {
             .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
+            border-bottom: 1px solid @blue;
             box-shadow: 0px 0px 10px 0px @shadow_color;
 
             margin: 0;
@@ -712,6 +742,8 @@ i {
     }
 
     .pagination-container {
+        display: block;
+
         & .pagination-prev {
             padding: 10px 0 5px;
             text-align: center;
@@ -740,7 +772,15 @@ i {
 
 // #region [ <=350px ]
 @media screen and (max-width: 350px) {
-    .intro-poem { font-size: 5vw; }
+    blockquote {
+        .intro-poem {
+            font-size: 4.5vw;
+
+            &::before {
+                left: -13px;
+            }
+        }
+    }
 }
 // #endregion
 

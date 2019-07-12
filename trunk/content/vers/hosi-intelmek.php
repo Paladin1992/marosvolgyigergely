@@ -17,3 +17,5 @@ Halj meg másért, és örökké élsz!
 Nagymaros,<br>
 2012. augusztus 29.
 </p>
+
+<!-- https://montazsmagazin.hu/vii-varosi-civil-korzo-kecskemet/ -->

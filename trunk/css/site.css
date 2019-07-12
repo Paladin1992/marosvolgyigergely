@@ -170,8 +170,28 @@ blockquote {
   border: none;
   display: flex;
   justify-content: center;
+  font-style: italic;
   margin: 40px 0 20px;
   padding: 0;
+}
+blockquote .inline-block {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+blockquote .inline-block::before {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  content: open-quote;
+  font-size: 3.5em;
+  font-weight: bold;
+  opacity: 0.6;
+  position: absolute;
+  left: -20px;
+  top: -30px;
+}
+blockquote .author {
+  font-style: normal;
+  text-align: right;
 }
 h1 {
   font-size: 24px;
@@ -220,13 +240,6 @@ p {
   line-height: 1.3;
   text-align: justify;
   margin: 0 0 20px;
-}
-.intro-poem {
-  font-style: italic;
-}
-.intro-poem .intro-poet {
-  font-style: normal;
-  float: right;
 }
 .accordion .accordion-header {
   color: #004080;
@@ -303,6 +316,18 @@ article.poem p {
 }
 article.short-story p {
   text-align: justify;
+}
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-container .pagination-prev {
+  padding: 0;
+  text-align: center;
+}
+.pagination-container .pagination-next {
+  padding: 0;
+  text-align: center;
 }
 .verse-number {
   display: inline-block;
@@ -436,6 +461,7 @@ i.arrow.open {
     background: -ms-linear-gradient(-90deg, #003355 0%, #004080 100%);
     background: -o-linear-gradient(-90deg, #003355 0%, #004080 100%);
     background: linear-gradient(180deg, #003355 0%, #004080 100%);
+    border-bottom: 1px solid #004080;
     box-shadow: 0px 0px 10px 0px #404040;
     margin: 0;
     padding: 0;
@@ -533,6 +559,9 @@ i.arrow.open {
     font-size: 1.1em;
     line-height: 1;
   }
+  .pagination-container {
+    display: block;
+  }
   .pagination-container .pagination-prev {
     padding: 10px 0 5px;
     text-align: center;
@@ -556,8 +585,11 @@ i.arrow.open {
   }
 }
 @media screen and (max-width: 350px) {
-  .intro-poem {
-    font-size: 5vw;
+  blockquote .intro-poem {
+    font-size: 4.5vw;
+  }
+  blockquote .intro-poem::before {
+    left: -13px;
   }
 }
 @media screen and (min-width: 768px) {

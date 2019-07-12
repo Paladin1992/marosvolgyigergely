@@ -10,6 +10,7 @@
     if ($page == 'versek' || $page == 'novellak') {
         include_once("helpers/sql_helper.php");
         $writing_info = get_writing_info($title);
+        //get_sitemap(); // keep it here for later use
     }
 ?>
 <!DOCTYPE html>
