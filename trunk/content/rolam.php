@@ -1,3 +1,16 @@
+<?php
+    insert_raw_image(
+        'images/marosvolgyi-gergely-portre.jpg', // src
+        'portrait', // orientation
+        'right', // float
+        'Marosvölgyi Gergely portréja', // alt
+        'Marosvölgyi Gergely', // title
+        '', // classes
+        'height: 300px', // styles
+        false // use hider?
+    );
+?>
+
 <p>
 Marosvölgyi Gergely vagyok, 1992. augusztus 12-én születtem Vácott.
 A Dunakanyar szívében, Nagymaroson nőttem fel, jelenleg is ott élek.

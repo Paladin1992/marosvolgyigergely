@@ -360,6 +360,46 @@ p {
         margin-bottom: 10px;
     }
 }
+
+img {
+    border: 1px solid @blue;
+    margin: 0 0 15px;
+    padding: 10px;
+
+    &.portrait {
+        &.none {
+            float: none;
+            margin: 0 auto;
+        }
+
+        &.left {
+            float: left;
+            margin-right: 15px;
+        }
+    
+        &.right {
+            float: right;
+            margin-left: 15px;
+        }
+    }
+
+    &.landscape {
+        &.none {
+            float: none;
+            margin: 0 auto;
+        }
+
+        &.left {
+            float: left;
+            margin-right: 15px;
+        }
+    
+        &.right {
+            float: right;
+            margin-left: 15px;
+        }
+    }
+}
 // #endregion
 
 // #region [ Content ]
@@ -770,6 +810,12 @@ i {
 @media screen and (max-width: 500px) {
     header .name-title {
         line-height: @header_height;
+    }
+
+    img {
+        display: block !important;
+        float: none !important;
+        margin: 0 auto 15px !important;
     }
 }
 // #endregion
