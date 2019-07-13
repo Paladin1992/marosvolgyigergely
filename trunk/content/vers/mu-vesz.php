@@ -19,10 +19,10 @@ műsorváltozás<br>
 műbalhé<br>
 műhiba<br>
 műtét<br>
+műszáj<br>
 műköröm<br>
 műszempilla<br>
 műbőr<br>
-műajak<br>
 műmell<br>
 műfenék<br>
 műveltség<br>
@@ -31,5 +31,6 @@ művészet
 
 <p class="writing-info">
 Nagymaros,<br>
-2016. szeptember 12-13., 17., 21.
+2016. szeptember 12-13., 17., 21.<br>
+2019. július 13.
 </p>

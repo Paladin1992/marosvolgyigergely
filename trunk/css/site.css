@@ -175,9 +175,10 @@ blockquote {
   padding: 0;
 }
 blockquote .inline-block {
+  line-height: 1.3;
   display: inline-block;
   position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 blockquote .inline-block::before {
   quotes: "\201C" "\201D" "\2018" "\2019";
@@ -186,7 +187,7 @@ blockquote .inline-block::before {
   font-weight: bold;
   opacity: 0.6;
   position: absolute;
-  left: -20px;
+  left: -10px;
   top: -30px;
 }
 blockquote .author {
@@ -207,13 +208,6 @@ h1.page-title {
 h1.center {
   text-align: center;
 }
-h1 + .subtitle {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
-  line-height: 1;
-  margin: -12px 0 15px;
-}
 h2 {
   font-size: 24px;
   font-weight: bold;
@@ -225,6 +219,13 @@ h2.welcome {
   font-weight: normal;
   text-align: center;
   margin: 20px 0;
+}
+.subtitle {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+  margin: -12px 0 15px;
 }
 hr {
   border: none;
@@ -303,7 +304,7 @@ p {
   display: inline-block;
   font-size: 1.1em;
   line-height: 1;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .nav-link.back {
   padding-bottom: 15px;
@@ -354,6 +355,9 @@ article.short-story p {
   font-size: 16px;
   font-style: italic;
 }
+.writing-quotation {
+  font-style: italic;
+}
 i.arrow {
   text-decoration: none !important;
   vertical-align: sub;
@@ -363,6 +367,16 @@ i.arrow {
 i.arrow.open {
   transform: rotateZ(180deg);
   transition: transform 0.3s linear;
+}
+.warning {
+  background-color: #ffcc66;
+  border-radius: 5px;
+  border: 1px solid #805500;
+  color: #404040;
+  line-height: 1;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
 }
 @media screen and (max-width: 767px) {
   .header-container {
@@ -583,13 +597,8 @@ i.arrow.open {
   article.short-story p {
     text-align: left;
   }
-}
-@media screen and (max-width: 350px) {
-  blockquote .intro-poem {
+  blockquote .quotation {
     font-size: 4.5vw;
-  }
-  blockquote .intro-poem::before {
-    left: -13px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -602,14 +611,14 @@ i.arrow.open {
     display: none;
   }
   nav.menu-container {
-    background: -webkit-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
-    background: -moz-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
-    background: -ms-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
-    background: -o-linear-gradient(-90deg, #f9f9f9 85%, transparent 100%);
-    background: linear-gradient(180deg, #f9f9f9 85%, transparent 100%);
+    background: -webkit-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -moz-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -ms-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -o-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: linear-gradient(180deg, #f9f9f9 90%, transparent 100%);
     display: block;
     overflow: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   nav.menu-container ul {
     background: -webkit-linear-gradient(-90deg, #003355 0%, #004080 100%);
@@ -660,9 +669,13 @@ i.arrow.open {
     text-decoration: none;
   }
   nav.menu-container ul li.active {
-    background-color: #f9f9f9;
+    background: -webkit-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -moz-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -ms-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: -o-linear-gradient(-90deg, #f9f9f9 90%, transparent 100%);
+    background: linear-gradient(180deg, #f9f9f9 90%, transparent 100%);
     border-radius: 5px 5px 0 0;
-    height: 55px;
+    height: 60px;
   }
   nav.menu-container ul li.active a,
   nav.menu-container ul li.active a:hover {

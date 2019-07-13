@@ -27,8 +27,8 @@
     ?>
     <div class="copyright">
         <div class="copyright-name">&copy;<?=($years.' '.$_MAGE)?></div>
-        <div class="copyright-rights">
+        <!-- <div class="copyright-rights">
             <span class="copyright-separator">&ndash;</span> Minden jog fenntartva!
-        </div>
+        </div> -->
     </div>
 </footer>

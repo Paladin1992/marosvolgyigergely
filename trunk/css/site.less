@@ -28,7 +28,8 @@
         @facebookBlue: #4267b2;
         @linkedinBlue: #00538f;
         @poetBrown: #993d1f;
-
+        @yellow: #ffcc66;
+        @brown: #805500;
         
         @body_bgColor: @almostWhite;
         @body_color: @gray;
@@ -48,6 +49,10 @@
         @shadow_color: @gray;
 
         @link_color: @blue;
+
+        @warning_bgColor: @yellow;
+        @warning_color: @gray;
+        @warning_borderColor: @brown;
 
         .gradient(@type; @colors; @dir: 0deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
             .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
@@ -290,9 +295,11 @@ blockquote {
     padding: 0;
 
     & .inline-block {
+        line-height: 1.3;
+
         display: inline-block;
         position: relative;
-        padding-left: 20px;
+        padding-left: 25px;
 
         &::before {
             quotes: "\201C""\201D""\2018""\2019";
@@ -302,7 +309,7 @@ blockquote {
             opacity: 0.6;
 
             position: absolute;
-            left: -20px;
+            left: -10px;
             top: -30px;
         }
     }
@@ -328,14 +335,6 @@ h1 {
     font-weight: bold;
     line-height: 1;
     margin: 20px 0 15px;
-
-    & + .subtitle {
-        font-size: 18px;
-        font-style: italic;
-        font-weight: bold;
-        line-height: 1;
-        margin: -12px 0 15px;
-    }
 }
 
 h2 {
@@ -350,6 +349,14 @@ h2 {
         text-align: center;
         margin: 20px 0;
     }
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+    margin: -12px 0 15px;
 }
 
 hr {
@@ -431,7 +438,7 @@ p {
     display: inline-block;
     font-size: 1.1em;
     line-height: 1;
-    padding: 5px 0;
+    padding: 10px 0;
 
     &.back { padding-bottom: 15px; }
 }
@@ -491,6 +498,8 @@ article {
     font-style: italic;
 }
 
+.writing-quotation { font-style: italic; }
+
 i {
     &.arrow {
         text-decoration: none !important;
@@ -504,6 +513,19 @@ i {
             transition: transform 0.3s linear;
         }
     }
+}
+
+.warning {
+    background-color: @warning_bgColor;
+    border-radius: 5px;
+    border: 1px solid @warning_borderColor;
+    color: @warning_color;
+
+    line-height: 1;
+    text-align: center;
+
+    margin: 10px 0;
+    padding: 10px;
 }
 // #endregion
 
@@ -758,27 +780,23 @@ i {
 
 // #region [ <=500px ]
 @media screen and (max-width: 500px) {
-    header .name-title { line-height: @header_height; }
+    header .name-title {
+        line-height: @header_height;
+    }
 }
 // #endregion
 
 // #region [ <=400px ]
 @media screen and (max-width: 400px) {
-    article.poem p { font-size: 4.5vw; }
+    article {
+        &.poem p { font-size: 4.5vw; }
 
-    article.short-story p { text-align: left; }
-}
-// #endregion
+        &.short-story p { text-align: left; }
+    }
 
-// #region [ <=350px ]
-@media screen and (max-width: 350px) {
     blockquote {
-        .intro-poem {
+        .quotation {
             font-size: 4.5vw;
-
-            &::before {
-                left: -13px;
-            }
         }
     }
 }
@@ -795,11 +813,11 @@ i {
     header button { display: none; }
 
     nav.menu-container {
-        .gradient(linear; @almostWhite 85%, transparent 100%; 180deg);
+        .gradient(linear; @almostWhite 90%, transparent 100%; 180deg);
         display: block;
         overflow: hidden;
 
-        padding-bottom: 15px;
+        padding-bottom: 20px;
 
         & ul {
             .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
@@ -844,9 +862,9 @@ i {
                 }
 
                 &.active {
-                    background-color: @menu_active_bgColor;
+                    .gradient(linear; @almostWhite 90%, transparent 100%; 180deg);
                     border-radius: 5px 5px 0 0;
-                    height: 55px;
+                    height: 60px;
 
                     & a, & a:hover {
                         background: @menu_active_link_bgColor;

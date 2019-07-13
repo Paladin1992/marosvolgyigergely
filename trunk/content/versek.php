@@ -11,6 +11,7 @@
             echo '<article id="'.$title.'" class="poem">';
             $current_title = $writing_info['Title'];
             include($path);
+            include('warning.php');
             echo '</article>';
 
             include('pagination.php');

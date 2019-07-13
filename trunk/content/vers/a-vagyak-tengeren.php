@@ -2,6 +2,7 @@
 
 <?php get_title($current_title); ?>
 
+<p>
 <span class="verse-number">1</span><br>
 Jéghideg ágy lapul<br>
 a csendhomályos szobában:<br>

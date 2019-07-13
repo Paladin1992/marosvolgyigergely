@@ -20,9 +20,12 @@ aki szárnyaival átölel...
 </p>
 
 <p>
-És nem voltak szavak: elporladtak egy mosoly mögött;<br>
-És nem volt test: csak két lélek, mely összeforrt;<br>
-És nem fájt a szív: mert megtanult szeretni...
+És nem voltak szavak:<br>
+elporladtak egy mosoly mögött.<br>
+És nem volt test:<br>
+csak két lélek, mely összeforrt.<br>
+És nem fájt a szív:<br>
+mert megtanult szeretni...
 </p>
 
 <p>

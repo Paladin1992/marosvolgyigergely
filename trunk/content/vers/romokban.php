@@ -1,5 +1,6 @@
 <?php get_title($current_title); ?>
 
+<p>
 Kicsit ritka fajta<br>
 vagyok, s mint a balta:<br>
 fekszem nehéz fejjel<br>

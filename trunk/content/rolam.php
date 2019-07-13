@@ -42,7 +42,7 @@ Azt hiszem, az egyetemi években kezdtem el igazán kibontakozni, mind írás, m
 2012 novemberében vettem részt életem első &ndash; Pintér Tibor nevével fémjelzett &ndash; országos versmondó versenyén,
 ahol Szilvásiné Csordás Éva (akkor még ismeretlenül) felvetette, hogy lehetnék az irodalmi színpad tagja.
 Fél évvel később így is lett: 2013 februárjában csatlakoztam az 1958 óta fennálló Váci Mihály Irodalmi Színpadhoz!
-Büszkén állíthatom, hogy náluk tanultam meg a versmondás rejtelmeit és általuk erősödött meg a versek iránti szeretetem.
+Büszkén állíthatom, hogy náluk tanultam meg a versmondás rejtelmeit, és általuk erősödött meg a versek iránti szeretetem.
 </p>
 
 <p>
@@ -51,15 +51,20 @@ Onnantól kezdve minden évben jártam valamilyen országos versmondó versenyen
 </p>
 
 <p>
-A versek pedig hol Nagymaroson, hol Veszprémben, hol pedig utazás közben apránként gyűltek és gyűltek,
-és szerencsére nemcsak versmondással, hanem saját írásaimmal is volt néha alkalmam elkápráztatni a közönséget.
-Mindig egyvalami lebegett a szemem előtt: hittem benne, hogy egyszer sikerül maradandót alkotnom,
+A versek pedig apránként gyűltek, és szerencsére így már nemcsak versmondással,
+hanem saját írásaimmal is volt néha alkalmam elkápráztatni a közönséget.
+2012 tavaszán egy országos „Szülőföldem” c. pályázaton 2. helyezést értem el <a href="vers/nagymaros">Nagymaros</a> c. versemmel,
+majd 2015 elején megkaptam az Irodalmi Rádió „Az év diák költője 2014” díját, <a href="vers/hivo-szo">Hívó szó</a> c. versemért.
+</p>
+
+<p>
+Mindvégig egyvalami lebegett a szemem előtt: hittem benne, hogy egyszer sikerül maradandót alkotnom,
 mert &ndash; még a sok bizonytalanságom ellenére is &ndash; úgy érzem, hogy én ezt a „hivatást” kaptam a sorstól,
-és amíg az a hang bentről súg valamit, addig az papírért kiált...
+és míg az a hang belülről súg valamit, addig az papírért kiált...
 </p>
 
 <blockquote>
-    <div class="inline-block">
+    <div class="inline-block quotation">
         Nem szükséges, hogy én írjak verset, de úgy látszik, szükséges, hogy vers írassék, különben meggörbülne a világ gyémánttengelye.
         <div class="author">&mdash; József Attila</div>
     </div>

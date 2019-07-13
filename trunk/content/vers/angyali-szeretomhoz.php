@@ -44,6 +44,8 @@ s majd ringatnak a csillagok.
 
 <p class="writing-info">
 Nagymaros,<br>
-2011. december 27. (Szemed c. versem vázlatából)<br>
+2011. december 27.<br>
 2012. augusztus 23., 26.
 </p>
+
+<!-- Jegyzet: (Szemed c. versem vázlatából) -->

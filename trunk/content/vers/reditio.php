@@ -3,7 +3,7 @@
 <p>
 Csak egy nagy tűz kellene,<br>
 hogy elporladjak benne:<br>
-s főnixként szárnyalnék újra<br>
+s főnixként szárnyalnék újra,<br>
 a csillagok közé bújva...
 </p>
 

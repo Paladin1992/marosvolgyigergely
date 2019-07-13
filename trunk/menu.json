@@ -4,7 +4,7 @@
         "h1": "",
         "classes": "",
         "url": "fooldal",
-        "keywords": "Marosvölgyi Gergely, vers, versek, novella, novellák, József Attila",
+        "keywords": "Marosvölgyi Gergely, Marosvölgyi Gergely hivatalos oldala, vers, versek, novella, novellák, József Attila",
         "description": "Marosvölgyi Gergely hivatalos oldala. Itt minden versemet, novellámat megtalálod egy helyen!"
     },
     {
@@ -12,7 +12,7 @@
         "h1": "Versek",
         "classes": "page-title",
         "url": "versek",
-        "keywords": "Marosvölgyi Gergely",
+        "keywords": "Marosvölgyi Gergely, vers, versei, versek",
         "description": "Erről az oldalról kiindulva verseimre betűrendben és időrendi sorrendben is rátalálhatsz."
     },
     {
@@ -20,7 +20,7 @@
         "h1": "Novellák",
         "classes": "page-title",
         "url": "novellak",
-        "keywords": "Marosvölgyi Gergely",
+        "keywords": "Marosvölgyi Gergely, novella, novellái, novellák",
         "description": "Erről az oldalról kiindulva novelláimra betűrendben és időrendi sorrendben is rátalálhatsz."
     },
     {
