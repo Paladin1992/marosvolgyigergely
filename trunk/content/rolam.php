@@ -6,8 +6,7 @@
         'Marosvölgyi Gergely portréja', // alt
         'Marosvölgyi Gergely', // title
         '', // classes
-        'height: 300px', // styles
-        false // use hider?
+        'height: 300px' // styles
     );
 ?>
 
