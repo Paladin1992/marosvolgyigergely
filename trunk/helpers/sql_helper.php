@@ -200,37 +200,6 @@
         }
     }
 
-    // $direction: 'prev' | 'next'
-    // $type: 'vers' | 'novella'
-    // $by: 'name' | 'time'
-    function get_paging_link($id, $direction, $type, $by, $classes) {
-        global $connection;
-        $qDirection = ucfirst($direction);
-        $qType = ($type == 'vers' ? 'Poem' : 'ShortStory');
-        $qBy = ucfirst($by);
-        $proc = '`Get'.$qDirection.$qType.'By'.$qBy.'`';
-
-        $query = 'CALL '.$proc.'('.intval($id).')';
-        $result = mysqli_query($connection, $query);
-
-        if (!$result) return;
-        
-        if (mysqli_num_rows($result) > 0) {
-            $writing = mysqli_fetch_array($result, MYSQL_ASSOC);
-            $caption_with_arrow = '';
-
-            if ($direction == 'prev') {
-                $caption_with_arrow = '<i class="material-icons arrow">keyboard_arrow_left</i>'.$writing['Title'];
-            } else {
-                $caption_with_arrow = $writing['Title'].'<i class="material-icons arrow">keyboard_arrow_right</i>';
-            }
-
-            echo action_link($type.'/'.$writing['Uri'], $caption_with_arrow, '', $classes);
-        }
-
-        $connection->next_result();
-    }
-
     // short stories
     function get_short_stories_by_name() {
         global $connection;
@@ -407,5 +376,40 @@
         }
 
         fclose($file);
+    }
+
+    // $direction: 'prev' | 'next'
+    // $type: 'vers' | 'novella'
+    // $by: 'name' | 'time'
+    function get_paging_link($id, $direction, $type, $by, $classes) {
+        global $connection;
+        $qDirection = ucfirst($direction);
+        $qType = ($type == 'vers' ? 'Poem' : 'ShortStory');
+        $qBy = ucfirst($by);
+        $proc = '`Get'.$qDirection.$qType.'By'.$qBy.'`';
+
+        $query = 'CALL '.$proc.'('.intval($id).')';
+        $result = mysqli_query($connection, $query);
+
+        if (!$result) return;
+        
+        if (mysqli_num_rows($result) > 0) {
+            $writing = mysqli_fetch_array($result, MYSQL_ASSOC);
+            $href = $type.'/'.$writing['Uri'];
+            $caption_with_arrow = '';
+            $linkTitle = '';
+
+            if ($direction == 'prev') {
+                $caption_with_arrow = '<i class="material-icons arrow">keyboard_arrow_left</i>'.$writing['Title'];
+                $linkTitle = 'Előző '.$type.': '.$writing['Title'];
+            } else {
+                $caption_with_arrow = $writing['Title'].'<i class="material-icons arrow">keyboard_arrow_right</i>';
+                $linkTitle = 'Következő '.$type.': '.$writing['Title'];
+            }
+
+            echo action_link($href, $caption_with_arrow, '', $classes, $linkTitle);
+        }
+
+        $connection->next_result();
     }
 ?>

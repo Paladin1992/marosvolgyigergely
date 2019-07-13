@@ -242,6 +242,9 @@ p {
   text-align: justify;
   margin: 0 0 20px;
 }
+p.intro {
+  margin-bottom: 10px;
+}
 .accordion .accordion-header {
   color: #004080;
   display: block;
@@ -375,7 +378,7 @@ i.arrow.open {
   color: #404040;
   line-height: 1;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px;
 }
 @media screen and (max-width: 767px) {

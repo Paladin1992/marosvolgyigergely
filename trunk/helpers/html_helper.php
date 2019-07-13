@@ -29,12 +29,13 @@
         echo $pageDescription;
     }
 
-    function action_link($relative_path, $caption, $target = '', $class = '') {
+    function action_link($relative_path, $caption, $target = '', $class = '', $title = '') {
         $href = 'href="'.$relative_path.'"';
         $class = $class == '' ? '' : ' class="'.$class.'"';
         $target = $target == '' ? '' : ' target="'.$target.'"';
+        $title = $title == '' ? '' : ' title="'.$title.'"';
 
-        echo '<a '.$href.$target.$class.'>'.$caption.'</a>';
+        echo '<a '.$href.$target.$class.$title.'>'.$caption.'</a>';
     }
 
     // $orientation : "portrait" | "landscape"
