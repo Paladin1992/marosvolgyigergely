@@ -1,5 +1,5 @@
 <?php get_title($current_title); ?>
-<div class="subtitle">A nagymarosi Kittenberger Kálmán Általános és Művészeti Iskola<br>
+<div class="subtitle">A nagymarosi Kittenberger Kálmán Általános és Művészeti Iskola
 alapításának 100. évfordulója alkalmából (1915-2015)</div>
 
 <p>

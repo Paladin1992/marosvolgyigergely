@@ -2,7 +2,7 @@
     <i>Eredeti szöveg:</i>
 <p>
 
-<?php get_title($current_title); ?>
+<h1>József Attila &ndash; Wolke</h1>
 
 <p>
 Du wirst nicht meine Frau sein,<br>

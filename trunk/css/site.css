@@ -245,18 +245,6 @@ p {
 p.intro {
   margin-bottom: 10px;
 }
-.hider {
-  background-image: url(../images/hider.png);
-  background-repeat: repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.hider-container {
-  position: relative;
-}
 img {
   border: 1px solid #004080;
   margin: 0 0 15px;
@@ -641,7 +629,7 @@ i.arrow.open {
 }
 @media screen and (max-width: 400px) {
   article.poem p {
-    font-size: 4.5vw;
+    font-size: 4.0vw;
   }
   article.short-story p {
     text-align: left;

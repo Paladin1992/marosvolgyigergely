@@ -60,4 +60,6 @@ $(document).ready(function() {
             scrollTop: destination
         }, time, 'linear');
     });
+
+    //initNotifications();
 });

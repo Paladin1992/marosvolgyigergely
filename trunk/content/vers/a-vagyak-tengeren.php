@@ -33,10 +33,14 @@ se rejtelmes sejtelem.
 
 <p>
 <span class="verse-number">2</span><br>
-Szendergő párnádról patakként folyik le hajad,<br>
-fehér mosolyod elvarázsol, magával ragad...<br>
-Ragyogó szemeid felcsillannak a homályban,<br>
-míg én türelmetlen fekszem a perzselő vágyban...
+Szendergő párnádról<br>
+patakként folyik le hajad,<br>
+fehér mosolyod elvarázsol,<br>
+magával ragad...<br>
+Ragyogó szemeid<br>
+felcsillannak a homályban,<br>
+míg én türelmetlen fekszem<br>
+a perzselő vágyban...
 </p>
 
 <p>

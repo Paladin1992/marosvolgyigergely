@@ -74,6 +74,7 @@
         <?php include_once('footer.php'); ?>
     </div>
 
+    <!-- <script src="js/notification.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

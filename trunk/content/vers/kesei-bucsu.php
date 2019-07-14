@@ -32,7 +32,7 @@ Nagymaros,<br>
 2013. december 31.
 </p>
 
-<?php get_title($current_title); ?>
+<!-- <h2>Jegyzetek</h2>
 
 <p>
     <i>Sz. A. válasza:</i><br>
@@ -67,4 +67,4 @@ Ez hajt, míg a szikra végleg kiég.
 
 <p class="writing-info">
 2014. I. 5.
-</p>
+</p> -->

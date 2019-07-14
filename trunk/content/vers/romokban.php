@@ -28,7 +28,7 @@ magammal békülök.<br>
 
 <p>
 A tömegben állok,<br>
-s jó embert nem látok,<br>
+s jókat alig látok,<br>
 bár hiszik, hogy nagyok<br>
 (sötét fényük ragyog),<br>
 mert sokakat vakít<br>
@@ -41,5 +41,6 @@ s fekete lángokban<br>
 
 <p class="writing-info">
 Nagymaros, Székesfehérvár, Budapest-Vác (úton)<br>
-2013. szeptember 24., 27-28.
+2013. szeptember 24., 27-28.<br>
+2019. július 14.
 </p>

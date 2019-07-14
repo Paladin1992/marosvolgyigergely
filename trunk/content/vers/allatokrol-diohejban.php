@@ -3,7 +3,7 @@
 <p>
 <span class="verse-subtitle">(Cinege)</span><br>
 Pici vagyok, igen félénk,<br>
-tollam sárgás, szemem élénk,<br>
+tollam sárgás, röptöm élénk,<br>
 telem-nyaram örök fészek:<br>
 ágon ülve fütyörészek.
 </p>
@@ -20,8 +20,8 @@ vagy ha nem, hát jót karmolok!
 <span class="verse-subtitle">(Kutya)</span><br>
 Ficánkoló gyerek vagyok,<br>
 örömömben jót vakkantok;<br>
-ha macska vagy, majd elkaplak &ndash;<br>
-gazdám bántod?! Megharaplak!
+ha macska vagy, majd elkaplak!<br>
+Gazdám bántod?! Megharaplak!
 </p>
 
 <p>
@@ -42,7 +42,7 @@ tüskés gombóc leszek hamar!
 
 <p>
 <span class="verse-subtitle">(Csiga)</span><br>
-Van házam, de én cipelem,<br>
+Van házam, de én cipelem<br>
 (odabent már nincs félelem),<br>
 s jobb, ha tudod: nem sietek &ndash;<br>
 nem kellenek balesetek!
@@ -66,7 +66,7 @@ hason fekve jót csúszkálok!
 
 <p>
 <span class="verse-subtitle">(Ló)</span><br>
-Néha botlok: van négy lábam,<br>
+Néha botlok: van négy lábam<br>
 (jól jön azért nagy vágtában);<br>
 pihenésként legelészek:<br>
 lóvá tett a vad természet!
@@ -103,5 +103,6 @@ Veszprém, vonaton hazafelé, Nagymaros<br>
 2014. április 14-15.<br>
 2014. június 13-14., 29.<br>
 2014. július 16.<br>
-2019. június 30.
+2019. június 30.<br>
+2019. július 14.
 </p>
