@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     // scroll to section
     $('a[href*="#"]').not('[href="#"], [href^="#collapse"]').on('click', function() {
-        var target = $(this.hash);
+        var target = $(decodeURI(this.hash));
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         var offset = window.innerWidth < SCREEN_WIDTH_XS ? OFFSET_Y_XS : OFFSET_Y_LG;
         var destination = target.offset().top - offset;

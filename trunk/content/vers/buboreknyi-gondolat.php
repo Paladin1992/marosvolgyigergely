@@ -1,4 +1,4 @@
-<p class="writing-note">
+﻿<p class="writing-note">
 Tábori versírói feladat, párban; megadott szavak (nem volt mind kötelező):<br>
 kerüllek, napsütötte, alma, hőség, selymes, lélek, fényes, levelek, világosság, csillaghullás, buborék, kék
 </p>
@@ -25,7 +25,7 @@ oly selymes a lélek,<br>
 s őszi levelek<br>
 sóhajtotta ének<br>
 zengi felénk<br>
-a mindenség múló emlékét.
+a mindenség <i>múló</i> emlékét.
 </p>
 
 <p>

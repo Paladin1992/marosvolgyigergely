@@ -43,4 +43,4 @@ Veszprém, Nagymaros<br>
 2017. június 5.
 </p>
 
-<a href="vers/valtozatok#kell-az-elet">Eredeti változat megtekintése</a>
+<!--<a href="vers/valtozatok#kell-az-elet">Eredeti változat megtekintése</a>-->

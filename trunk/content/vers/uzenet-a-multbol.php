@@ -2,7 +2,7 @@
 
 <p>
 Pár sort üzenek csupán, Barátom,<br>
-s jövőnk reményét csak bennük látom:<br>
+S jövőnk reményét csak bennük látom:<br>
 Tisztességgel minden körülményben &ndash;<br>
 Emberként az embertelenségben!
 </p>
