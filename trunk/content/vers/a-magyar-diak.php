@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 <div class="subtitle">(Avagy a mai fiatalokat kigúnyoló vers<br>
 Petőfi Sándor „A magyar nemes” c. verse mintájára)</div>
 
@@ -53,7 +53,7 @@ Nagymellű’k a jó csajok!<br>
 
 <p>
 Jövő nélkül, kicsi házban,<br>
-Éltemet ha elkártyáztam:<br>
+Éltemet, ha elkártyáztam:<br>
 Büszkén leszünk magyarok!<br>
 Én magyar diák vagyok!
 </p>
