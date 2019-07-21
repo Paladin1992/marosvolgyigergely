@@ -2,7 +2,7 @@
 
 <p>
 Ha kéred,<br>
-dolgaimat félre téve,<br>
+dolgaimat félretéve,<br>
 olthatatlan vágytól égve,<br>
 szép álmomból felriadva<br>
 útra kelnék lovat hajtva,<br>

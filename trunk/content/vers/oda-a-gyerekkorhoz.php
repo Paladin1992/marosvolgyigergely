@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p class="writing-quotation">
 „Mikor gyermek valék,<br>
@@ -13,7 +13,7 @@ elhagytam a gyermekhez illő dolgokat.”<br>
 <p>
 <span class="verse-number">1</span><br>
 De szeretnék gyerek lenni!<br>
-Már csak ez az, mire vágyom! &ndash;<br>
+Már csak <i>ez</i> az, mire vágyom! &ndash;<br>
 Oh, miért kellett ily hamar<br>
 ostoba felnőtté válnom?!
 </p>
@@ -65,7 +65,7 @@ s körém gyűlve daloljatok!
 <p>
 Csodás lények a könyvekben,<br>
 kik a képzeletben éltek:<br>
-Keljetek fel álmotokból,<br>
+keljetek fel álmotokból,<br>
 s találjunk ki új meséket!
 </p>
 

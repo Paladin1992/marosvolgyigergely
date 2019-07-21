@@ -11,9 +11,9 @@ s azt is, mi még nincsen.
 <p>
 Tiéd lenne<br>
 tárt karomnak<br>
-forró ölelése:<br>
+forró ölelése,<br>
 vágyam templomának<br>
-gyöngéd örök mécse.
+gyöngéd örökmécse.
 </p>
 
 <p>

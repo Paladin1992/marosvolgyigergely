@@ -10,7 +10,7 @@ susogva vetkező erdő.
 
 <p>
 Nyirkos fák törzse közt (távol)<br>
-hullámzó fehér ködfátyol &ndash;<br>
+hullámzó, fehér ködfátyol &ndash;<br>
 ezüstként csillámló harmat<br>
 csöppenése hajló ágról.
 </p>

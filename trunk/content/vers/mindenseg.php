@@ -46,7 +46,7 @@ születésnek, elmúlásnak.<br>
 Lehulltam én ősi fámról,<br>
 szél repít el szép hazámtól;<br>
 ezer színem fényben ragyog:<br>
-zizzenő kis levél vagyok. <br>
+zizzenő kis levél vagyok.<br>
 </p>
 
 <p>

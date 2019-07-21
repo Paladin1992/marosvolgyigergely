@@ -1,9 +1,9 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Nos, igen: van olyan, hogy nincs ihlet,<br>
 s ezt egy költőnek nehéz kibírni:<br>
-mereven ülni a homályban egy<br>
+mereven ülni a homályban, egy<br>
 lapra meredve, mert nincs mit írni!
 </p>
 

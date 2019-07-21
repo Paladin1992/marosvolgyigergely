@@ -28,7 +28,6 @@ zengeni kell,<br>
 és hinni kell,<br>
 és égni kell,<br>
 és győzni kell,<br>
-szárnyalni kell,<br>
 ölelni kell,<br>
 szeretni kell,<br>
 remélni kell,<br>
@@ -40,7 +39,8 @@ mert élni, élni,<br>
 <p class="writing-info">
 Veszprém, Nagymaros<br>
 2015. március 17-18.,<br>
-2017. június 5.
+2017. június 5.<br>
+2019. július 19.
 </p>
 
 <!--<a href="vers/valtozatok#kell-az-elet">Eredeti változat megtekintése</a>-->

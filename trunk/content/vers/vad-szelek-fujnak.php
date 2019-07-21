@@ -43,8 +43,10 @@ visszavárlak téged, kedvesem!...
 </p>
 
 <p>
-*<br>
- <br>
+*
+</p>
+
+<p>
 Rajzolódnak völgyek-hegyek,<br>
 átmegyek réten és patakon &ndash;<br>
 sír a lelkem, mint kisgyerek:<br>

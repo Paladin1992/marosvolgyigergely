@@ -2,7 +2,7 @@
 
 <p>
 Szerettél már nőt igazán?<br>
-Dobbant érte szíved hangosan? <br>
+Dobbant érte szíved hangosan?<br>
 A mindennapok hajnalán<br>
 ébredtél mellette boldogan?
 </p>
@@ -43,7 +43,7 @@ tisztelted mint gyermeked anyját?
 </p>
 
 <p>
-...Hiúságod vesd le végleg,<br>
+Hiúságod vesd le végleg,<br>
 és most már ez égi megmentőt,<br>
 kit Isten teremtett néked:<br>
 becsüld meg, vigyázd, és szeresd őt!

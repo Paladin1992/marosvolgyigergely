@@ -10,7 +10,7 @@ szép a lét... nem ily mostoha.
 <p>
 Bennem már rég gyümölccsé lett,<br>
 mi sarjad csupán bennetek,<br>
-de mégis nektek jobb az élet,<br>
+de mégis <i>nektek</i> jobb az élet,<br>
 s könnyen megy, min én szenvedek.
 </p>
 

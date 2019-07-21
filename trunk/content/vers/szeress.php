@@ -18,7 +18,7 @@ s kigyúlnak mind a lángok<br>
 csakis teérted,<br>
 de te nem érted:<br>
 s bárhogy is rángok<br>
-e sötét éjben<br>
+e sötét éjben,<br>
 a magány ketrecében:<br>
 elmém előled nem menekül!<br>
 Mit mondhatnék: nehéz egyedül...
@@ -37,7 +37,7 @@ falevélen,<br>
 <span class="indented-line by20">magas égen,</span><br>
 <span class="indented-line by40">lágy esőben,</span><br>
 reggelente felkelőben,<br>
-naplemente fátyolában...! &ndash;<br>
+naplemente fátyolában... &ndash;<br>
 Átkaroló félhomályban<br>
 egy sóhaj neved öleli,<br>
 de karom tested nem leli;<br>

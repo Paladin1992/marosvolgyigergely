@@ -1,7 +1,7 @@
 <?php get_title($current_title); ?>
 
 <p>
-Csak írom a verset halomba,<br>
+Csak írom a verset halomra,<br>
 de nem lelek szót a szavakra,<br>
 mik elmesélik ezer kínom,<br>
 míg testet öltenek papíron.
@@ -24,5 +24,6 @@ a kegyes Sorsnak megköszönöm...
 <p class="writing-info">
 Nagymaros,<br>
 2013. július 13-14.,<br>
-2017. június 5.
+2017. június 5.<br>
+2019. július 19.
 </p>

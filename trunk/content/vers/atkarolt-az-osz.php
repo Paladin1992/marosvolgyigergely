@@ -44,7 +44,7 @@ most &ndash; és mindörökké
 egy levélnyi pillanat<br>
 elindult az elmúlás felé<br>
 s színeivel dalolászva<br>
-átkarolt az ősz...
+átkarolt az ősz
 </p>
 
 <p class="writing-info">

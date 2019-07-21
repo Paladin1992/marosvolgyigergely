@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 A hajnali dér szálla már alá lassan,<br>
@@ -61,7 +61,7 @@ Hogy az ember a port rúgja, s a madár száll?<br>
 Miért kell az életet becsülnöm, áldnom,<br>
 Ha a szellemek élnek, s ránk a halál vár?<br>
 Miért kell a szorgos munkáját megvetni,<br>
-Ki bár ártatlanul, de majd az utcán hál?<br>
+Ki, bár ártatlanul, de majd az utcán hál?<br>
 Miért jó hát mindig őszintének lenni,<br>
 Ha tisztességért cserébe hazugság jár?
 </p>
@@ -107,7 +107,7 @@ S végre nem porban kúsznék, csodára várva...<br>
 Oda vágyom, hol nincs már se bűn, se vagyon,<br>
 És csak a becsület áll mindenek felett;<br>
 Hol az ember békében él és szabadon,<br>
-Egy helyre, hol a rossz végleg száműztetett.
+Egy helyre, hol a rossz végleg száműzetett.
 </p>
 
 <p>

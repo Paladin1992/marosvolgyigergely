@@ -1,9 +1,9 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Hópihék hullnak lomhán,<br>
 befedvén kopár fákat,<br>
-takaróként lepve el<br>
+takaróként lepve el,<br>
 s megtisztítván a tájat.
 </p>
 

@@ -17,7 +17,7 @@ lapra folytak néma szavak.
 <p>
 Tengerré nőtt mind a vágy, mely<br>
 bennem lapult kimondatlan;<br>
-sors keze ha messze ránt el,<br>
+sors keze, ha messze ránt el,<br>
 zeng belőlem tiszta dallam.
 </p>
 
@@ -59,7 +59,7 @@ sem idő nem kezd ki vele!
 <p>
 Kultúránk ma sivár birtok:<br>
 szép virágnak alig kedvez;<br>
-amíg bírom, gyomot irtok &ndash; <br>
+amíg bírom, gyomot irtok &ndash;<br>
 de ahhoz már te is kellesz!
 </p>
 

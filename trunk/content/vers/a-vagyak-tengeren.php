@@ -1,4 +1,4 @@
-<?php global $title; ?>
+﻿<?php global $title; ?>
 
 <?php get_title($current_title); ?>
 
@@ -22,13 +22,6 @@ A csönd szürke hangját<br>
 sóhajod töri meg halkan,<br>
 s e két ifjú szívből<br>
 suttogva ébred egy dallam...
-</p>
-
-<p>
-Mindent befed takarónk,<br>
-mi nesztelen meztelen &ndash;<br>
-köztünk nincs többé titok,<br>
-se rejtelmes sejtelem.
 </p>
 
 <p>
@@ -110,13 +103,7 @@ a rideg paplan &ndash;<br>
 fáradt, boldog sóhaj<br>
 tör fel mélyről,<br>
 végleg búcsúzván<br>
-e csodás éjtől...<br>
-S ahogy szép szemed<br>
-szelíden maraszt:<br>
-a kéj elánja<br>
-gyönyörre fakaszt...<br>
-S áldott gyümölcsmagot vetvén el:<br>
-eggyé válunk a szenvedéllyel... 
+e csodás éjtől...
 </p>
 
 <p>
@@ -148,7 +135,7 @@ s a függöny lengi be a szobát...
 Hallgatnak a percek idelenn,<br>
 csillagok bámulnak édesen...<br>
 Itt van minden, mi kell, egy helyen:<br>
-Csak te meg én... és a szerelem.
+csak te meg én... és a szerelem.
 </p>
 
 <p class="writing-info">

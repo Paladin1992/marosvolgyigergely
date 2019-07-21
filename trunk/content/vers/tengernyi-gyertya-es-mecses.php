@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Mennyi szép csillag tündököl<br>
@@ -31,7 +31,7 @@ ha majd egyszer eltemetnek...
 <p>
 Sokan csak most eszmélnek rá:<br>
 tisztelni kellett volna Őt!<br>
-S csak most érzik elveszettnek<br>
+S csak <i>most</i> érzik elveszettnek<br>
 a nem Vele töltött időt!
 </p>
 

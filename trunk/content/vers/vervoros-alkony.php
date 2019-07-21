@@ -10,8 +10,8 @@ Még nem tudhatom,<br>
 
 <p>
 Magányos atom<br>
-<span class="indented-line by20">molekulák között:</span><br>
-<span class="indented-line by20">egy bomlásnyi élet,</span><br>
+<span class="indented-line by20">molekulák között?</span><br>
+<span class="indented-line by20">Egy bomlásnyi élet,</span><br>
 <span class="indented-line by20">mit véletlen szövött,</span><br>
 <span class="indented-line by20">aztán semmivé lett?
 </p>

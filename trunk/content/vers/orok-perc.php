@@ -4,7 +4,7 @@
 <p>
 Eljött a perc, mit régen vártunk,<br>
 szép jövőnk útján együtt járunk:<br>
-két külön szív, de közös lélek, <br>
+két külön szív, de közös lélek,<br>
 te értem és én érted élek.
 </p>
 
@@ -19,7 +19,7 @@ mind, mit lehet, megadom neked.
 E perctől te vagy az egyetlen,<br>
 a te oldalad az én helyem;<br>
 mikor a sors bánattal befed,<br>
-majd ölellek és fogom kezed.
+majd ölellek, és fogom kezed.
 </p>
 
 <p>

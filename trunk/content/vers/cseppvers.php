@@ -28,7 +28,7 @@ cseppeket,<br>
 s ez égre<br>
 dermedt<br>
 lepelt<br>
-kékre <br>
+kékre<br>
 húzza-<br>
 fújja<br>
 már az<br>
@@ -38,7 +38,7 @@ s elő-<br>
 tűnnek-<br>
 másznak<br>
 tarka-<br>
-barka <br>
+barka<br>
 színei<br>
 fűnek,<br>
 fának –<br>

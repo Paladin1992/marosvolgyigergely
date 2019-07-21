@@ -16,8 +16,8 @@ majd szétsimul az alkony melegén.
 </p>
 
 <p>
-Maszatos égbolt: aranyban ragyog,<br>
-s már szikráznak rajta kis csillagok.
+A maszatos égbolt némán ragyog,<br>
+s már gyúlnak ki rajta kis csillagok.
 </p>
 
 <p>

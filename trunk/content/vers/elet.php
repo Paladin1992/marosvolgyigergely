@@ -17,8 +17,8 @@ rám sokszor a magány.
 <p>
 S kinek jobb közülünk?<br>
 Olyan, ki tudja, nincs:<br>
-másnak élni csoda,<br>
-nékem csodája kincs!
+másnak <i>élni</i> csoda,<br>
+nékem <i>csodája</i> kincs!
 </p>
 
 <p class="writing-info">

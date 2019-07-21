@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Utolsó napom ez itthon:<br>
@@ -22,7 +22,7 @@ s virágom tán ott is kikel...
 </p>
 
 <p>
-Ha érzéseim elhozom,<br>
+Ha emlékeim elhozom,<br>
 honvágyam lesz minden színben,<br>
 hisz más tájékra tartozom,<br>
 és hazahúz, míg van szívem!
@@ -30,5 +30,6 @@ hisz más tájékra tartozom,<br>
 
 <p class="writing-info">
 Nagymaros,<br>
-2012. augusztus 31.
+2012. augusztus 31.<br>
+2019. július 17.
 </p>

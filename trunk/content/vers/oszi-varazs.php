@@ -10,7 +10,7 @@ suhan a lombok között.
 <p>
 Gyűrt avar ölelkezik<br>
 a sétány hideg kövén,<br>
-míg tarkán zizeg színük<br>
+míg tarkán zizeg színük,<br>
 fényözönben fürödvén.
 </p>
 
@@ -18,7 +18,7 @@ fényözönben fürödvén.
 Mosolyogva karol át<br>
 az idő némasága,<br>
 s egy levél hull elémbe:<br>
-vörösre kent napsárga.
+vörösre kent, napsárga.
 </p>
 
 <p>
@@ -46,7 +46,7 @@ hisz az Örök marad bent...
 S mint kis gesztenye fölé<br>
 nehéz levelek érnek,<br>
 úgy fed el minket is e<br>
-száraz avar... az évek.
+száraz avar: az évek.
 </p>
 
 <p class="writing-info">

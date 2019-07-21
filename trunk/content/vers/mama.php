@@ -5,7 +5,7 @@
 <p>
 Most is a mamára gondolok<br>
 sok más egyéb dolgom között,<br>
-ki hagyván e földi kínokat<br>
+ki hagyván e földi kínokat,<br>
 egy szebb világba költözött.
 </p>
 
