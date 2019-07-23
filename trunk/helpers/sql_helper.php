@@ -356,28 +356,6 @@
         }
     }
 
-    function get_sitemap() {
-        global $connection;
-        $baseUrl = 'https://www.marosvolgyigergely.hu';
-
-        $query =
-            "SELECT `Uri`, (CASE WHEN `TypeId`=2 THEN 'novella' ELSE 'vers' END) AS WritingType "
-            ."FROM `irasok` "
-            ."WHERE `IsVisible`=1 "
-            ."ORDER BY 2 DESC, `DateFinished`";
-
-        $result = mysqli_query($connection, $query);
-        
-        $file = fopen("urls.txt", "w");
-        
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $line = $baseUrl.'/'.$row['WritingType'].'/'.$row['Uri'].PHP_EOL;
-            fwrite($file, $line);
-        }
-
-        fclose($file);
-    }
-
     // $direction: 'prev' | 'next'
     // $type: 'vers' | 'novella'
     // $by: 'name' | 'time'
