@@ -30,7 +30,7 @@ Tán a képzeletem játszik velem?
 
 <p>
 A fűzfa ugyan lehet szomorú,<br>
-De a lány arcán nem látszik oly bú:<br>
+De a lány arcán sehol semmi bú:<br>
 Hisz vígan dúdolgat most kedvében,<br>
 Míg én égek a vágynak hevében!
 </p>
@@ -86,5 +86,6 @@ S mi lehetnénk: a fiú és a lány...
 
 <p class="writing-info">
 Nagymaros,<br>
-2010. április 30. - július 25.
+2010. április 30. - július 25.<br>
+2019. július 24.
 </p>

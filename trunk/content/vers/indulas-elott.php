@@ -1,4 +1,4 @@
-﻿<?php get_title($current_title); ?>
+<?php get_title($current_title); ?>
 
 <p>
 Utolsó napom ez itthon:<br>

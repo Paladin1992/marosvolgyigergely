@@ -1,4 +1,4 @@
-﻿<?php get_title($current_title); ?>
+<?php get_title($current_title); ?>
 
 <p>
 A hajnali dér szálla már alá lassan,<br>

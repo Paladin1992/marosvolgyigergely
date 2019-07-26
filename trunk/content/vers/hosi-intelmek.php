@@ -1,4 +1,4 @@
-﻿<?php get_title($current_title); ?>
+<?php get_title($current_title); ?>
 
 <p>
 Láss, hogy meglássák az igaz fényt;<br>

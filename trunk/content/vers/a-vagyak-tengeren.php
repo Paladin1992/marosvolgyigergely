@@ -1,4 +1,4 @@
-﻿<?php global $title; ?>
+<?php global $title; ?>
 
 <?php get_title($current_title); ?>
 

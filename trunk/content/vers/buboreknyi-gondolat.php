@@ -1,4 +1,4 @@
-﻿<p class="writing-note">
+<p class="writing-note">
 Tábori versírói feladat, párban; megadott szavak (nem volt mind kötelező):<br>
 kerüllek, napsütötte, alma, hőség, selymes, lélek, fényes, levelek, világosság, csillaghullás, buborék, kék
 </p>

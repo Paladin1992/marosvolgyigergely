@@ -1,10 +1,10 @@
 <?php get_title($current_title); ?>
 
 <p>
-Mint tengerszilaj áhítat,<br>
-pillantásod átitat;<br>
-sóhajodtól boldog vagyok,<br>
-karjaidban elhamvadok;<br>
+Mint tenger-szilaj áhítat,<br>
+gyöngy-szemed fénye átitat;<br>
+egy sóhaj időz, s tovaillan:<br>
+elhamvadok karjaidban;<br>
 felperzselnek szelíd vágyak:<br>
 szívemből nőtt gyönyör-ágak;<br>
 lüktetnek e sóvár kezek,<br>
