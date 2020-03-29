@@ -52,7 +52,7 @@ ledobná a fegyvert a kéz.
 <p>
 Megállnának múló percek,<br>
 fénnyé válna minden árnyék;<br>
-ezüst gyémánt tündökölne:<br>
+puha gyémánt tündökölne:<br>
 világgá nőtt, néma tájkép.
 </p>
 

@@ -1,18 +1,36 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Úgy szeress, mint ifjú szívem őszi tájat;<br>
-úgy ismerj, mint örömét a néma bánat;<br>
+úgy ismerj, mint örömét a néma bánat;
+</p>
+
+<p>
 úgy érints, mint csipkebogyót hajnali dér;<br>
-úgy csókolj, mint napsugár, ha arcomra ér;<br>
+úgy csókolj, mint napsugár, ha arcomra ér;
+</p>
+
+<p>
 úgy ölelj, mint édesanyját apró gyermek;<br>
-úgy őrizz, mint emléket a múló percek;<br>
+úgy őrizz, mint emléket a múló percek;
+</p>
+
+<p>
 úgy lebegj, mint lombok között madár-ének;<br>
-úgy dalolj, mint fényt, ha lát a tiszta lélek;<br>
+úgy dalolj, mint fényt, ha lát a tiszta lélek;
+</p>
+
+<p>
 úgy nevess, mint meleg zápor nyári estén;<br>
-úgy kívánj, mint ecsetét a félkész festmény;<br>
+úgy kívánj, mint ecsetét a félkész festmény;
+</p>
+
+<p>
 úgy ragyogj, mint csillag-taván magas égbolt;<br>
-úgy tekints, mint egészére törött félhold;<br>
+úgy tekints, mint egészére törött félhold;
+</p>
+
+<p>
 úgy örülj, mint szerelem, ha bontja szárnyát;<br>
 úgy szeress, hogy én vagyok, ki mindig vár rád!...
 </p>

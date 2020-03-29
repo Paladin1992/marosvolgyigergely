@@ -55,13 +55,14 @@
         $list_all_in_progress = false;
     }
 
-    function get_title($final_title) {
+    function get_title($final_title, $classes = null) {
         global $list_all_in_progress;
+        $classList = is_null($classes) ? '' : ' class="'.$classes.'"';
 
         if ($list_all_in_progress) {
-            echo '<h2>'.$final_title.'</h2>';
+            echo '<h2'.$classList.'>'.$final_title.'</h2>';
         } else {
-            echo '<h1>'.$final_title.'</h1>';
+            echo '<h1'.$classList.'>'.$final_title.'</h1>';
         }
     }
 

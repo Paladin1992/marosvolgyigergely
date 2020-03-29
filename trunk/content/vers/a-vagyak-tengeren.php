@@ -1,4 +1,4 @@
-<?php global $title; ?>
+﻿<?php global $title; ?>
 
 <?php get_title($current_title); ?>
 
@@ -59,8 +59,8 @@ jobban és jobban...<br>
 Lüktetnek az erek,<br>
 szívünk együtt dobban,<br>
 lelkedbe lelkem<br>
-hangtalan belecsobban;<br>
-Mint mikor méh lel rá<br>
+hangtalan belecsobban &ndash;<br>
+mint mikor méh lel rá<br>
 a legszebb virágra,<br>
 vagy kóbor csillag<br>
 tündöklő holdvilágra,<br>

@@ -333,6 +333,8 @@ h2 {
         text-align: center;
         margin: 20px 0;
     }
+
+    &.center { text-align: center; }
 }
 
 .subtitle {
@@ -358,6 +360,10 @@ p {
 
     &.intro {
         margin-bottom: 10px;
+    }
+
+    &.center {
+        text-align: center;
     }
 }
 
@@ -479,7 +485,13 @@ img {
 
 article {
     &.poem {
-        & p { text-align: left; }
+        & p {
+            text-align: left;
+
+            &.center {
+                text-align: center;
+            }
+        }
     }
 
     &.short-story {
@@ -523,6 +535,10 @@ article {
 .writing-info, .writing-note {
     font-size: 16px;
     font-style: italic;
+
+    &.center {
+        text-align: center;
+    }
 }
 
 .writing-quotation { font-style: italic; }

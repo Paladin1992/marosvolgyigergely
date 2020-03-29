@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+﻿<?php get_title($current_title); ?>
 
 <p>
 Mint a villám derült égből,<br>
@@ -14,7 +14,7 @@ csak éltél s haltál színpadon;<br>
 erős volt lényed, égető:<br>
 mással össze nem férhető &ndash;<br>
 több voltál, mint puszta ember:<br>
-izgága Jézus, kit nem mer<br>
+„izgága Jézus”, kit nem mer<br>
 ma senki méltón tisztelni<br>
 (hisz fáj hűséget viselni),<br>
 mert lehull erkölcs, kultúra:<br>

@@ -2,7 +2,7 @@
 
 <p>
 Hópihék hullnak lomhán,<br>
-befedvén kopár fákat,<br>
+befedve kopár fákat,<br>
 takaróként lepve el,<br>
 s megtisztítván a tájat.
 </p>

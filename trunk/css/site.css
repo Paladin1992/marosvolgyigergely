@@ -220,6 +220,9 @@ h2.welcome {
   text-align: center;
   margin: 20px 0;
 }
+h2.center {
+  text-align: center;
+}
 .subtitle {
   font-size: 18px;
   font-style: italic;
@@ -244,6 +247,9 @@ p {
 }
 p.intro {
   margin-bottom: 10px;
+}
+p.center {
+  text-align: center;
 }
 img {
   border: 1px solid #004080;
@@ -347,6 +353,9 @@ img.landscape.right {
 article.poem p {
   text-align: left;
 }
+article.poem p.center {
+  text-align: center;
+}
 article.short-story p {
   text-align: justify;
 }
@@ -385,6 +394,10 @@ article.short-story p {
 .writing-note {
   font-size: 16px;
   font-style: italic;
+}
+.writing-info.center,
+.writing-note.center {
+  text-align: center;
 }
 .writing-quotation {
   font-style: italic;
