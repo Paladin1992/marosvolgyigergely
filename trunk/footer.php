@@ -1,6 +1,7 @@
 <footer>
-    <div class="social-links">
+    <div class="social-links-container">
         <div class="keep-in-touch">Maradjunk kapcsolatban!</div>
+
         <ul class="clearfix">
             <li>
                 <a href="https://www.facebook.com/marosvolgyi.gergely" target="_blank" class="facebook" title="Kövess Facebookon!">
@@ -18,6 +19,10 @@
                 </a>
             </li>
         </ul>
+    </div>
+
+    <div class="email-container">
+        <i class="fa fa-envelope"></i> marosvolgyi<!--1-->.<!--2-->gergely<!--3-->@<!--4-->gmail<!--5-->.<!--6-->com
     </div>
 
     <?php

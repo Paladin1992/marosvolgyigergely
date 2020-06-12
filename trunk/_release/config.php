@@ -1,5 +1,5 @@
 <?php
-    $_HTML_BASE_URL = 'http://localhost:8080/mage/marosvolgyigergely/trunk/';
+    $_HTML_BASE_URL = 'https://www.marosvolgyigergely.hu/';
 
     $_MAGE = 'Marosvölgyi Gergely';
     $_TITLE_SEPARATOR = '&bull;';

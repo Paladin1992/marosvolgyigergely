@@ -1,15 +1,28 @@
-<?php
+﻿<?php
     include('connect.php');
     $list_all_in_progress = false;
     $current_title = '';
 
-    function get_writing_info($title) {
+    function get_writing_info($url) {
         global $connection;
-        $query = "SELECT * FROM `irasok` WHERE `Uri`='$title'";
+        $query = "SELECT * FROM `irasok` WHERE `Uri`='$url'";
+        $result = mysqli_query($connection, $query);
+        
+        $writing_info = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        return $writing_info;
+    }
+
+    function get_records($query) {
+        global $connection;
+
         $result = mysqli_query($connection, $query);
 
-        $writing_info = mysqli_fetch_array($result, MYSQL_ASSOC);
-        return $writing_info;
+        $rows = [];
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            $rows[] = $row;
+        }
+
+        return $rows;
     }
 
     function list_all($type) {
@@ -18,16 +31,16 @@
         $list_all_in_progress = true;
 
         $query =
-            "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE '".$type."%' "
-            ."ORDER BY `DateFinished` ASC";
+            "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE '".$type."%'"
+            ." ORDER BY `DateFinished` ASC";
         
         $result = mysqli_query($connection, $query);
         $prev_year = '';
 
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $url = $row['Uri'];
             $path = 'content/'.$type.'/'.$url.'.php';
             $year = $row['Year'];
@@ -66,23 +79,64 @@
         }
     }
 
+    function get_latest_writings($maxCount = 3, $maxDays = 183) {
+        global $connection;
+
+        $query =
+            "SELECT iras.`Title`, iras.`Uri`, tipus.`Name` AS `TypeName`"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE iras.`IsVisible`=1"
+            ."    AND ABS(TIMESTAMPDIFF(DAY, CURDATE(), iras.`DatePublished`)) <= $maxDays"
+            ." ORDER BY iras.`DatePublished` DESC, iras.`DateFinished` DESC, iras.`Id` DESC"
+            ." LIMIT $maxCount";
+
+        $rows = get_records($query);
+
+        $rows_length = count($rows);
+
+        echo '<div class="latest-writings">';
+        
+        if ($rows_length == 0) {
+            echo '(Az elmúlt fél évben nem került fel új írásom az oldalra.)';
+        } else {
+            for ($i = 0; $i < $rows_length; $i++) {
+                $row = $rows[$i];
+                $href = $row['TypeName']."/".$row['Uri'];
+                $writing_info = get_writing_info($row['Uri']);
+                $current_title = $writing_info['Title'];
+
+                if ($i > 0) {
+                    echo '<hr>';
+                }
+
+                echo '<div class="writing-extract">';
+                    echo '<div class="writing-extract-text">';
+                        echo '<div class="writing-extract-overlay"></div>';
+                        include("content/".$href.".php");
+                    echo '</div>';
+                    echo '<div class="writing-extract-link">';
+                        echo '<a href="'.$href.'" class="title-link">Tovább olvasom <i class="material-icons arrow">keyboard_arrow_right</i></a>';                    
+                    echo '</div>';
+                echo '</div>';
+            }
+        }
+        
+        echo '</div>';
+    }
+
     // poems
     function get_poems_by_name() {
         global $connection;
 
         $query =
-            "SELECT `Title`, `Initial`, `Uri` "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
-            ."ORDER BY `Initial`, `TitleLetterOnly`";
+            "SELECT `Title`, `Initial`, `Uri`"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%'"
+            ." ORDER BY `Initial`, `TitleLetterOnly`";
 
-        $result = mysqli_query($connection, $query);
-        
-        $rows = [];
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $rows[] = $row;
-        }
+        $rows = get_records($query);
 
         $rows_length = count($rows);
         $prev_letter = '';
@@ -119,18 +173,13 @@
         global $connection;
 
         $query =
-            "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
-            ."ORDER BY `DateFinished`";
+            "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%'"
+            ." ORDER BY `DateFinished`";
 
-        $result = mysqli_query($connection, $query);
-        
-        $rows = [];
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $rows[] = $row;
-        }
+        $rows = get_records($query);
 
         $rows_length = count($rows);
         $prev_year = '';
@@ -167,16 +216,16 @@
         global $connection;
 
         $query =
-            "SELECT `Initial` "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId` "
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
-            ."GROUP BY `Initial` "
-            ."ORDER BY 1 ASC";
+            "SELECT `Initial`"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%'"
+            ." GROUP BY `Initial`"
+            ." ORDER BY 1 ASC";
 
         $result = mysqli_query($connection, $query);
 
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $initial = $row['Initial'];
             echo '<li><a href="versek#'.$initial.'">'.transform_initial($initial).'</a></li>';
         }
@@ -186,16 +235,16 @@
         global $connection;
 
         $query =
-            "SELECT YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%' "
-            ."GROUP BY YEAR(`DateFinished`) "
-            ."ORDER BY 1 ASC";
+            "SELECT YEAR(`DateFinished`) AS Year"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'vers%'"
+            ." GROUP BY YEAR(`DateFinished`)"
+            ." ORDER BY 1 ASC";
         
         $result = mysqli_query($connection, $query);
 
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $year = $row['Year'];
             echo '<li><a href="versek#'.$year.'">'.$year.'</a></li>';
         }
@@ -206,18 +255,13 @@
         global $connection;
 
         $query =
-            "SELECT `Title`, `Initial`, `Uri` "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
-            ."ORDER BY `Initial`, `TitleLetterOnly`";
+            "SELECT `Title`, `Initial`, `Uri`"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%'"
+            ." ORDER BY `Initial`, `TitleLetterOnly`";
 
-        $result = mysqli_query($connection, $query);
-        
-        $rows = [];
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $rows[] = $row;
-        }
+        $rows = get_records($query);
 
         $rows_length = count($rows);
         $prev_letter = '';
@@ -254,18 +298,13 @@
         global $connection;
 
         $query =
-            "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
-            ."ORDER BY `DateFinished`";
+            "SELECT `Title`, `Initial`, `Uri`, YEAR(`DateFinished`) AS Year"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%'"
+            ." ORDER BY `DateFinished`";
 
-        $result = mysqli_query($connection, $query);
-        
-        $rows = [];
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-            $rows[] = $row;
-        }
+        $rows = get_records($query);
 
         $rows_length = count($rows);
         $prev_year = '';
@@ -302,16 +341,16 @@
         global $connection;
 
         $query =
-            "SELECT `Initial` "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
-            ."GROUP BY `Initial` "
-            ."ORDER BY 1 ASC";
+            "SELECT `Initial`"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%'"
+            ." GROUP BY `Initial`"
+            ." ORDER BY 1 ASC";
         
         $result = mysqli_query($connection, $query);
 
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $initial = $row['Initial'];
             echo '<li><a href="novellak#'.$initial.'">'.transform_initial($initial).'</a></li>';
         }
@@ -321,16 +360,16 @@
         global $connection;
 
         $query =
-            "SELECT YEAR(`DateFinished`) AS Year "
-            ."FROM `irasok` iras "
-            ."INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
-            ."WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%' "
-            ."GROUP BY YEAR(`DateFinished`) "
-            ."ORDER BY 1 ASC";
+            "SELECT YEAR(`DateFinished`) AS Year"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE 'novella%'"
+            ." GROUP BY YEAR(`DateFinished`)"
+            ." ORDER BY 1 ASC";
         
         $result = mysqli_query($connection, $query);
 
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $year = $row['Year'];
             echo '<li><a href="novellak#'.$year.'">'.$year.'</a></li>';
         }
@@ -373,7 +412,7 @@
         if (!$result) return;
         
         if (mysqli_num_rows($result) > 0) {
-            $writing = mysqli_fetch_array($result, MYSQL_ASSOC);
+            $writing = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $href = $type.'/'.$writing['Uri'];
             $caption_with_arrow = '';
             $linkTitle = '';

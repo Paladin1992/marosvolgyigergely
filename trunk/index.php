@@ -6,9 +6,9 @@
     include_once("connect.php");
     include_once("helpers/menu_helper.php");
     include_once("helpers/html_helper.php");
+    include_once("helpers/sql_helper.php");
 
     if ($page == 'versek' || $page == 'novellak') {
-        include_once("helpers/sql_helper.php");
         $writing_info = get_writing_info($title);
     }
 ?>

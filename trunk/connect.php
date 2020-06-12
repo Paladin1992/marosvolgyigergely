@@ -1,6 +1,5 @@
 <?php
-    include_once("credentials_debug.php");
-    //include_once("credentials_release.php");
+    include_once("credentials.php");
 
     $connection = mysqli_connect($db_host, $db_user, $db_password);
     

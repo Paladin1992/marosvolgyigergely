@@ -1,5 +1,5 @@
 <div class="accordion exclusive">
-    <div class="accordion">
+    <div class="accordion" id="shortStoriesByName">
         <div class="accordion-header">
             <span class="accordion-caption nav-link">
                 Novellák betűrendben
@@ -14,7 +14,7 @@
             <?php get_short_stories_by_name(); ?>
         </div>
     </div>
-    <div class="accordion">
+    <div class="accordion" id="shortStoriesByTime">
         <div class="accordion-header">
             <span class="accordion-caption nav-link">
                 Novellák időrendben

@@ -5,9 +5,9 @@
         @paleGray: #f0f0f0;
         @gray: #404040;
 
-        @lightBlue: #056cb9;
         @blue: #004080;
         @darkBlue: #003355;
+        @darkerBlue: #002244;
 
         @facebookBlue: #4267b2;
         @linkedinBlue: #00538f;
@@ -18,7 +18,7 @@
         @body_bgColor: @almostWhite;
         @body_color: @gray;
 
-        @header_bgColor: @darkBlue;
+        @header_bgColor: @blue;
         @header_color: @almostWhite;
         
         @menu_color: @almostWhite;
@@ -27,7 +27,7 @@
         @menu_active_bgColor: @almostWhite;
         @menu_active_link_bgColor: @almostWhite;
         
-        @footer_bgColor: @darkBlue;
+        @footer_bgColor: @blue;
         @footer_color: @almostWhite;
         
         @shadow_color: @gray;
@@ -54,29 +54,102 @@
 
     // #region [ Fonts ]
         @font-face {
-            font-family: 'Garamond';
-            font-style: normal;
-            font-weight: 400;
-            src: url(../fonts/garamond.ttf) format('truetype');
-        }
-
-        @font-face {
             font-family: 'Perpetua';
             font-style: normal;
             font-weight: 400;
             src: url(../fonts/perpetua.ttf) format('truetype');
         }
 
-        @garamond: 'Garamond', serif;
+        /* lora-regular - latin-ext_latin */
+        @font-face {
+            font-family: 'Lora';
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/lora-regular.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('../fonts/lora-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/lora-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/lora-regular.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/lora-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/lora-regular.svg#Lora') format('svg'); /* Legacy iOS */
+        }
+        /* lora-700 - latin-ext_latin */
+        @font-face {
+            font-family: 'Lora';
+            font-style: normal;
+            font-weight: 700;
+            src: url('../fonts/lora-700.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('../fonts/lora-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/lora-700.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/lora-700.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/lora-700.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/lora-700.svg#Lora') format('svg'); /* Legacy iOS */
+        }
+        /* lora-italic - latin-ext_latin */
+        @font-face {
+            font-family: 'Lora';
+            font-style: italic;
+            font-weight: 400;
+            src: url('../fonts/lora-italic.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('../fonts/lora-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/lora-italic.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/lora-italic.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/lora-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/lora-italic.svg#Lora') format('svg'); /* Legacy iOS */
+        }
+        /* roboto-regular - latin-ext_latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/roboto-regular.eot'); /* IE9 Compat Modes */
+            src: local('Roboto'), local('Roboto-Regular'),
+                url('../fonts/roboto-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/roboto-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/roboto-regular.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/roboto-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/roboto-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+        }
+        /* roboto-slab-regular - latin-ext_latin */
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/roboto-slab-regular.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('../fonts/roboto-slab-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/roboto-slab-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/roboto-slab-regular.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/roboto-slab-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/roboto-slab-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+        }
+        /* roboto-slab-700 - latin-ext_latin */
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url('../fonts/roboto-slab-700.eot'); /* IE9 Compat Modes */
+            src: local(''),
+                url('../fonts/roboto-slab-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('../fonts/roboto-slab-700.woff2') format('woff2'), /* Super Modern Browsers */
+                url('../fonts/roboto-slab-700.woff') format('woff'), /* Modern Browsers */
+                url('../fonts/roboto-slab-700.ttf') format('truetype'), /* Safari, Android, iOS */
+                url('../fonts/roboto-slab-700.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+        }
+
+        @lora: 'Lora';
         @perpetua: 'Perpetua';
-        @timesNewRoman: 'Times New Roman', Times, serif;
+        @roboto: 'Roboto';
+        @robotoSlab: 'Roboto Slab';
 
         @font_header: @perpetua;
-        @font_menu: @garamond;
-        @font_body: @timesNewRoman;
-        @font_footer: @garamond;
-        @font_copyright: @timesNewRoman;
-        @font_keep_in_touch: @garamond;
+        @font_menu: @roboto;
+        @font_body: @lora;
+        @font_footer: @roboto;
+        @font_copyright: @roboto;
+        @font_keep_in_touch: @roboto;
         @font_social_icon_poet: @perpetua;
     // #endregion
 
@@ -132,7 +205,7 @@ body {
     color: @body_color;
 
     font-family: @font_body;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
 
     margin: 0;
@@ -177,12 +250,12 @@ header {
 }
 
 main {
-    font-size: 18px;
+    font-size: 1.125rem;
 
     min-height: 300px;
     max-width: 800px;
-    margin: 0 auto 160px;
-    padding: 15px;
+    margin: 0 auto 200px;
+    padding: 1rem;
 }
 
 footer {
@@ -190,31 +263,32 @@ footer {
     color: @footer_color;
 
     font-family: @font_footer;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 
     position: absolute;
     bottom: 0;
     width: 100%;
 
-    & .social-links {
+    & .social-links-container {
         & .keep-in-touch {
             font-family: @font_keep_in_touch;
-            font-size: 22px;
-            margin: 10px 0 10px;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 1rem 0 0;
         }
 
         & ul {
             display: flex;
             justify-content: center;
-            margin: 10px 0 20px;
-            padding: 0;
+            margin: 0;
+            padding: 1rem 0 1rem;
 
             & li {
                 list-style-type: none;
                 
                 float: left;
-                margin: 0 12px;
+                margin: 0 0.75rem;
 
                 & a {
                     background-color: transparent;
@@ -223,7 +297,7 @@ footer {
                     color: @almostWhite;
                     display: block;
 
-                    font-size: 22px;
+                    font-size: 1.375rem;
                     font-weight: normal;
                     line-height: 44px;
                     text-decoration: none;
@@ -241,7 +315,7 @@ footer {
 
                     &.poet {
                         font-family: @font_social_icon_poet;
-                        font-size: 23px;
+                        font-size: 1.8rem;
 
                         &:hover { background-color: @poetBrown; }
                     }
@@ -250,8 +324,21 @@ footer {
         }
     }
 
+    & .email-container {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 0 0 1rem;
+
+        & i {
+            margin-right: 0.25rem;
+        }
+    }
+
     & .copyright {
+        background-color: @darkerBlue;
         font-family: @font_copyright;
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
 
         & .copyright-name,
         & .copyright-separator,
@@ -264,6 +351,7 @@ footer {
 a {
     color: @link_color;
     font-size: inherit;
+    font-weight: bold;
     text-decoration: none;
 
     &:hover, &:active, &:focus { text-decoration: underline; }
@@ -275,7 +363,7 @@ blockquote {
     justify-content: center;
     font-style: italic;
 
-    margin: 40px 0 20px;
+    margin: 2.5rem 0 1.25rem;
     padding: 0;
 
     & .inline-block {
@@ -283,12 +371,12 @@ blockquote {
 
         display: inline-block;
         position: relative;
-        padding-left: 25px;
+        padding-left: 1.5rem;
 
         &::before {
             quotes: "\201C""\201D""\2018""\2019";
             content: open-quote;
-            font-size: 3.5em;
+            font-size: 3.5rem;
             font-weight: bold;
             opacity: 0.6;
 
@@ -307,42 +395,42 @@ blockquote {
 h1 {
     // as page-title
     &.page-title {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: normal;
-        margin: 20px 0;
+        margin: 0.5em 0;
     }
 
     &.center { text-align: center; }
 
     // as title for writings
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1;
-    margin: 20px 0 15px;
+    margin: 1rem 0 1rem;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1;
-    margin: 20px 0 15px;
+    margin: 1.25rem 0 1rem;
 
     &.welcome {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: normal;
         text-align: center;
-        margin: 20px 0;
+        margin: 1.5rem 0;
     }
 
     &.center { text-align: center; }
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: italic;
     font-weight: bold;
     line-height: 1;
-    margin: -12px 0 15px;
+    margin: -0.75rem 0 1rem;
 }
 
 hr {
@@ -350,16 +438,16 @@ hr {
     .gradient(linear; @blue 0%, transparent 100%; 90deg);
 
     height: 2px;
-    margin: 30px 0;
+    margin: 2rem 0;
 }
 
 p {
     line-height: 1.3;
     text-align: justify;
-    margin: 0 0 20px;
+    margin: 0 0 1.25em;
 
     &.intro {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     &.center {
@@ -369,8 +457,8 @@ p {
 
 img {
     border: 1px solid @blue;
-    margin: 0 0 15px;
-    padding: 10px;
+    margin: 0 0 1rem;
+    padding: 0.625rem;
 
     &.portrait {
         &.none {
@@ -380,12 +468,12 @@ img {
 
         &.left {
             float: left;
-            margin-right: 15px;
+            margin-right: 1rem;
         }
     
         &.right {
             float: right;
-            margin-left: 15px;
+            margin-left: 1rem;
         }
     }
 
@@ -397,12 +485,12 @@ img {
 
         &.left {
             float: left;
-            margin-right: 15px;
+            margin-right: 1rem;
         }
     
         &.right {
             float: right;
-            margin-left: 15px;
+            margin-left: 1rem;
         }
     }
 }
@@ -424,30 +512,52 @@ img {
     }
 
     & .accordion-body {
-        .gradient(linear; @paleGray 0%, transparent 100%; 90deg);
-        border-left: 1px solid @blue;
-        border-width: 1px;
-        border-style: solid;
-        border-image: linear-gradient(to right, @blue 0%, transparent 100%) 1;
-        border-right: none;
+        //.gradient(linear; @paleGray 0%, transparent 100%; 90deg);
+        //border-left: 1px solid @blue;
+        //border-width: 1px;
+        //border-style: solid;
+        //border-image: linear-gradient(to right, @blue 0%, transparent 100%) 1;
+        //border-right: none;
         display: none;
 
-        padding-left: 15px;
+        padding-left: 1rem;
 
         & ul.poems-alphabet, & ul.poems-time {
             margin: 0;
-            padding: 10px 0 15px;
+            padding: 0.625rem 0 1rem;
 
             & li {
                 display: inline-block;
 
                 & a {
-                    font-size: 22px;
-                    margin-right: 10px;
+                    background-color: @blue;
+                    border-radius: 5px;
+                    color: @almostWhite;
+
+                    font-size: 1.375rem;
+                    font-weight: normal;
+
+                    display: block;
+                    margin: 5px 5px 0 0;
+                    padding: 0 0.75rem;
+
+                    &:hover {
+                        background-color: @darkBlue;
+                        color: @yellow;
+                        text-decoration: none;
+                    }
                 }
             }
         }
     }
+}
+
+.latest-writings-caption {
+    .initial-group();
+
+    font-family: @roboto;
+    font-size: 1em;
+    margin: 2rem 0 0.5rem;
 }
 
 .initial-group, .year-group {
@@ -455,31 +565,32 @@ img {
     color: @almostWhite;
     .gradient(linear; @blue 0%, transparent 100%; 90deg);
     
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 38px;
 
     height: 36px;
-    margin-bottom: 5px;
-    padding-left: 9px;
+    margin-bottom: 0.3165rem;
+    padding-left: 0.5625rem;
 
     & + .group-list {
         margin: 0;
-        padding: 5px 0 20px 40px;
+        padding: 0.3125rem 0 1.3125rem 2.5rem;
     }
 }
 
 .nav-link {
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    font-weight: bold;
     line-height: 1;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 
-    &.back { padding-bottom: 15px; }
+    &.back { padding-bottom: 1rem }
 }
 
 .group-list-item {
     & .title-link {
-        font-size: 1.1em;
+        font-size: 1.125rem;
     }
 }
 
@@ -532,8 +643,32 @@ article {
     &.by40 { padding-left: 40px; }
 }
 
+.writing-extract {
+    margin-bottom: 0.625rem;
+    overflow: hidden;
+
+    & .writing-extract-text {
+        max-height: 180px;
+        overflow: hidden;
+        position: relative;
+
+        & .writing-extract-overlay {
+            box-shadow: 0 -10px 15px 15px #f9f9f9 inset;
+            position: absolute;
+            width: 120%;
+            height: 100%;
+            left: -10%;
+            top: 0;
+        }
+    }
+
+    // & .writing-extract-link {
+        
+    // }
+}
+
 .writing-info, .writing-note {
-    font-size: 16px;
+    font-size: 1rem;
     font-style: italic;
 
     &.center {
@@ -567,8 +702,8 @@ i {
     line-height: 1;
     text-align: center;
 
-    margin: 20px 0;
-    padding: 10px;
+    margin: 1.25rem 0;
+    padding: 0.625rem;
 }
 // #endregion
 
@@ -680,6 +815,8 @@ i {
     }
 
     nav.menu-container {
+        box-shadow: 0px 0px 10px 0px @shadow_color;
+
         display: block;
         max-height: 0;
         overflow: hidden;
@@ -695,7 +832,7 @@ i {
         }
         
         & ul {
-            .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
+            background-color: @blue;
             border-bottom: 1px solid @blue;
             box-shadow: 0px 0px 10px 0px @shadow_color;
 
@@ -705,8 +842,10 @@ i {
             & li {
                 display: block;
                 list-style-type: none;
-
+                
                 text-align: center;
+                
+                height: 100%;
                 
                 &:last-of-type::after { clear: both; }
 
@@ -715,16 +854,18 @@ i {
                     display: block;
 
                     font-family: @font_menu;
-                    font-size: 22px;
+                    font-size: 1.25rem;
                     font-weight: normal;
                     letter-spacing: 1px;
                     line-height: 2;
                     text-decoration: none;
 
+                    height: 100%;
                     padding: 5px 0;
 
                     &:hover {
                         color: @menu_hover_color;
+                        font-weight: bold;
                         text-decoration: none;
                     }
 
@@ -735,7 +876,6 @@ i {
                     & a, & a:hover {
                         .gradient(linear; transparent 0%, @almostWhite 25%, @almostWhite 75%, transparent 100%; 90deg);
                         color: @menu_active_color;
-
                         font-weight: bold;
                         text-decoration: none;
                     }
@@ -765,7 +905,7 @@ i {
     .accordion {
         & .accordion-header {
             & .accordion-caption {
-                font-size: 1.25em;
+                font-size: 1.25rem;
 
                 &:hover { text-decoration: none; }
             }
@@ -775,11 +915,11 @@ i {
             padding-left: 0;
     
             & ul.poems-alphabet, & ul.poems-time {
-                padding-left: 15px;
+                padding-left: 1rem;
     
                 & li {
                     & a {
-                        margin-right: 20px;
+                        font-weight: normal;
                     }
                 }
             }
@@ -787,21 +927,21 @@ i {
     }
 
     .initial-group, .year-group {
-        border-radius: 0;
-        padding-left: 10px;
+        border-radius: 5px 0 0 5px;
+        padding-left: 0.625rem;
     }
 
     .nav-link {
-        font-size: 1.25em;
+        font-size: 1.25rem;
 
         &:hover, &:active, &:focus { text-decoration: none !important; }
     }
 
     .group-list-item {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
 
         & .title-link {
-            font-size: 1.1em;
+            font-size: 1.1rem;
             line-height: 1;
         }
     }
@@ -810,11 +950,11 @@ i {
         display: block;
 
         & .pagination-prev {
-            padding: 10px 0 5px;
+            padding: 0.625rem 0 0.3125rem;
             text-align: center;
         }
         & .pagination-next {
-            padding-top: 5px;
+            padding-top: 0.3125rem;
             text-align: center;
         }
     }
@@ -830,7 +970,7 @@ i {
     img {
         display: block !important;
         float: none !important;
-        margin: 0 auto 15px !important;
+        margin: 0 auto 1rem !important;
     }
 }
 // #endregion
@@ -866,11 +1006,11 @@ i {
         display: block;
         overflow: hidden;
 
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
 
         & ul {
-            .gradient(linear; @darkBlue 0%, @blue 100%; 180deg);
-            box-shadow: 0px 0px 10px 0px @shadow_color;
+            .gradient(linear; @darkBlue 0%, @blue 25%; 0deg);
+            background-color: @blue;
 
             display: flex;
             justify-content: center;
@@ -889,20 +1029,22 @@ i {
 
                 & a {
                     background: transparent;
+                    border-radius: 5px 5px 0 0;
                     color: @menu_color;
                     display: block;
 
                     font-family: @font_menu;
-                    font-size: 22px;
+                    font-size: 1.25rem;
                     font-weight: normal;
                     letter-spacing: 1px;
                     line-height: 2;
                     text-decoration: none;
 
-                    padding: 0 25px;
+                    height: 100%;
+                    padding: 0 1.5rem;
 
                     &:hover {
-                        .gradient(linear; @darkBlue 0%, @lightBlue 100%; 180deg);
+                        background-color: @darkBlue;
                         color: @menu_hover_color;
                         text-decoration: none;
                     }
@@ -913,12 +1055,12 @@ i {
                 &.active {
                     .gradient(linear; @almostWhite 90%, transparent 100%; 180deg);
                     border-radius: 5px 5px 0 0;
-                    height: 60px;
+                    height: 50px;
 
                     & a, & a:hover {
                         background: @menu_active_link_bgColor;
-                        border-radius: 5px 5px 0 0;
                         color: @menu_active_color;
+                        font-weight: bold;
                         text-decoration: none;
                     }
                 }

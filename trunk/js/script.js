@@ -30,10 +30,12 @@ $(document).ready(function() {
         var $accordionGroup = $accordion.parent();
         var $arrow = $accordionHeader.find('i.material-icons');
 
-        if ($arrow.hasClass('open')) {
+        if ($arrow.hasClass('open')) { // close
             $accordionBody.slideUp(ACCORDION_SLIDE_SPEED_MS);
             $arrow.removeClass('open');
-        } else {
+
+            localStorage.setItem('openAccordionId', '');
+        } else { // open
             $arrow.addClass('open');
 
             if ($accordionGroup.hasClass('exclusive')) {
@@ -44,8 +46,16 @@ $(document).ready(function() {
             }
 
             $accordionBody.slideDown(ACCORDION_SLIDE_SPEED_MS);
+
+            localStorage.setItem('openAccordionId', $accordion.attr('id'));
         }
-    })
+    });
+
+    if (localStorage.openAccordionId) {
+        $('#' + localStorage.openAccordionId)
+            .find('.accordion-caption')
+            .trigger('click');
+    }
 
     // scroll to section
     $('a[href*="#"]').not('[href="#"], [href^="#collapse"]').on('click', function() {

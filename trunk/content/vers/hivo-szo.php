@@ -28,9 +28,7 @@ sors feszül rá vitorlámra,<br>
 s kihajózom új világra...
 </p>
 
-<p>
-*
-</p>
+<p>*</p>
 
 <p>
 Elért a lét hívó szava:<br>

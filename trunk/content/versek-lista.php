@@ -1,5 +1,5 @@
 <div class="accordion-group exclusive">
-    <div class="accordion">
+    <div class="accordion" id="poemsByName">
         <div class="accordion-header">
             <span class="accordion-caption nav-link">
                 Versek betűrendben
@@ -14,7 +14,7 @@
             <?php get_poems_by_name(); ?>
         </div>
     </div>
-    <div class="accordion">
+    <div class="accordion" id="poemsByTime">
         <div class="accordion-header">
             <span class="accordion-caption nav-link">
                 Versek időrendben

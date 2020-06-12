@@ -13,15 +13,15 @@
 </p>
 
 <p>
-    <a href="versek">Verseimet</a> és <a href="novellak">novelláimat</a> értelemszerűen a megfelelő menüpont alatt találod.<br>
-    <span style="color:red;">Ha bármelyik művemet szeretnéd felhasználni vagy előadni, kérlek szépen, jelezd felém! :)</span>
+    <!-- <a href="versek">Verseimet</a> és <a href="novellak">novelláimat</a> értelemszerűen a megfelelő menüpont alatt találod.<br> -->
+    Ha bármelyik művemet szeretnéd felhasználni vagy előadni, kérlek szépen, jelezd felém! :)
 </p>
 
-<p>
+<!-- <p>
     Ha többet szeretnél megtudni rólam, olvasd el az <a href="rolam">önéletrajzomat</a>.
-</p>
+</p> -->
 
-<blockquote>
+<!-- <blockquote>
     <div class="inline-block quotation">
         Én költő vagyok, de nem kell dicsőség,<br>
         ne ünnepelje bennem senki hősét,<br>
@@ -31,4 +31,7 @@
         és nékem elég a barátság érte.
         <div class="author">&mdash; József Attila</div>
     </div>
-</blockquote>
+</blockquote> -->
+
+<div class="latest-writings-caption">Legutóbb felkerült írásaim:</div>
+<?php get_latest_writings($_LATEST_WRITINGS_MAX_COUNT, $_LATEST_WRITINGS_MAX_DAYS); ?>
