@@ -1,4 +1,13 @@
 <?php
+    function set_base_url() {
+        global $_HTML_BASE_URL;
+        echo '<base href="'.$_HTML_BASE_URL.'">';
+    }
+
+    function get_versioned_link($filePath) {
+        return $filePath.'?v='.date('YmdHis', filemtime($filePath));
+    }
+
     function get_meta_keywords($page, $title) {
         global $writing_info;
         $pageKeywords = get_menu_item_data($page)['keywords'];

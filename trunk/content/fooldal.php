@@ -33,5 +33,5 @@
     </div>
 </blockquote> -->
 
-<div class="latest-writings-caption">Legutóbb felkerült írásaim:</div>
+<div class="latest-writings-caption">Legújabb írásaim:</div>
 <?php get_latest_writings($_LATEST_WRITINGS_MAX_COUNT, $_LATEST_WRITINGS_MAX_DAYS); ?>

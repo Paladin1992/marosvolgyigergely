@@ -1,5 +1,5 @@
 <?php
-    $menu = json_decode(file_get_contents("menu.json"), true);
+    $menu = json_decode(file_get_contents("app/menu.json"), true);
     $menu_count = count($menu);
 
     function get_menu_item_data($url) {

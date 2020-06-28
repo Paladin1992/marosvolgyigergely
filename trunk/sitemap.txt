@@ -59,7 +59,9 @@ https://www.marosvolgyigergely.hu/vers/emlekszel
 https://www.marosvolgyigergely.hu/vers/esik-esik
 https://www.marosvolgyigergely.hu/vers/fajjon-ha-kell
 https://www.marosvolgyigergely.hu/vers/felho
+https://www.marosvolgyigergely.hu/vers/fibonacci-vers
 https://www.marosvolgyigergely.hu/vers/furcsa-szonett
+https://www.marosvolgyigergely.hu/vers/gesztenye
 https://www.marosvolgyigergely.hu/vers/ha-karacsonyfa-disze-lennek
 https://www.marosvolgyigergely.hu/vers/ha-szeretnel
 https://www.marosvolgyigergely.hu/vers/ha-ujra-hull-a-feher-ho
@@ -71,6 +73,7 @@ https://www.marosvolgyigergely.hu/vers/hopihek-hullnak
 https://www.marosvolgyigergely.hu/vers/hosi-intelmek
 https://www.marosvolgyigergely.hu/vers/hovirag
 https://www.marosvolgyigergely.hu/vers/iden-eloszor
+https://www.marosvolgyigergely.hu/vers/ihlet
 https://www.marosvolgyigergely.hu/vers/indulas-elott
 https://www.marosvolgyigergely.hu/vers/indulasra-keszen
 https://www.marosvolgyigergely.hu/vers/invokacio
@@ -80,6 +83,7 @@ https://www.marosvolgyigergely.hu/vers/kell-az-elet
 https://www.marosvolgyigergely.hu/vers/kerekbe-tort-pillango
 https://www.marosvolgyigergely.hu/vers/kesei-bucsu
 https://www.marosvolgyigergely.hu/vers/konyvtar
+https://www.marosvolgyigergely.hu/vers/korako
 https://www.marosvolgyigergely.hu/vers/latinovits-zoltan
 https://www.marosvolgyigergely.hu/vers/lesz-helyed
 https://www.marosvolgyigergely.hu/vers/mama
@@ -124,6 +128,7 @@ https://www.marosvolgyigergely.hu/vers/szeress
 https://www.marosvolgyigergely.hu/vers/szivem
 https://www.marosvolgyigergely.hu/vers/szivemben-mar-kikelet-jar
 https://www.marosvolgyigergely.hu/vers/szivvel-lelekkel
+https://www.marosvolgyigergely.hu/vers/talan
 https://www.marosvolgyigergely.hu/vers/te-vagy
 https://www.marosvolgyigergely.hu/vers/teli-kep
 https://www.marosvolgyigergely.hu/vers/tengernyi-gyertya-es-mecses

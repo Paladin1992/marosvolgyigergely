@@ -5,10 +5,5 @@
     $_TITLE_SEPARATOR = '&bull;';
     $_TITLE_SUFFIX = $_MAGE.' hivatalos oldala';
     $_LATEST_WRITINGS_MAX_COUNT = 3; // default: 3
-    $_LATEST_WRITINGS_MAX_DAYS = 183; // default: 183
-
-    function set_base_url() {
-        global $_HTML_BASE_URL;
-        echo '<base href="'.$_HTML_BASE_URL.'">';
-    }
+    $_LATEST_WRITINGS_MAX_DAYS = 183; // default: 183 (half year)
 ?>

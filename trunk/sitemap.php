@@ -1,5 +1,5 @@
 <?php
-    include('connect.php');
+    include('db/connect.php');
     echo '<pre>';
     get_sitemap();
     echo '</pre>';
@@ -26,7 +26,7 @@
         $result = mysqli_query($connection, $query);
         $subUrls = [];
         
-        while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $subUrls[] = $baseUrl.'/'.$row['WritingType'].'/'.$row['Uri'];
         }
 
@@ -42,4 +42,6 @@
 
         fclose($file);
     }
+
+    include('db/disconnect.php');
 ?>

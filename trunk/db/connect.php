@@ -1,6 +1,4 @@
 <?php
-    include_once("credentials.php");
-
     $connection = mysqli_connect($db_host, $db_user, $db_password);
     
     if (!$connection) {

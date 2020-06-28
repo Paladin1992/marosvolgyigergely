@@ -1,14 +1,16 @@
 ﻿<?php
-    include('connect.php');
-    $list_all_in_progress = false;
-    $current_title = '';
-
     function get_writing_info($url) {
         global $connection;
-        $query = "SELECT * FROM `irasok` WHERE `Uri`='$url'";
+
+        $query =
+            "SELECT iras.*, tipus.`Name` AS TypeName"
+            ." FROM `irasok` iras"
+            ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
+            ." WHERE `Uri`='$url'";
+
         $result = mysqli_query($connection, $query);
-        
         $writing_info = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        
         return $writing_info;
     }
 
@@ -27,11 +29,10 @@
 
     function list_all($type) {
         global $connection;
-        global $list_all_in_progress;
-        $list_all_in_progress = true;
+        global $writing_info;
 
         $query =
-            "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year"
+            "SELECT `Title`, `Uri`, YEAR(`DateFinished`) AS Year, `HasAuthorNotes`, tipus.`Name` AS TypeName"
             ." FROM `irasok` iras"
             ." INNER JOIN `tipusok` tipus ON tipus.`Id`=iras.`TypeId`"
             ." WHERE `IsVisible`=1 AND tipus.`Name` LIKE '".$type."%'"
@@ -54,8 +55,9 @@
             echo '<article id="'.$url.'">';
 
             if (file_exists($path)) {
-                $current_title = $row['Title'];
+                $writing_info = $row;
                 include($path);
+                include('content/keletkezes.php');
             } else {
                 echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';
             }
@@ -64,16 +66,18 @@
 
             $prev_year = $year;
         }
-
-        $list_all_in_progress = false;
     }
 
-    function get_title($final_title, $classes = null) {
-        global $list_all_in_progress;
+    function get_title($classes = null) {
+        global $writing_info;
+        global $title;
+
+        $final_title = $writing_info['Title'];
         $classList = is_null($classes) ? '' : ' class="'.$classes.'"';
 
-        if ($list_all_in_progress) {
-            echo '<h2'.$classList.'>'.$final_title.'</h2>';
+        if ($title == 'osszes') {
+            $href = $writing_info['TypeName'].'/'.$writing_info['Uri'];
+            echo '<h2'.$classList.'><a href="'.$href.'">'.$final_title.'</a></h2>';
         } else {
             echo '<h1'.$classList.'>'.$final_title.'</h1>';
         }
@@ -81,6 +85,7 @@
 
     function get_latest_writings($maxCount = 3, $maxDays = 183) {
         global $connection;
+        global $writing_info;
 
         $query =
             "SELECT iras.`Title`, iras.`Uri`, tipus.`Name` AS `TypeName`"
@@ -104,7 +109,6 @@
                 $row = $rows[$i];
                 $href = $row['TypeName']."/".$row['Uri'];
                 $writing_info = get_writing_info($row['Uri']);
-                $current_title = $writing_info['Title'];
 
                 if ($i > 0) {
                     echo '<hr>';

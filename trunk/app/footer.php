@@ -22,18 +22,13 @@
     </div>
 
     <div class="email-container">
-        <i class="fa fa-envelope"></i> marosvolgyi<!--1-->.<!--2-->gergely<!--3-->@<!--4-->gmail<!--5-->.<!--6-->com
+        <i class="fa fa-envelope"></i> marosvolgyi<!--1-->&#46;<!--2-->gergely<!--3-->&#64;<!--4-->gmail<!--5-->&#46;<!--6-->com
     </div>
 
-    <?php
-        $startYear = 2019;
-        $currentYear = date("Y");
-        $years = $startYear.($currentYear > $startYear ? '-'.$currentYear : '');
-    ?>
     <div class="copyright">
-        <div class="copyright-name">&copy;<?=($years.' '.$_MAGE)?></div>
-        <!-- <div class="copyright-rights">
+        <div class="copyright-name">&copy;2019-<?=(date('Y').' '.$_MAGE)?></div>
+        <div class="copyright-rights">
             <span class="copyright-separator">&ndash;</span> Minden jog fenntartva!
-        </div> -->
+        </div>
     </div>
 </footer>
