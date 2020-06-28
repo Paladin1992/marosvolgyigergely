@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Mint tenger-szilaj áhítat,<br>

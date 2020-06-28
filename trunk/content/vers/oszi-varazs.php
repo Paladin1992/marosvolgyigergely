@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Elmúlt a nyár, és az ősz<br>

@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 <div class="subtitle">A Föld napjára</div>
 
 <p>
@@ -42,7 +42,7 @@ A Föld elmegy az orvoshoz:<br>
 &ndash; És ezt mi válthatta ki?<br>
 &ndash; Nos, a jelekből arra következtetek, hogy Önnek embere van. Ez lehet az az „élősdi”, amit említett. És ahogy elnézem, már rendesen elszaporodtak. Bányászatot, olajfúrást, fakitermelést okozhatnak, ebből kifolyólag jelentkezhetnek ipari forradalmak, környezetszennyezések, valamint magasabb fejlettségi szint esetén akár felszín fölött keringő műholdak is megjelenhetnek.<br>
 &ndash; Áh, szóval ezek legyeskednek itt körülöttem már egy ideje!...<br>
-&ndash; Így van... Továbbá érdemes lehet még tudni, hogy önpusztító fajról beszélünk, ami többnyire háborúk formájában nyilvánul meg. Ha azonban sikerül megtanulniuk a mértékletességet, akkor akár nagyon szerethetővé és az Ön szempontjából is hasznossá válhatnak. A problémát jelenleg a rengeteg gyáruk okozza, ami töméntelen mennyiségű káros anyagot bocsát ki az Ön légkörébe. Ha ezt sikerülne drasztikusan lecsökkenteni, az hosszútávon mindenképp sokat segítene az állapotán.<br>
+&ndash; Így van... Továbbá érdemes lehet még tudni, hogy önpusztító fajról beszélünk, ami többnyire háborúk formájában nyilvánul meg. Ha azonban sikerül megtanulniuk a mértékletességet, akkor akár nagyon szerethetővé és az Ön szempontjából is hasznossá válhatnak. A problémát főleg a rengeteg gyáruk okozza, ami töméntelen mennyiségű káros anyagot bocsát ki az Ön légkörébe. Ha ezt sikerülne drasztikusan lecsökkenteni, az hosszútávon mindenképp sokat segítene az állapotán.<br>
 &ndash; És így mennyi időt jósol még nekem?<br>
 &ndash; A jó hír az, hogy ezzel a keringő életmóddal &ndash; még az emberektől függetlenül is &ndash; akár bő másfél milliárd évet is leélhet. De a globális felmelegedéssel akkor is kellene valamit kezdeni, hacsak az embereknek nem az a céljuk, hogy teljesen lakhatatlanná tegyék Önt.<br>
 &ndash; Mit tud javasolni?<br>
@@ -54,5 +54,6 @@ A Föld elmegy az orvoshoz:<br>
 <p class="writing-info">
 Nagymaros,<br>
 2017. augusztus 6-7., 11.<br>
-2018. április 22.
+2018. április 22.<br>
+2020. június 20.
 </p>

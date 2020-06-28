@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Világba zárt madár vagyok,<br>

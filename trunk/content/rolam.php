@@ -69,6 +69,12 @@ majd 2015 elején megkaptam az Irodalmi Rádió „Az év diák költője 2014�
 </p>
 
 <p>
+Karinthy Frigyes novellái és Örkény István egypercesei hatására 2015-ben kezdtem magam kipróbálni a rövid prózai írások terén,
+s bár amennyire könnyűnek hittem, épp annyira bizonyult kihívásnak. De kitartottam elhatározásom mellett, hisz mint mindenhez,
+ehhez is idő és gyakorlás kell, így ma már alkotásnál hagyom, hogy a mondanivaló határozza meg, mi szeretne lenni: vers vagy novella.
+</p>
+
+<p>
 Mindvégig egyvalami lebegett a szemem előtt: hittem benne, hogy egyszer sikerül maradandót alkotnom,
 mert &ndash; még a sok bizonytalanságom ellenére is &ndash; úgy érzem, hogy én ezt a „hivatást” kaptam a sorstól,
 és míg az a hang belülről súg valamit, addig az papírért kiált...

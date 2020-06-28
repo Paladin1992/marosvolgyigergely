@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Nos, igen: van olyan, hogy nincs ihlet,<br>

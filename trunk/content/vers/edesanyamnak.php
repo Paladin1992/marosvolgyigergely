@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 <div class="subtitle">Anyák napjára</div>
 
 <p>
@@ -7,7 +7,7 @@ hogy hozzak neked virágot:<br>
 szépségedért rózsaszálat,<br>
 szerénységért ibolyákat,<br>
 fréziát a bizalmadért,<br>
-violát, mert te vagy, ki ért,<br>
+violát, mert te vagy, aki ért,<br>
 tulipánt a nevelésért,<br>
 orgonát a törődésért,<br>
 gyöngyvirágot oltalmadért<br>

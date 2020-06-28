@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Gondoltam, hozok egy szál virágot,<br>

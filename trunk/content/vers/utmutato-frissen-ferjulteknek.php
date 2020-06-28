@@ -2,7 +2,7 @@
 Pár: Andris és Lilla
 </p>
 
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Tökéletes kis férjedet<br>

@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 <div class="subtitle">avagy: ami az élethez kell</div>
 
 <p>

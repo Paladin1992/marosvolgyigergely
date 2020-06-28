@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Már a délután perceit<br>
@@ -25,7 +25,7 @@ arcod, alvás közben.
 Eltűnődtem, mi húzhatta<br>
 szép mosolyra ajkad &ndash;<br>
 Tán egy szebb világ jelei<br>
-mutatkoztak rajtad?...
+mutatkoztak rajtad?
 </p>
 
 <p>
@@ -46,14 +46,14 @@ virágillat terjedt.
 S te csak némán szenderegtél,<br>
 nem zavart meg semmi:<br>
 nekem így is megtisztelő<br>
-sorsod része lenni!...
+sorsod része lenni.
 </p>
 
 <p>
-Hisz üres szavak nélkül is<br>
-jó szeretni téged &ndash;<br>
-s kívánom: e földi érzés<br>
-sose érjen véget!
+Szavak nélkül, szívem súgja<br>
+most, hogy szeret téged &ndash;<br>
+s az az igaz szeretet, ha<br>
+álmodban is érzed...
 </p>
 
 <p class="writing-info">
@@ -61,5 +61,6 @@ Nagymaros,<br>
 2011. május 3-7.<br>
 2011. július 17-18.<br>
 2012. március 16.<br>
-2012. augusztus 30.
+2012. augusztus 30.<br>
+2020. június 15.
 </p>

@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Még fénylik a hold odafent,<br>
@@ -31,26 +31,27 @@ harmatot lehel a rétre.
 <p>
 Köd teríti halvány fátylát,<br>
 áttör a fény a fák között,<br>
-s bontogatván arany szárnyát<br>
+bontogatván arany szárnyát,<br>
 fehér párába öltözött.
 </p>
 
 <p>
-A félelem és sötétség<br>
-már a ragyogás mögé bújhat,<br>
-szívünkről pereg a kétség,<br>
-s végre beköszönt egy új nap!...
+S ébredő szívünk megtelik<br>
+nap nap után a reménnyel,<br>
+ahogy lágyan szeretkezik<br>
+a sötétség a napfénnyel...
 </p>
 
 <p class="writing-info">
 Nagymaros, Veszprém<br>
 2012. augusztus 14-15., 26.<br>
 2012. október 13., 16-17.<br>
-2019. július 18.
+2019. július 18.<br>
+2020. június 14.
 </p>
 
 <!--
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Még fénylik a hold odafent,<br>

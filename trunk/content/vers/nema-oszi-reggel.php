@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Gyűrt paplan a meleg ágyon:<br>
@@ -31,7 +31,7 @@ még szótlanok a madarak...
 </p>
 
 <p>
-deresre görnyedt fűszálak,<br>
+zúzmara-lepte fűszálak,<br>
 mozdulatlan, nyirkos ágak;
 </p>
 
@@ -86,5 +86,6 @@ Veszprém, Nagymaros<br>
 2014. november 16.<br>
 2015. május 22. (vonaton), 25. (buszon)<br>
 2015. július 19-20.<br>
-2015. október 14., 20., 27.
+2015. október 14., 20., 27.<br>
+2020. június 15.
 </p>

@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Esik,<br>
@@ -47,8 +47,7 @@ a szél:<br>
 érzi már<br>
 a nyár<br>
 madár-<br>
-röptét<br>
-s jöttét,<br>
+röptét,<br>
 ahogy<br>
 égkék<br>
 fészkét<br>
@@ -72,5 +71,6 @@ Veszprémből hazafelé, Veszprém, Nagymaros<br>
 2014. augusztus 26.<br>
 2015. január 3.<br>
 2015. július 16.<br>
-2015. július 27.
+2015. július 27.<br>
+2020. június 14.
 </p>

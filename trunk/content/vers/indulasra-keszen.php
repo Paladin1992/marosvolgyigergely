@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Ismersz &ndash; vagyis te úgy hiszed,<br>
@@ -19,13 +19,6 @@ Volt, hogy izgatottan lested,<br>
 ki is áll éppen idelenn,<br>
 s kiben a társat kerested:<br>
 most közönséges idegen.
-</p>
-
-<p>
-Mikor még egymást imádtuk,<br>
-a vágytól izzott szép szemed...<br>
-De sajnos akkor nem láttuk,<br>
-hogy sorsunk hova vezethet.
 </p>
 
 <p>

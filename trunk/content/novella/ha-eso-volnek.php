@@ -1,11 +1,11 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Te voltál már eső? Mert én nagyon szeretnék eső lenni...
 </p>
 
 <p>
-Valahol a nyílt vizeken születnék meg. Minden felszíni és partokat nyaldosó hullámból, minden kis vízpermetből gyűjtenék egy-egy cseppet. S míg készülődnék egy hosszabb utazásra, távolról szemlélném a partvonalat, a hajókat, a vízből felugrándozó delfineket, miközben a Nap melegen sütkérezné hátamat.
+Valahol a nyílt vizeken születnék meg felhőként. Minden felszíni és partokat nyaldosó hullámból, minden kis vízpermetből gyűjtenék egy-egy cseppet. S míg készülődnék egy hosszabb utazásra, távolról szemlélném a partvonalat, a hajókat, a vízből felugrándozó delfineket, miközben a Nap melegen sütkérezné hátamat.
 </p>
 
 <p>
@@ -54,5 +54,6 @@ Vonaton Pest felé, Verőce, Nagymaros<br>
 2018. május 4., 13-14., 18-20.<br>
 2018. június 2.<br>
 2018. augusztus 4-5.<br>
-2019. május 11.
+2019. május 11.<br>
+2020. június 20.
 </p>

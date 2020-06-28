@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Egy átlagos családi házban vagyunk, nem sokkal a fadíszítés befejezte után. A szoba csendes, a sarokban áll a karácsonyfa. Egyszer csak megszólal az egyik aranyszínű dísze:

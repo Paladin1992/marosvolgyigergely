@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Ez még általános iskolában történt; ha jól emlékszem, ötödik osztályosok voltunk.

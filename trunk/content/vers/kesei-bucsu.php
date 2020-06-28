@@ -1,5 +1,5 @@
-<h1>Kései búcsú<br>
-<span class="subtitle">(szonett Sz. A. részére)</span></h1>
+<?php get_title(); ?>
+<div class="subtitle">(szonett Sz. A. részére)</div>
 
 <p>
 Mint jót akaró kisgyerek,<br>

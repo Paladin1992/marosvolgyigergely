@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Már nem is tudom, mióta<br>
@@ -102,10 +102,11 @@ s összetörik darabokban...<br>
 De ha megőrzöd &ndash; újjáéled,<br>
 s míg folyik benne izzó élet,<br>
 nap nap után súgja néked:<br>
-teljes szívből szeretlek téged!
+mennyire jó szeretni téged!
 </p>
 
 <p class="writing-info">
-Veszprém,<br>
-2015. január 21-22., 27., 30-31.
+Veszprém, Nagymaros<br>
+2015. január 21-22., 27., 30-31.<br>
+2020. június 14.
 </p>

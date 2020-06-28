@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Csak írom a verset halomra,<br>
@@ -18,7 +18,7 @@ tán ős-idegen vallomásé...
 Bár súlyos a kiszabott teher,<br>
 hogy a szép szóért szenvedni kell;<br>
 hogy így alakult, mégis öröm:<br>
-a kegyes Sorsnak megköszönöm...
+a kegyes sorsnak megköszönöm...
 </p>
 
 <p class="writing-info">

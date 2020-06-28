@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Szomorú az égbolt,<br>
@@ -11,7 +11,7 @@ ezüstös csöppjei.
 Remeg a kis tócsa,<br>
 gőzölög a járda &ndash;<br>
 forró ölelésre<br>
-ki az, aki vár ma?...
+ki az, aki vár ma?
 </p>
 
 <p>

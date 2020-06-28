@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p>
 Szeptember &ndash; így szólt a naptár
@@ -20,7 +20,7 @@ felhőket sepreget a szél odafent
 </p>
 
 <p>
-állni látszék a vén Duna tükre<br>
+állni látszik a vén Duna tükre<br>
 fáradt hajók súlya alatt
 </p>
 
@@ -50,5 +50,6 @@ s színeivel dalolászva<br>
 <p class="writing-info">
 Nagymaros,<br>
 2016. augusztus 29., 31.<br>
-2016. szeptember 1.
+2016. szeptember 1.<br>
+2020. június 14.
 </p>

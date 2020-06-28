@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 <div class="subtitle">Gondolataim egy versmondó versenyen</div>
 
 <p>
@@ -54,11 +54,11 @@ Elhangzik az utolsó sor. A hangok lecsillapodásával lehunyom a szemem, bokái
 </p>
 
 <p>
-Felzúg a taps. A taps nem hazudik, az mindig őszinte: a produkció fokmérője. Talán a két kezemen meg tudom számolni, hányszor sikerült életemben igazán jól egy-egy versmondás, amikor a levegőben érezhető volt az a nem mindennapi, kellemes feszültség. Csak remélhetem, hogy most ez a produkció is betársul közéjük. Akárhogy is: a közönség mindenképpen tudtomra adja, ha megszületett a katarzis, a csoda.
+Felzúg a taps. A taps nem hazudik, az mindig őszinte: a produkció fokmérője. Talán a két kezemen meg tudom számolni, hányszor sikerült életemben igazán jól egy-egy versmondás, amikor a levegőben érezhető volt az a nem mindennapi, kellemes feszültség. Csak remélhetem, hogy most ez az alkalom is betársul közéjük. Akárhogy is: a közönség mindenképpen tudtomra adja, ha megszületett a katarzis, a csoda.
 </p>
 
 <p>
-Elindulok a pódiumról, vissza a helyemre, egy rövid, biztató pillantást vetve az utánam következőre, mint az olimpiai lángot vivő sportoló, aki lelke teljességével adja át társának a stafétát, szemével súgván: „Én megtettem, ami tőlem tellett. Most rajtad a világ szeme!” Ekkor nem, vagy csak elvétve nézek a közönségre. Szellemi feltöltöttséget és fizikai kimerültséget érzek, de jólesik. Lassan-lassan kezdek visszatérni a normál tudatállapotba. Ez egy hosszú &ndash; átéléstől függően akár 10-20 percig (!) tartó &ndash; folyamat. Ilyenkor lehunyom a szemem, és megköszönöm az égieknek, hogy velem voltak, és erőt adtak. A külvilágból még alig érzékelek valamit, mintha a mögöttes, igazi valóságot látnám, a megszokott „fátyol” nélkül... Erős, ugyanakkor kellemes lüktetést érzek a mellkasomban, mely mérhetetlen hálával és békével tölt el. Már nincs teher: a magokat elvetettem, s ezáltal teljesen felszabadultam &ndash; most már bennük is tovább él a vers...
+Elindulok a pódiumról, vissza a helyemre, egy rövid, biztató pillantást vetve az utánam következőre, mint az olimpiai lángot vivő sportoló, aki lelke teljességével adja át társának a stafétát, szemével súgván: „Én megtettem, ami tőlem tellett. Most rajtad a világ szeme!” Ekkor nem, vagy csak elvétve nézek a közönségre. Szellemi feltöltöttséget és fizikai kimerültséget érzek, de jólesik. Lassan-lassan kezdek visszatérni a normál tudatállapotba. Ez egy hosszú &ndash; átéléstől függően akár 10-20 percig (!) tartó &ndash; folyamat. Ilyenkor lehunyom a szemem, és megköszönöm az égieknek, hogy velem voltak, és erőt adtak. A külvilágból még alig érzékelek valamit, mintha a mögöttes, igazi valóságot látnám, a megszokott „fátyol” nélkül... Erős, ugyanakkor kellemes lüktetést érzek a mellkasomban, mely mérhetetlen hálával és békével tölt el. Már nincs teher: a magokat elvetettem, s ez által teljesen felszabadultam &ndash; most már bennük is tovább él a vers...
 </p>
 
 <p>
@@ -66,9 +66,10 @@ Latinovits Zoltán szerint a versmondás olyan, mintha az ember a világ egy kis
 </p>
 
 <p class="writing-info">
-Vonaton Pest és Nagymaros között, Budapest<br>
+Vonaton Pest és Nagymaros között, Budapest, Nagymaros<br>
 2018. június 13., 18., 22., 25., 28.<br>
 2018. július 2., 4-6., 9.<br>
 2018. augusztus 20.<br>
-2018. szeptember 21.
+2018. szeptember 21.<br>
+2020. június 18.
 </p>

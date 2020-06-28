@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 
 <p class="writing-quotation">
 „Mikor gyermek valék,<br>
@@ -21,7 +21,7 @@ ostoba felnőtté válnom?!
 <p>
 Az elbűvölő csodákat<br>
 vissza már hiába várom;<br>
-Mackóm se virraszt mellettem,<br>
+mackóm se virraszt mellettem,<br>
 hogy csendben őrizze álmom:
 </p>
 

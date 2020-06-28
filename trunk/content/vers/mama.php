@@ -1,4 +1,4 @@
-<?php get_title($current_title); ?>
+<?php get_title(); ?>
 <div class="subtitle">(Nagymamám, sz. Paulicsek Rozália emlékére,<br>
 1928. május 17. &ndash; 2012. április 22.)</div>
 
