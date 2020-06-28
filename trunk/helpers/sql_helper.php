@@ -57,7 +57,7 @@
             if (file_exists($path)) {
                 $writing_info = $row;
                 include($path);
-                include('content/keletkezes.php');
+                include('content/partials/keletkezes.php');
             } else {
                 echo '<div style="color: red;">Nincs ilyen: '.$path.'</div>';
             }

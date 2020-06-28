@@ -1,7 +1,7 @@
 <?php get_title(); ?>
 
 <p>
-Állítólag egyszer József Attila azon vitatkozott egy barátjával, hogy milyen színű a tenger. Az illető szerint a tenger színe kék, míg költőnk zöldnek vélte. Végül Attila így zárta le a vitát: „A tenger színe valóban kék, de nem úgy, ahogy te gondolod.”
+Állítólag egyszer József Attila azon vitatkozott egy barátjával, hogy milyen színű a tenger. Az illető szerint a tenger színe kék, míg költőnk zöldnek vélte. Végül Attila így zárta le a vitát: „A tenger színe valóban kék, de nem úgy, ahogy te gondolod!”
 </p>
 
 <p>

@@ -3,7 +3,7 @@
 <p class="intro">Ezen az oldalon szerepel az összes felvállalható novellám, befejezés szerinti időrendi sorrendben.</p>
 
 <?php
-    include('content/warning.php');
+    include('content/partials/warning.php');
 ?>
 
 <div id="dynamicContent"></div>

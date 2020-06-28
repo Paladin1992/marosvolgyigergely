@@ -6,12 +6,12 @@
         $path = "content/vers/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link back', 'Vissza a versekhez');
+            include('content/partials/vissza-vers.php');
             
             echo '<article id="'.$title.'">';
             {
                 include($path);
-                action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link back', 'Vissza a versekhez');
+                include('content/partials/vissza-vers.php');
             }
             echo '</article>';
         }
@@ -19,13 +19,13 @@
         $path = "content/vers/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('versek', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', '', 'nav-link back', 'Vissza a versekhez');
+            include('content/partials/vissza-vers.php');
             
             echo '<article id="'.$title.'" class="poem">';
             {
                 include($path);
-                include('content/keletkezes.php');            
-                include('content/warning.php');
+                include('content/partials/keletkezes.php');            
+                include('content/partials/warning.php');
             }
             echo '</article>';
 

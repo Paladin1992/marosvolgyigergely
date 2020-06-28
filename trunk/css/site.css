@@ -341,6 +341,7 @@ img.landscape.right {
   font-size: 1rem;
   font-weight: normal;
   display: inline-block;
+  margin: 1rem 0;
   padding: 1rem;
 }
 .btn:hover {

@@ -6,12 +6,12 @@
         $path = "content/novella/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('novellak', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a novellákhoz', '', 'nav-link back', 'Vissza a novellákhoz');
+            include('content/partials/vissza-novella.php');
             
             echo '<article id="'.$title.'">';
             {
                 include($path);
-                action_link('novellak', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a novellákhoz', '', 'nav-link back', 'Vissza a novellákhoz');
+                include('content/partials/vissza-novella.php');
             }
             echo '</article>';
         }
@@ -19,13 +19,13 @@
         $path = "content/novella/".$title.".php";
         
         if (file_exists($path)) {
-            action_link('novellak', '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a novellákhoz', '', 'nav-link back', 'Vissza a novellákhoz');
+            include('content/partials/vissza-novella.php');
             
             echo '<article id="'.$title.'" class="short-story">';
             {
                 include($path);
-                include('content/keletkezes.php');
-                include('content/warning.php');
+                include('content/partials/keletkezes.php');
+                include('content/partials/warning.php');
             }
             echo '</article>';
             
