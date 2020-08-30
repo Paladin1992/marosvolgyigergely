@@ -17,6 +17,7 @@ https://www.marosvolgyigergely.hu/novella/oszinte-vallomas
 https://www.marosvolgyigergely.hu/novella/sarokba-szoritva
 https://www.marosvolgyigergely.hu/novella/vakito-csoda
 https://www.marosvolgyigergely.hu/novella/verset-mondok
+https://www.marosvolgyigergely.hu/novella/zakinthosz
 https://www.marosvolgyigergely.hu/novellak
 https://www.marosvolgyigergely.hu/rolam
 https://www.marosvolgyigergely.hu/vers/20-szuletesnapomra
@@ -56,6 +57,7 @@ https://www.marosvolgyigergely.hu/vers/egyedul-a-csucson
 https://www.marosvolgyigergely.hu/vers/elegetlek
 https://www.marosvolgyigergely.hu/vers/elet
 https://www.marosvolgyigergely.hu/vers/emlekszel
+https://www.marosvolgyigergely.hu/vers/en-kepek
 https://www.marosvolgyigergely.hu/vers/esik-esik
 https://www.marosvolgyigergely.hu/vers/fajjon-ha-kell
 https://www.marosvolgyigergely.hu/vers/felho
@@ -77,6 +79,7 @@ https://www.marosvolgyigergely.hu/vers/ihlet
 https://www.marosvolgyigergely.hu/vers/indulas-elott
 https://www.marosvolgyigergely.hu/vers/indulasra-keszen
 https://www.marosvolgyigergely.hu/vers/invokacio
+https://www.marosvolgyigergely.hu/vers/isten-fele
 https://www.marosvolgyigergely.hu/vers/itthon-mar-a-tavasz-vart
 https://www.marosvolgyigergely.hu/vers/jatek
 https://www.marosvolgyigergely.hu/vers/kell-az-elet

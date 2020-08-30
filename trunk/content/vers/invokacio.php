@@ -4,7 +4,7 @@
 Összetéve két tenyered,<br>
 csillapul már az erezet...<br>
 Halkan mormol imát ajkad,<br>
-hiszed: Ő majd segít rajtad.
+s hiszed: Ő majd segít rajtad.
 </p>
 
 <p>
