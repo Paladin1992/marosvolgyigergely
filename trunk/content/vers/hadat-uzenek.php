@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Hadat üzenek a szerelemnek,<br>

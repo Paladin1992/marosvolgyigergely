@@ -26,7 +26,7 @@
     </div>
 
     <div class="copyright">
-        <div class="copyright-name">&copy;2019-<?=(date('Y').' '.$_MAGE)?></div>
+        <div class="copyright-name">&copy;2019-<?=(date('Y').' '.App::AUTHOR)?></div>
         <div class="copyright-rights">
             <span class="copyright-separator">&ndash;</span> Minden jog fenntartva!
         </div>

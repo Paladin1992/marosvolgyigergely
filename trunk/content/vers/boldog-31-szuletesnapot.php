@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 <b>B</b>oldog születésnapot kívánok hát, s<br>

@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Mint a villám derült égből,<br>

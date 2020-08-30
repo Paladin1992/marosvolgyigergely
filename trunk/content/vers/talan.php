@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Talán nőnek egyszer virágok<br>

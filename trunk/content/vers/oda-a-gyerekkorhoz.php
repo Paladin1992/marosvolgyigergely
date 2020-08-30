@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p class="writing-quotation">
 „Mikor gyermek valék,<br>

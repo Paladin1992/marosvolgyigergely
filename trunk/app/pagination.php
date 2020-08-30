@@ -1,17 +1,17 @@
 <?php
-    $id = $writing_info['Id'];
-    $type = $page == 'versek' ? 'vers' : 'novella';
+    $id = App::$writing_info['Id'];
+    $typeName = App::$page == 'versek' ? 'vers' : 'novella';
 ?>
 
 <div class="pagination-container">
     <div class="pagination-prev">
         <?php
-            get_paging_link($id, 'prev', $type, 'time', 'nav-link');
+            App::$sqlHelper->get_paging_link($id, 'prev', $typeName, 'time', 'nav-link');
         ?>
     </div>
     <div class="pagination-next">
         <?php
-            get_paging_link($id, 'next', $type, 'time', 'nav-link');
+            App::$sqlHelper->get_paging_link($id, 'next', $typeName, 'time', 'nav-link');
         ?>
     </div>
 </div>

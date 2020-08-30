@@ -1,9 +1,9 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
-Mint földre hulló dicső jel:<br>
-elvarázsolt égi múzsa,<br>
-megáldott egy ős-erővel,<br>
+Mint szebb világnak hírnöke,<br>
+földre szállt egy égi múzsa:<br>
+üzenetét belém szőtte,<br>
 s ösztönömmel kötött gúzsba.
 </p>
 

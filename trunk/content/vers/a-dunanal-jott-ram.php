@@ -2,7 +2,7 @@
 Kötelező szavak: szilvalekvár, naiv, lepke, birsalma, palacsinta, padlás, elképesztő, sokféle, hasmenés, őszhajú, búváruszony, szalma, fülbevaló, aszalás, feketerigó, dióbél, hang, remény, kávéház, alku, függöny, béke
 </p>
 
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 A rakodópart alsó kövén ültem,<br>

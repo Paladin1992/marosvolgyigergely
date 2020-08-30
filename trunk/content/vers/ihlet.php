@@ -1,10 +1,9 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Mikor elmémbe hatolva<br>
 megnyílik az égi csatorna,<br>
-megszűnik minden<br>
-körülöttem:<br>
+megszűnik minden körülöttem:<br>
 a tűz ropogása,<br>
 a vonat kattogása,<br>
 a beszéd, a zaj, a nesz<br>
@@ -33,8 +32,6 @@ s amit egykor lelkemre kötött:<br>
 hogy csoda rejtőzik<br>
 minden szó mögött!
 </p>
-
-<p>*</p>
 
 <p>
 De mindezt csak egyszer teszi,<br>

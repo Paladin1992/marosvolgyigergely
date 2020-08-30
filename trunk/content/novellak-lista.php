@@ -8,10 +8,10 @@
         </div>
         <div class="accordion-body">
             <ul class="poems-alphabet">
-                <?php get_alphabet_for_short_stories(); ?>
+                <?php App::$sqlHelper->get_alphabet_for_writings('novella'); ?>
             </ul>
             
-            <?php get_short_stories_by_name(); ?>
+            <?php App::$sqlHelper->get_writings_by_name('novella'); ?>
         </div>
     </div>
     <div class="accordion" id="shortStoriesByTime">
@@ -23,10 +23,10 @@
         </div>
         <div class="accordion-body">
             <ul class="poems-time">
-                <?php get_years_for_short_stories(); ?>
+                <?php App::$sqlHelper->get_years_for_writings('novella'); ?>
             </ul>    
 
-            <?php get_short_stories_by_time(); ?>
+            <?php App::$sqlHelper->get_writings_by_time('novella'); ?>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Állítólag egyszer József Attila azon vitatkozott egy barátjával, hogy milyen színű a tenger. Az illető szerint a tenger színe kék, míg költőnk zöldnek vélte. Végül Attila így zárta le a vitát: „A tenger színe valóban kék, de nem úgy, ahogy te gondolod!”
@@ -9,7 +9,7 @@
 </p>
 
 <p>
-Márpedig ez volt az a kékség, mely zakinthoszi szobám erkélyéről köszöntött minden reggel, mikor a horizont még lágy aranyban és rózsaszínben úszott... Mondd, érezted már bőrödön azt a nyárvégi, tengeri levegőt hajnalban, amikor életörömmel telve ébredsz minden egyes nap?
+Márpedig ez volt az a kékség, mely zakinthoszi szobám erkélyéről köszöntött minden reggel, mikor a horizont még lágy aranyban és rózsaszínben úszott... Mondd, érezted már bőrödön azt a nyárvégi, tengeri levegőt hajnalban, amikor mosolyogva ébredsz minden egyes nap?
 </p>
 
 <p>
@@ -21,7 +21,7 @@ Utaztál már egy jó humorú, görög buszsofőrrel, aki elé a túravezető od
 </p>
 
 <p>
-Vagy béreltél-e már valaha autót egymagad, hogy megízleld a szabadság bódító menetszelét, amikor minden kereszteződésnél te döntesz, hogy merre mész?  Amikor van nálad nyomtatott térkép és GPS, mégis eltévedsz egy teljesen ismeretlen helyen, de te csak mosolyogsz az egészen? Ugye tudod, hogy ezt hívják kalandnak?
+Vagy béreltél-e már valaha autót egymagad, hogy megízleld a szabadság bódító menetszelét, amikor minden kereszteződésnél te döntesz, hogy merre mész? Amikor van nálad nyomtatott térkép és GPS, mégis eltévedsz egy teljesen ismeretlen helyen, de te csak mosolyogsz az egészen? Ugye tudod, hogy ezt hívják kalandnak?
 </p>
 
 <p>

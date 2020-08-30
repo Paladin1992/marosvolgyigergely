@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 <div class="subtitle">&ndash; mert az eskütétel csak egy perc, mégis egy életre szól...</div>
 
 <p>

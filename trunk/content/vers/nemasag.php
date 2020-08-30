@@ -1,9 +1,9 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 <div class="subtitle">(igék nélkül)</div>
 
 <p>
 Szél szavára jót nevető,<br>
-lágy őszi tájra meredő,<br>
+lágy, őszi tájra meredő,<br>
 elnémuló semmiségben<br>
 susogva vetkező erdő.
 </p>

@@ -1,5 +1,5 @@
 <?php
-    insert_raw_image(
+    HtmlHelper::insert_raw_image(
         'images/marosvolgyi-gergely-portre.jpg', // src
         'portrait', // orientation
         'right', // float

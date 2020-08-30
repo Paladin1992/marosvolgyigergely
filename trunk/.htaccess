@@ -1,7 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine on
 # RewriteBase /
-# RewriteBase /marosvolgyigergely/trunk/
 RewriteBase /mage/marosvolgyigergely/trunk/
 
 RewriteCond %{REQUEST_FILENAME} !-f

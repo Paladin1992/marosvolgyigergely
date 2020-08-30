@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Te voltál már eső? Mert én nagyon szeretnék eső lenni...

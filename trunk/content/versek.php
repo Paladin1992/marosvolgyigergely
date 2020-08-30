@@ -1,14 +1,14 @@
 <?php
-    if ($title == '') {
-        print_page_title($page, true);
+    if (App::$title == '') {
+        App::$menuHelper->print_page_title(App::$page, true);
         include('versek-lista.php');
-    } else if ($title == 'osszes') {
-        $path = "content/vers/".$title.".php";
+    } else if (App::$title == 'osszes') {
+        $path = "content/vers/".App::$title.".php";
         
         if (file_exists($path)) {
             include('content/partials/vissza-vers.php');
             
-            echo '<article id="'.$title.'">';
+            echo '<article id="'.App::$title.'">';
             {
                 include($path);
                 include('content/partials/vissza-vers.php');
@@ -16,12 +16,12 @@
             echo '</article>';
         }
     } else {
-        $path = "content/vers/".$title.".php";
+        $path = "content/vers/".App::$title.".php";
         
         if (file_exists($path)) {
             include('content/partials/vissza-vers.php');
             
-            echo '<article id="'.$title.'" class="poem">';
+            echo '<article id="'.App::$title.'" class="poem">';
             {
                 include($path);
                 include('content/partials/keletkezes.php');            

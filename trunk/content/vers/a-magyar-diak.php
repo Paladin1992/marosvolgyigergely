@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 <div class="subtitle">(Avagy a mai fiatalokat kigúnyoló vers<br>
 Petőfi Sándor „A magyar nemes” c. verse mintájára)</div>
 

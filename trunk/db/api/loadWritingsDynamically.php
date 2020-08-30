@@ -1,4 +1,6 @@
 <?php
+    App::$title = isset($_GET['title']) ? $_GET['title'] : '';
+    
     $typeName = isset($_GET['typeName']) ? $_GET['typeName'] : 0;
     $skip = isset($_GET['skip']) ? $_GET['skip'] : 0;
     $take = isset($_GET['take']) ? $_GET['take'] : 0;
@@ -12,7 +14,7 @@
 
     $storedProcedureName = $typeName == 'vers' ? 'LoadPoemsDynamically' : 'LoadShortStoriesDynamically';
     $query = "CALL `$storedProcedureName`($skip, $take);";
-    $rows = get_records($query);
+    $rows = App::$sqlHelper->get_records($query);
 
     $startIndex = 0;
     $count = count($rows);
@@ -38,7 +40,7 @@
         echo '<article id="'.$url.'">';
 
         if (file_exists($path)) {
-            $writing_info = $row;
+            App::$writing_info = $row;
             include($path);
             include('../../content/partials/keletkezes.php');
         } else {

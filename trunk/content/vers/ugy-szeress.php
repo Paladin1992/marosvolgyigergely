@@ -1,4 +1,4 @@
-﻿<?php get_title(); ?>
+﻿<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Úgy szeress, mint ifjú szívem őszi tájat;<br>

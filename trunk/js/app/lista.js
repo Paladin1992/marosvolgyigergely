@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
     $('.menu a').on('click', function() {
 		localStorage.setItem('openAccordionId', null);

@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Átlagos nyár végi nap. Ülök este hét körül a vonaton, mint sokan mások, akik naponta ingáznak otthonuk és a főváros között. A vonat zakatolását leszámítva szinte teljes a némaság: senki sem szól a másikhoz, legfeljebb a telefonjukat nyomkodják, elvétve egy-két ember olvas. A fáradtság jelei kiülnek az arcokra &ndash; volt, aki már indulás előtt is bóbiskolt vagy tán el is aludt.

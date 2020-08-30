@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 <div class="subtitle">(T. B. részére)</div>
 
 <p>

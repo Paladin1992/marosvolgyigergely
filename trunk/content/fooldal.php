@@ -34,4 +34,9 @@
 </blockquote> -->
 
 <div class="latest-writings-caption">Legújabb írásaim:</div>
-<?php get_latest_writings($_LATEST_WRITINGS_MAX_COUNT, $_LATEST_WRITINGS_MAX_DAYS); ?>
+<?php
+    App::$sqlHelper->get_latest_writings(
+        App::LATEST_WRITINGS_MAX_COUNT,
+        App::LATEST_WRITINGS_MAX_DAYS
+    );
+?>

@@ -1,4 +1,5 @@
 <?php
+    include('../../app/config.php');
     include('../credentials.php');
     include('../connect.php');
     include('../../helpers/sql_helper.php');

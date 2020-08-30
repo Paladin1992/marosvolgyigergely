@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
     $('#btn-menu').on('click', function() {
         const $button = $(this);
@@ -101,7 +103,8 @@ function loadWritingsDynamically(typeName, skip, take) {
                 action: 'loadWritingsDynamically',
                 typeName: typeName,
                 skip: skip,
-                take: take
+                take: take,
+                title: title
             },
             cache: false
         })

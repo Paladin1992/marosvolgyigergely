@@ -1,6 +1,4 @@
-<?php global $title; ?>
-
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 <span class="verse-number">1</span><br>
@@ -39,7 +37,7 @@ a perzselő vágyban...
 <p>
 Félénk ujjaim lassan érnek hozzád,<br>
 s végigkúsznak tested lankás tájain,<br>
-míg szelíd <a href="vers/<?=$title?>#glissando" title="Amikor a két hang közti távolságot csúsztatva teszi meg a zenész.">glissandókat</a> zongoráznak<br>
+míg szelíd <a href="vers/<?=App::$title?>#glissando" title="Amikor a két hang közti távolságot csúsztatva teszi meg a zenész.">glissandókat</a> zongoráznak<br>
 felizgatott sejtjeidnek százain...
 </p>
 

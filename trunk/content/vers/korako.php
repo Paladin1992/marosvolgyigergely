@@ -1,4 +1,4 @@
-<?php get_title('center'); ?>
+<?php App::$sqlHelper->get_title('center'); ?>
 
 <p class="center">
 egy kavics<br>

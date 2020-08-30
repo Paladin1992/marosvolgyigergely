@@ -1,6 +1,6 @@
 <?php
     echo '<nav>';
-    action_link(
+    HtmlHelper::action_link(
         'versek', // href
         '<i class="material-icons arrow">keyboard_arrow_left</i>Vissza a versekhez', // innerHTML
         '', // styles

@@ -1,5 +1,5 @@
 <nav class="menu-container">
     <ul>
-        <?php get_menu($page); ?>
+        <?php App::$menuHelper->get_menu(App::$page); ?>
     </ul>
 </nav>

@@ -764,6 +764,7 @@ i.arrow.open {
   .initial-group,
   .year-group {
     border-radius: 0;
+    padding-left: 1em;
   }
   .nav-link {
     font-size: 1.25rem;

@@ -1,4 +1,4 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Nem kívánom, hogy enyém légy &ndash; elég, ha hozzám tartozol; mert nem tárgy vagy, amit birtokolni lehet, hanem teljes értékű Ember, akihez kellemes kötelék fűz. De kérem, hogy add magad &ndash; minden pillanatban; s hogy együtt mártózzunk a hűség tengerében.

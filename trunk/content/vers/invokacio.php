@@ -1,10 +1,10 @@
-<?php get_title(); ?>
+<?php App::$sqlHelper->get_title(); ?>
 
 <p>
 Összetéve két tenyered,<br>
 csillapul már az erezet...<br>
 Halkan mormol imát ajkad,<br>
-s hiszed: Ő majd segít rajtad.
+hiszed: Ő majd segít rajtad.
 </p>
 
 <p>

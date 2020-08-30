@@ -1,36 +1,38 @@
 <?php
-    $page = (isset($_GET['page']) ? $_GET['page'] : 'fooldal');
-    $title = (isset($_GET['title']) ? $_GET['title'] : '');
-
     include('app/config.php');
+
+    App::$page = (isset($_GET['page']) ? $_GET['page'] : 'fooldal');
+    App::$title = (isset($_GET['title']) ? $_GET['title'] : '');
+
     include('db/credentials.php');
     include('db/connect.php');
     include('helpers/menu_helper.php');
     include('helpers/html_helper.php');
     include('helpers/sql_helper.php');
 
-    if ($page == 'versek' || $page == 'novellak') {
-        $writing_info = get_writing_info($title);
+    if (App::$page == 'versek' || App::$page == 'novellak') {
+        App::$writing_info = App::$sqlHelper->get_writing_info(App::$title);
     }
 ?>
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <base href="<?php echo App::HTML_BASE_URL; ?>">
+
     <?php
-        set_base_url();
-        insert_page_title($page, $title);
+        App::$menuHelper->insert_page_title();
     ?>
 
     <meta charset="utf-8"/>
-    <meta keywords="<?=get_meta_keywords($page, $title);?>"/>
-    <meta description="<?=get_meta_description($page, $title);?>"/>
-    <meta name="author" content="MaGe">
+    <meta keywords="<?php echo HtmlHelper::get_meta_keywords(); ?>"/>
+    <meta description="<?php echo HtmlHelper::get_meta_description(); ?>"/>
+    <meta name="author" content="Marosvölgyi Gergely">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="images/favicon.png">
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_versioned_link('css/site.css'); ?>">
+    <link rel="stylesheet" href="<?php echo HtmlHelper::get_versioned_link('css/site.css'); ?>">
 
     <script src="js/jquery.min.js"></script>
 </head>
@@ -39,10 +41,10 @@
         <div class="header-container">
             <header>
                 <?php
-                    if ($page == 'fooldal') {
-                        echo '<h1 class="name-title">'.$_MAGE.'</h1>';
+                    if (App::$page == 'fooldal') {
+                        echo '<h1 class="name-title">'.App::AUTHOR.'</h1>';
                     } else {
-                        echo '<div class="name-title">'.$_MAGE.'</div>';
+                        echo '<div class="name-title">'.App::AUTHOR.'</div>';
                     }
                 ?>
 
@@ -57,15 +59,15 @@
         </div>
         
         <div class="header-placeholder">
-            <div class="name-title"><?=$_MAGE?></div>
+            <div class="name-title"><?=App::AUTHOR?></div>
         </div>
 
         <main>
             <?php
-                $file_path = "content/".$page.".php";
+                $file_path = "content/".App::$page.".php";
 
                 if (file_exists($file_path)) {
-                    print_page_title($page, true, ['fooldal', 'versek', 'novellak']);
+                    App::$menuHelper->print_page_title(App::$page, true, ['fooldal', 'versek', 'novellak']);
                     include($file_path);
                 }
             ?>
@@ -84,10 +86,10 @@
             LOAD_WRITINGS_MAX_COUNT: 10,
 
             totalWritingsCount: <?php
-                if ($page == 'versek' || $page == 'novellak') {
-                    $storedProcedureName = $page == 'versek' ? 'GetAllPoemsCount' : 'GetAllShortStoriesCount';
+                if (App::$page == 'versek' || App::$page == 'novellak') {
+                    $storedProcedureName = App::$page == 'versek' ? 'GetAllPoemsCount' : 'GetAllShortStoriesCount';
                     $query = "CALL `$storedProcedureName`();";
-                    $rows = get_records($query);
+                    $rows = App::$sqlHelper->get_records($query);
 
                     if (count($rows) > 0) {
                         echo $rows[0]['WritingsCount'];
@@ -101,16 +103,16 @@
             loadedWritingsCount: 0,
         };
 
-        const title = '<?php echo $title; ?>';
-        const page = '<?php echo $page; ?>';
+        const title = '<?php echo App::$title; ?>';
+        const page = '<?php echo App::$page; ?>';
     </script>
-    <script src="<?php echo get_versioned_link('js/app/common.js')?>"></script>
+    <script src="<?php echo HtmlHelper::get_versioned_link('js/app/common.js')?>"></script>
     <?php
-        if ($page == 'versek' || $page == 'novellak') {
-            if ($title == 'osszes') {
-                echo '<script src="'.get_versioned_link('js/app/osszes.js').'"></script>';
-            } else if ($title == '') {
-                echo '<script src="'.get_versioned_link('js/app/lista.js').'"></script>';
+        if (App::$page == 'versek' || App::$page == 'novellak') {
+            if (App::$title == 'osszes') {
+                echo '<script src="'.HtmlHelper::get_versioned_link('js/app/osszes.js').'"></script>';
+            } else if (App::$title == '') {
+                echo '<script src="'.HtmlHelper::get_versioned_link('js/app/lista.js').'"></script>';
             }
         }
     ?>

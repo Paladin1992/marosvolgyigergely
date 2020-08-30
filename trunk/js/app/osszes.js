@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
     switch (page) {
         case 'versek':
