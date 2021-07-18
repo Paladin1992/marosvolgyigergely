@@ -71,10 +71,9 @@
                     $inside_block = true;
                 }
 
-                echo
-                    '<li class="group-list-item">'
-                        .'<a href="'.$typeName.'/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
-                    .'</li>';
+                echo '<li class="group-list-item">';
+                echo '  <a href="'.$typeName.'/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>';
+                echo '</li>';
 
                 $prev_letter = $initial;
             }
@@ -111,10 +110,9 @@
                     $inside_block = true;
                 }
 
-                echo
-                    '<li class="group-list-item">'
-                        .'<a href="'.$typeName.'/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>'
-                    .'</li>';
+                echo '<li class="group-list-item">';
+                echo '  <a href="'.$typeName.'/'.$row['Uri'].'" class="title-link">'.$row['Title'].'</a>';
+                echo '</li>';
 
                 $prev_year = $year;
             }
@@ -137,7 +135,9 @@
 
             for ($i = 0; $i < $count; $i++) {
                 $initial = $rows[$i]['Initial'];
-                echo '<li><a href="'.$baseHref.'#'.$initial.'">'.$this->transform_initial($initial).'</a></li>';
+                echo '<li>';
+                echo '  <a href="'.$baseHref.'#'.$initial.'">'.$this->transform_initial($initial).'</a>';
+                echo '</li>';
             }
         }
 
@@ -156,7 +156,9 @@
 
             for ($i = 0; $i < $count; $i++) {
                 $year = $rows[$i]['Year'];
-                echo '<li><a href="'.$baseHref.'#'.$year.'">'.$year.'</a></li>';
+                echo '<li>';
+                echo '  <a href="'.$baseHref.'#'.$year.'">'.$year.'</a>';
+                echo '</li>';
             }
         }
 
@@ -188,13 +190,13 @@
                     }
     
                     echo '<div class="writing-extract">';
-                        echo '<div class="writing-extract-text">';
-                            echo '<div class="writing-extract-overlay"></div>';
-                            include("content/".$href.".php");
-                        echo '</div>';
-                        echo '<div class="writing-extract-link">';
-                            echo '<a href="'.$href.'" class="title-link">Tovább olvasom <i class="material-icons arrow">keyboard_arrow_right</i></a>';                    
-                        echo '</div>';
+                    echo '  <div class="writing-extract-text">';
+                    echo '      <div class="writing-extract-overlay"></div>';
+                    include("content/".$href.".php");
+                    echo '  </div>';
+                    echo '  <div class="writing-extract-link">';
+                    echo '      <a href="'.$href.'" class="title-link">Tovább olvasom <i class="material-icons arrow">keyboard_arrow_right</i></a>';
+                    echo '  </div>';
                     echo '</div>';
                 }
             }
