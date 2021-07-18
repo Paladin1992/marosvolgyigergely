@@ -5,7 +5,7 @@ Te voltál már eső? Mert én nagyon szeretnék eső lenni...
 </p>
 
 <p>
-Valahol a nyílt vizeken születnék meg felhőként. Minden felszíni és partokat nyaldosó hullámból, minden kis vízpermetből gyűjtenék egy-egy cseppet. S míg készülődnék egy hosszabb utazásra, távolról szemlélném a partvonalat, a hajókat, a vízből felugrándozó delfineket, miközben a Nap melegen sütkérezné hátamat.
+Valahol a nyílt vizeken születnék meg, felhőként. Minden felszíni és partokat nyaldosó hullámból, minden kis vízpermetből gyűjtenék egy-egy cseppet. S míg készülődnék egy hosszabb utazásra, távolról szemlélném a partvonalat, a hajókat, a vízből felugrándozó delfineket, miközben a Nap melegen sütkérezné hátamat.
 </p>
 
 <p>

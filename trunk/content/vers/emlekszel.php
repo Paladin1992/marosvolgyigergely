@@ -11,8 +11,6 @@ mély ábrándba merülve<br>
 (egy csillag hullt az égen);<br>
 csak ezüstös fény látszott,<br>
 az idő semmit játszott,<br>
-lágy sóhaján a szélnek<br>
-szállt sok mosolygó lélek,<br>
 az ágon ülő csendnek<br>
 kis hullámok feleltek:<br>
 s lanka vízen a vágyak<br>
@@ -33,5 +31,6 @@ nagyon szeretlek téged!
 
 <p class="writing-info">
 Nagymaros,<br>
-2013. július 25-27.
+2013. július 25-27.<br>
+2020. szeptember 16.
 </p>

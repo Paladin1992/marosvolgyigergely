@@ -25,9 +25,9 @@ jókor kértem &ndash; mind megadta;<br>
 sokat kértem &ndash; keveset adott;<br>
 keveset kértem &ndash; többet adott;<br>
 semmit se kértem &ndash; mindent adott:<br>
-mindig csak azt, mit megadhatott.<br>
-(De mind kevés, mit elmém kívánt.<br>
-Ő tudta, mi kell, mégis kivárt.)
+mindig csak azt, mit megadhatott &ndash;<br>
+de mind kevés, mit elmém kívánt.<br>
+(Ő tudta, mi kell, mégis kivárt.)
 </p>
 
 <p>
@@ -76,12 +76,13 @@ hogy létezhetek... boldogan.
 
 <p>
 Azt hittem, hogy létezik.<br>
-Most már tudom: Létezik...<br>
+Most már tudom: Létezik.<br>
 És rátaláltam &ndash; végre, újra.<br>
 Itt volt végig... szívembe bújva.
 </p>
 
 <p class="writing-info">
 Nagymaros,<br>
-2020. augusztus 10-17., 23-24.
+2020. augusztus 10-17., 23-24.<br>
+2020. szeptember 11.
 </p>
