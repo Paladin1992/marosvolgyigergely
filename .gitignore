@@ -1,5 +1,6 @@
 /.vscode
 
+/trunk/_ignore
 /misc
 *.sql
 
